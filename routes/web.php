@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/beers', 'BeerController@index')->name('beers.index');
+Route::get('/beers/{beer}', 'BeerController@show')->name('beers.show');
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('beers', 'BeerController')->except(['index', 'show']);
+});
+
