@@ -14,6 +14,7 @@
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div id="app">

@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+if (config('app.env') === 'local') {
+    Route::get('styles/buttons', function() {
+        return view('styleguide.buttons');
+    });
+    Route::get('styles/typography', function() {
+        return view('styleguide.typography');
+    });
+    Route::get('styles/cards', function() {
+        return view('styleguide.cards');
+    });
+}
+
 Route::get('/', function () {
     return view('welcome');
 });
