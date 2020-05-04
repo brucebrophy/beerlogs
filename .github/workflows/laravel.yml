@@ -25,6 +25,12 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
+    -name: Run dusk tests
+      run: |
+         php artisan dusk:chrome-driver
+         nohup bash -c './vendor/laravel/dusk/bin/chromedriver-linux > /dev/null 2>&1 &'
+         nohup bash -c 'php artisan serve > /dev/null 2>&1 &'
+         php artisan dusk
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
