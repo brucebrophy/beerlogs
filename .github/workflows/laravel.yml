@@ -32,7 +32,9 @@ jobs:
       run: vendor/bin/phpunit
 
   dusk-php:
+    
       runs-on: ubuntu-latest
+      
       steps:
         - uses: actions/checkout@v2
         - name: Prepare The Environment
