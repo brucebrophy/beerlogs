@@ -31,7 +31,10 @@ class BeerController extends Controller
      */
     public function create()
     {
-        //
+        $beer = new Beer;
+        return view('beers.create', [
+            'beer' => $beer,
+        ]);
     }
 
     /**
@@ -44,6 +47,8 @@ class BeerController extends Controller
     {
         $beer = new Beer;
         $beer->fill($request->input());
+        $beer->slug = \Str::slug($beer->name);
+        $beer->user_id = auth()->id();
         $beer->save();
 
         return redirect(route('beers.show', $beer->id));
