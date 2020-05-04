@@ -15,7 +15,9 @@ class BeerController extends Controller
      */
     public function index()
     {
-        $beers = Beer::all();
+        $beers = Beer::with([
+            'style'
+        ])->paginate(20);
 
         return view('beers.index', [
             'beers' => $beers,
@@ -40,7 +42,11 @@ class BeerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $beer = new Beer;
+        $beer->fill($request->input());
+        $beer->save();
+
+        return redirect(route('beers.show', $beer->id));
     }
 
     /**
@@ -51,7 +57,13 @@ class BeerController extends Controller
      */
     public function show(Beer $beer)
     {
-        //
+        $beer->load([
+            'style'
+        ]);
+
+        return view('beers.show', [
+            'beer' => $beer,
+        ]);
     }
 
     /**

@@ -13,5 +13,9 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserSeeder::class);
         $this->call(BeerStyleSeeder::class);
+
+        if(config('app.env') === 'local') {
+            $this->call(SampleSeeder::class);
+        }
     }
 }

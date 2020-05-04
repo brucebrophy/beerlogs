@@ -5,20 +5,17 @@
 use Faker\Generator as Faker;
 
 use App\Models\User;
-
 use App\Models\Beers\Beer;
 use App\Models\Beers\Style;
 
-$factory->define(Model::class, function (Faker $faker) {
-    $name = $faker->words(2);
-    $style = Style::first();
-    $user = User::first();
-    
+$factory->define(Beer::class, function (Faker $faker) {
+    $name = $faker->words(2, true);
+    $style = Style::inRandomOrder()->limit(1)->first();
     return [
-        'name' => $faker->words(2),
+        'name' => $name,
         'slug' => Str::slug($name),
-        'notes' => $faker->words(12),
-        'description' => $faker->words(100),
+        'notes' => $faker->words(12, true),
+        'description' => $faker->words(100, true),
         'style_id' => $style->id,
         'user_id' => factory(User::class),
     ];
