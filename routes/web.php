@@ -23,20 +23,23 @@ if (config('app.env') === 'local') {
     Route::get('styles/cards', function() {
         return view('styleguide.cards');
     });
+    Route::get('styles/forms', function() {
+        return view('styleguide.forms');
+    });
 }
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes(['verify' => true]);
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('beers', 'BeerController');
+});
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer}', 'BeerController@show')->name('beers.show');
 
-Route::middleware(['auth'])->group(function () {
-    Route::resource('beers', 'BeerController')->except(['index', 'show']);
-});
+Auth::routes(['verify' => true]);
 
