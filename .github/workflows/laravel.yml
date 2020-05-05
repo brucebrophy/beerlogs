@@ -65,4 +65,6 @@ jobs:
       - name: Run Dusk Tests
         run: php artisan dusk
         env:
+          DB_CONNECTION: mysql
+          DB_DATABASE: 'my-database'
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
