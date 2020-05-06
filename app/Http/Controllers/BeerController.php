@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Models\Beers\Beer;
+use Illuminate\Http\Request;
 
 class BeerController extends Controller
 {
@@ -51,7 +50,7 @@ class BeerController extends Controller
         $beer->user_id = auth()->id();
         $beer->save();
 
-        return redirect(route('beers.show', $beer->id));
+        return redirect()->route('beers.show', $beer->id);
     }
 
     /**
@@ -79,7 +78,15 @@ class BeerController extends Controller
      */
     public function edit(Beer $beer)
     {
-        //
+        $this->authorize('update', $beer);
+        
+        $beer->load([
+            'style'
+        ]);
+
+        return view('beers.edit', [
+            'beer' => $beer,
+        ]);
     }
 
     /**
@@ -91,7 +98,13 @@ class BeerController extends Controller
      */
     public function update(Request $request, Beer $beer)
     {
-        //
+        $this->authorize('update', $beer);
+
+        $beer->update($request->input());
+
+        return view('beers.show', [
+            'beer' => $beer,
+        ]);
     }
 
     /**
@@ -100,8 +113,22 @@ class BeerController extends Controller
      * @param  \App\Beer  $beer
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Beer $beer)
+    public function destroy(Request $request, Beer $beer)
     {
-        //
+        $this->authorize('delete', $beer);
+
+        $request->validate([
+            'name' => 'required'
+        ]);
+
+        if ($request->input('name') !== $beer->name) {
+            return redirect()
+                ->route('beers.edit', $beer->id)
+                ->with('error', 'The typed name does not match.');
+        }
+
+        $beer->delete();
+        
+        return redirect()->route('beers.index');
     }
 }

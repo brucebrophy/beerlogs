@@ -22,6 +22,7 @@ class CreateRecipesTable extends Migration
             $table->string('og')->nullable();
             $table->string('fg')->nullable();
             $table->text('adjuncts')->nullable();
+            $table->integer('user_id')->unsigned();
             $table->integer('beer_id')->unsigned();
             $table->timestamps();
         });
