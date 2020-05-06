@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHopsTable extends Migration
+class CreateHopRecipeTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateHopsTable extends Migration
      */
     public function up()
     {
-        Schema::create('hops', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->timestamps();
+        Schema::create('hop_recipe', function (Blueprint $table) {
+            $table->integer('hop_id')->unsigned();
+            $table->integer('recipe_id')->unsigned();
         });
     }
 
@@ -28,6 +26,6 @@ class CreateHopsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('hops');
+        Schema::dropIfExists('hop_recipe');
     }
 }

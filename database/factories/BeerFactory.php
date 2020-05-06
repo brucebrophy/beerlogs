@@ -5,6 +5,7 @@
 use Faker\Generator as Faker;
 
 use App\Models\User;
+use App\Models\Beers\Hop;
 use App\Models\Beers\Beer;
 use App\Models\Beers\Style;
 

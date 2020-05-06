@@ -1,0 +1,4265 @@
+[
+	{
+		"Variety": "Ahtanum®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5.7,
+		"Alpha Acid HIGH (%)": 6.3,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 6.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 50,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 16,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred by Select Botanicals Group, Ahtanum® Brand YCR 1 is an aroma-type cultivar used for its aromatic properties and moderate bittering. The hop is named after the location where Charles Carpenter established the first hop farm east of the Cascade Mountains in Washington State in 1869.",
+		"Aroma": "citrus grapefruit and geranium.",
+		"Beer Styles": "India Pale Ale, Pale Ale, Heffeweisen, American Ales, Lagers, Californian Common, Bitters",
+		"Substitutions": "Cascade, Amarillo®, Simcoe®, Centennial, Willamette",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Amarillo®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 8,
+		"Alpha Acid HIGH (%)": 11,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 7,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.9
+		},
+		"Co-Humulone LOW (%)": 21,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": 68,
+		"Myrcene HIGH (% of total oil)": 70,
+		"Caryophyllene LOW (% of total oil)": 2,
+		"Caryophyllene HIGH (% of total oil)": 4,
+		"Humulene LOW (% of total oil)": 9,
+		"Humulene HIGH (% of total oil)": 11,
+		"Farnesene (% of total oil)": "2 - 4",
+		"Description": "Discovered and introduced by Virgil Gamache Farms in Washington State, Amarillo® Brand VGXP01 cv. is an aroma variety that has recently become one of the top 10 varieties utilized by the craft beer industry. It features relatively high alpha acids along with extremely high levels of myrcene for citrus and grapefruit flavors. As a result, it is an excellent dual purpose variety. Amarillo demonstrates good resistance to downy and powdery mildew.",
+		"Aroma": "grapefruit, orange, lemon, melon, apricot and peach.",
+		"Beer Styles": "American Wheat, American Pale Ale, American IPA, Amber Wheat Beers",
+		"Substitutions": "Cascade, Centennial, Simcoe",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Aramis",
+		"Origin": "France",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 7.9,
+		"Alpha Acid HIGH (%)": 8.3,
+		"Beta Acid LOW (%)": 3.8,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 21,
+		"Myrcene LOW (% of total oil)": 39,
+		"Myrcene HIGH (% of total oil)": 41,
+		"Caryophyllene LOW (% of total oil)": 7.3,
+		"Caryophyllene HIGH (% of total oil)": 7.5,
+		"Humulene LOW (% of total oil)": 20.9,
+		"Humulene HIGH (% of total oil)": 21.1,
+		"Farnesene (% of total oil)": "2 - 4",
+		"Description": "Closely resembling Strisselspalt, but with higher oil and alpha content, Aramis is the first variety from the Comptoir Agricole breeding program.",
+		"Aroma": "spicy, herbal and subtle citrus. ",
+		"Beer Styles": "Pilsner, Lager, Wheat, Saison, India Pale Ale, Belgian Ales, Pale Ale, Porter",
+		"Substitutions": "Willamette, Challenger, Ahtanum™, Strisselspalter, Centennial, Chinook, Hallertau, Tettnang",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Aurora",
+		"Origin": "Slovenia",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 7,
+		"Alpha Acid HIGH (%)": 8.3,
+		"Beta Acid LOW (%)": 2.7,
+		"Beta Acid HIGH (%)": 4.4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "5 - 10",
+		"Description": "A diploid hybrid of Northern Brewer and a TG seedling of unknown origin, Aurora displays an intense yet pleasant aroma in finished beers. It is also known as Super Styrian.",
+		"Aroma": "noble characteristics.",
+		"Beer Styles": "American Pale Ale, Dark Lager",
+		"Substitutions": "Styrian Golding, Northern Brewer",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Blanc",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 9,
+		"Alpha Acid HIGH (%)": 12,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.5
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 50,
+		"Myrcene HIGH (% of total oil)": 75,
+		"Caryophyllene LOW (% of total oil)": 0,
+		"Caryophyllene HIGH (% of total oil)": 2,
+		"Humulene LOW (% of total oil)": 0,
+		"Humulene HIGH (% of total oil)": 3,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Released in 2012, Hallertau Blanc is one of several new German varieties with bold flavor profiles, perfect for American-style Ales.",
+		"Aroma": "floral and fruity with passion fruit, grapefruit, pineapple, grape and lemongrass overtones.",
+		"Beer Styles": "American IPAs, American Ales",
+		"Substitutions": "Nelson Sauvin",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Bobek",
+		"Origin": "Slovenia",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3.5,
+		"Alpha Acid HIGH (%)": 7,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 6.1,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 4
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 31,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 6,
+		"Humulene LOW (% of total oil)": 13,
+		"Humulene HIGH (% of total oil)": 19,
+		"Farnesene (% of total oil)": "4 - 7",
+		"Description": "A world-renowned couplet with moderate bitterness.",
+		"Aroma": "intense and pleasant with floral and pine overtones.",
+		"Beer Styles": "English Ale, Extra Special Bitter, Lager, Pilsner",
+		"Substitutions": "Fuggle, Willamette, Styrian Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Brewers Gold",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5.5,
+		"Alpha Acid HIGH (%)": 8,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.2
+		},
+		"Co-Humulone LOW (%)": 40,
+		"Co-Humulone HIGH (%)": 48,
+		"Myrcene LOW (% of total oil)": 37,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 29,
+		"Humulene HIGH (% of total oil)": 31,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Originally bred in the United Kingdom by professor E.S. Salmon, Brewer's Gold has a high resin content and gives a well-balanced bitterness which is ideally complemented by late hop additions in lager beers.",
+		"Aroma": "blackcurrant, fruity, and spicy",
+		"Beer Styles": "Ale, American Pale Ale, Bitter, Barley Wine, Imperial Stout",
+		"Substitutions": "Bullion, Cascade, Galena, Northern Brewer (US), Northdown",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Cascade",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5.5,
+		"Alpha Acid HIGH (%)": 9,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 7.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.5
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 14,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "6 - 9",
+		"Description": "Originating from the USDA-ARA breeding program, Cascade is an aroma-type cultivar bred in 1956 and released in 1972. It was developed by open pollination of a Fuggle seedling. Cascade is the most popular variety in craft brewing and is known for having a unique floral, spicy and citrus character with balanced bittering potential.",
+		"Aroma": "Medium intense floral, citrus and grapefruit tones",
+		"Beer Styles": "Pale ale, IPA, porter, barleywine\t",
+		"Substitutions": "Centennial, Amarillo, Columbus        ",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Citra®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 11,
+		"Alpha Acid HIGH (%)": 15,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": 60,
+		"Myrcene HIGH (% of total oil)": 70,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 7,
+		"Humulene HIGH (% of total oil)": 12,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Hop Breeding Company and released in 2007. Citra® Brand HBC 394 features fairly high alpha acids and total oil contents with a low percentage of co-humulone. It is tolerant to downy mildew and powdery mildew with good pickability of dense, medium sized cones. Comprised of Hallertau Mittelfrüh, US Tettnang, Brewer's Gold and East Kent Golding.",
+		"Aroma": "grapefruit, melon, lime, gooseberry, passion fruit and lychee",
+		"Beer Styles": "American Pale Ale, American IPA, Double IPA, Amber Ale",
+		"Substitutions": "Simcoe, Mosaic",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Crystal",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 2,
+		"Alpha Acid HIGH (%)": 4.5,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 6.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.5
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 18,
+		"Humulene HIGH (% of total oil)": 24,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1983 by the USDA, Crystal is a triploid aroma-type cultivar from Hallertau Mittelfrüh, Cascade, Brewer's Gold and Early Green. It is primarily grown in Oregon and has become increasingly popular among craft brewers due to its versatility in a variety of beer styles.",
+		"Aroma": "woody and green",
+		"Beer Styles": "Bitter, Pilsner, Light Lager, Golden Ale, Nut Brown Ale, Pale Ale, India Pale Ale, Stout, Chocolate Stout, American Lager",
+		"Substitutions": "Liberty, Mount Hood, German Hallertau, Ultra, Strisselspalter, Hersbrucker",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "East Kent Goldings",
+		"Origin": "United Kingdom",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4.4,
+		"Alpha Acid HIGH (%)": 6.7,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 2.7,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 29,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 45,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed from wild Canterbury Whitebine in the late 1700s, East Kent Godling is the quintessential English variety. It has been used in kettle and dry hopping and is known for is subtle citrus, floral and herbal characteristics.",
+		"Aroma": "smooth and delicate with floral, lavender, spice, honey, earth, lemon, orange, grapefruit and thyme overtones.",
+		"Beer Styles": "Pale Ales, English Bitters, English Milds, English IPA, English Borwn Ales, English Barleywine, Stouts & Porters, Saisons, Christmas Ales, Golden Ales, Belgian Triple, Belgian Golden/Blonde, Irish Red, Scottish Ales,",
+		"Substitutions": "U.K. Golding, First Gold, Whitbread Golding, Progress, U.S. Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Ekuanot™",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 13,
+		"Alpha Acid HIGH (%)": 15.5,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 2.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 4
+		},
+		"Co-Humulone LOW (%)": 31,
+		"Co-Humulone HIGH (%)": 36,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 12,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Hop Breeding Company and released in 2014, Ekuanot™ Brand HBC 366 features pronounced aroma characteristics and extremely high oil content. This variety bursts out of the spring soil in vibrant yellow and gradually matures to a deep green color by fall harvest.",
+		"Aroma": "melon, berry, orange peel, lime, papaya, pine and fresh peppers",
+		"Beer Styles": "Pale Ales, IPAs",
+		"Substitutions": "Citra, Galaxy",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Falconer's Flight 7C's®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 9,
+		"Alpha Acid HIGH (%)": 10.5,
+		"Beta Acid LOW (%)": 4.7,
+		"Beta Acid HIGH (%)": 5.1,
+		"Total Oil LOW (mL": {
+			"100g)": 1.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.7
+		},
+		"Co-Humulone LOW (%)": 0,
+		"Co-Humulone HIGH (%)": 48,
+		"Myrcene LOW (% of total oil)": 0,
+		"Myrcene HIGH (% of total oil)": 70,
+		"Caryophyllene LOW (% of total oil)": 0,
+		"Caryophyllene HIGH (% of total oil)": 20,
+		"Humulene LOW (% of total oil)": 0,
+		"Humulene HIGH (% of total oil)": 55,
+		"Farnesene (% of total oil)": "0 - 20",
+		"Description": "Developed by Hopunion LLC in 2011, Falconer's Flight hop pellets are an exclusive proprietary hop blend created to honor and support the legacy of Northwest brewing legend, Glen Hay Falconer. Proceeds from each Falconer's Flight purchase is contributed to the Glen Hay Falconer Foundation. These hop pellets are an excellent complement to many IPA and Pale Ale-oriented hop varieties.",
+		"Aroma": "strong fruit and citrus characteristics with layers of spicy and earthy overtones.",
+		"Beer Styles": "US-Style IPAs, Pale Ales, Lagers, IBAs, Black IPAs, APAs",
+		"Substitutions": "Citra, Simcoe, Amarillo, Falconer's Flight, Cascade, Centennial, Chinook, Columbus, Cluster, Crystal,",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Falconer's Flight®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 9.5,
+		"Alpha Acid HIGH (%)": 12,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 4.6
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": null,
+		"Myrcene HIGH (% of total oil)": null,
+		"Caryophyllene LOW (% of total oil)": null,
+		"Caryophyllene HIGH (% of total oil)": null,
+		"Humulene LOW (% of total oil)": null,
+		"Humulene HIGH (% of total oil)": null,
+		"Farnesene (% of total oil)": "",
+		"Description": "Developed by Hopunion LLC in 2010, Falconer's Flight hop pellets are an exclusive proprietary hop blend created to honor and support the legacy of Northwest brewing legend, Glen Hay Falconer. Proceeds from each Falconer's Flight purchase is contributed to the Glen Hay Falconer Foundation. These hop pellets are an excellent complement to many IPA and Pale Ale-oriented hop varieties.",
+		"Aroma": "distinct tropical, floral, lemon and grapefruit characteristics. ",
+		"Beer Styles": "India Pale Ale, Pale Ale, Lager",
+		"Substitutions": "\tCascade, Columbus, Centennial",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Fuggle",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 5.5,
+		"Beta Acid LOW (%)": 1.5,
+		"Beta Acid HIGH (%)": 2,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 40,
+		"Myrcene HIGH (% of total oil)": 50,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 26,
+		"Farnesene (% of total oil)": "4 - 5",
+		"Description": "Similar to English Fuggle but with slightly higher alpha.",
+		"Aroma": "mild, wood, mint, grass, subtle fruit",
+		"Beer Styles": "English Pale Ale, Belgian India Pale Ale, Extra Special Bitter, Brown Ale, Red Ale",
+		"Substitutions": "Fuggle (UK), Willamette, Styrian Golding, Tettnanger (GR)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Gold",
+		"Origin": "Slovenia",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3.5,
+		"Alpha Acid HIGH (%)": 6.5,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 5.9,
+		"Total Oil LOW (mL": {
+			"100g)": 1.3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.3
+		},
+		"Co-Humulone LOW (%)": null,
+		"Co-Humulone HIGH (%)": null,
+		"Myrcene LOW (% of total oil)": null,
+		"Myrcene HIGH (% of total oil)": null,
+		"Caryophyllene LOW (% of total oil)": null,
+		"Caryophyllene HIGH (% of total oil)": null,
+		"Humulene LOW (% of total oil)": null,
+		"Humulene HIGH (% of total oil)": null,
+		"Farnesene (% of total oil)": "",
+		"Description": "Daughter of Styrian Savinsjki Golding and released in 2009, Gold was bred to improve the agronomic values of the traditional Golding. Known for its distinct aroma, it is cultivated only in Slovenia.",
+		"Aroma": "honey, oregano, basil, nettle and hay",
+		"Beer Styles": "Belgian Ales",
+		"Substitutions": "Nugget, Galena",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Golding",
+		"Origin": "United Kingdom",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 13,
+		"Caryophyllene HIGH (% of total oil)": 16,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 45,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "A classic British hop, Goldings have a background as East Kent Golding but are grown in Hereford and Worcester. They are complementary to Fuggles, providing floral and citrus overtones; an excellent selection for bitter, pale ale, ESB, blond, tripel, saison and kölsch-style beers.",
+		"Aroma": "fragrant, floral, zesty lemon, orange and grapefruit.",
+		"Beer Styles": "Winter Ale, Bitter, English Pale Ale, English Ale, Strong Ale, Copper Ale, Brown Ale, Summer Ale, Belgian Ale",
+		"Substitutions": "Golding(US), Whitbread Golding Variety (WGV)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Golding",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 6.5,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 45,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Golding hops consist of a group of traditional English aroma varieties which have been cultivated since 1790. The cultivar originated in England and the hops were named after villages in East Kent (Petham, Rothersham, Canterbury, Eastwell). US Golding is the Canterbury strain. It is susceptible to downy mildew, but has good pickability of small size, moderately compact cones.",
+		"Aroma": "delicate and sweet floral",
+		"Beer Styles": "Bitter, Pale Ale, Belgian Ale, Belgian IPA, Barley Wine, Imperial Stout, Red Ale, Irish Stout, American Pale Ale",
+		"Substitutions": "East Kent Golding, Fuggle, Willamette, Savinjski Golding, Progress, Whitbread Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hallertau",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3.5,
+		"Alpha Acid HIGH (%)": 5.5,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 18,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 44,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 30,
+		"Humulene HIGH (% of total oil)": 38,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "US Hallertau originates from the classic Hallertau variety of Germany. It is a noble aroma variety. Despite low yield and low resistance to disease, Hallertau remains a historic hop and is often celebrated in the production of purist recipes and traditional beer styles",
+		"Aroma": "noble, earthy, herbal",
+		"Beer Styles": "German Pilsner, Pale Ale, Wheat, American Lager",
+		"Substitutions": "Liberty, Hallertau (US), Hallertauer Tradition",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hallertauer Mittelfrüh",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3.5,
+		"Alpha Acid HIGH (%)": 5.5,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.3
+		},
+		"Co-Humulone LOW (%)": 17,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": 10,
+		"Myrcene HIGH (% of total oil)": 20,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 30,
+		"Humulene HIGH (% of total oil)": 35,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "This classic German aroma hop is often associated with Bavarian-style lager beers and distinguished by an intense, pleasantly-harmonic bitterness. At one time, this was the major Hallertau landrace variety with a highly acclaimed aroma profile.",
+		"Aroma": "mild, but spicy with floral and citrus notes",
+		"Beer Styles": "traditional lagers, belgian ales, European ales.",
+		"Substitutions": "Liberty, German Tradition, Ultra",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hallertauer Tradition",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 7,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.4
+		},
+		"Co-Humulone LOW (%)": 26,
+		"Co-Humulone HIGH (%)": 29,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 45,
+		"Humulene HIGH (% of total oil)": 55,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Hallertau Tradition is a Hüll-bred fine aroma hop originating from Hallertau Mittelfrüher, Hallertauer Gold and Saaz. Bred specifically for fungus and disease resistance, it succeeded in that effort and also features higher alpha acids than its parent varieties, low cohumulone and higher myrcene. It was released for commercial production in 1989. Its oil profile contributes to a wonderfully earthy and grassy character atop a nose of nectar fruits. It is best used late in the boil, or for dry hopping. This utilization is preferential since its humulene content has been noted to dissipate rapidly when heated.",
+		"Aroma": "earthy, grass, nectar fruits",
+		"Beer Styles": "German/European Bocks, Wheat, Hefeweizen, Pilsner, Weissbier",
+		"Substitutions": "Liberty, Hallertauer Mittelfruh, Ultra",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "HBC 472",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 9,
+		"Alpha Acid HIGH (%)": 11,
+		"Beta Acid LOW (%)": 7,
+		"Beta Acid HIGH (%)": 9,
+		"Total Oil LOW (mL": {
+			"100g)": 0
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 5
+		},
+		"Co-Humulone LOW (%)": 42,
+		"Co-Humulone HIGH (%)": 46,
+		"Myrcene LOW (% of total oil)": null,
+		"Myrcene HIGH (% of total oil)": null,
+		"Caryophyllene LOW (% of total oil)": 20,
+		"Caryophyllene HIGH (% of total oil)": 20,
+		"Humulene LOW (% of total oil)": null,
+		"Humulene HIGH (% of total oil)": null,
+		"Farnesene (% of total oil)": "",
+		"Description": "Bred by Hop Breeding Company through open pollination of a wild American hop, subspecies neomexicanus, HBC 472 is a dual purpose variety still in experimental phase. The hop displays a unique aroma profile consisting of floral, wood, earth and coconut characteristics. When hopped aggressively in IPA style beers, citrus and grapefruit aromas emerge, along with a distinct whiskey.bourbon and coconut character in the background. These characteristics are especially evident in darker, malt-forward beers. HBC 472 lends itself well to full flavor beer styles such as pale ales, IPAs, porters, stouts and barrel-aged beers.",
+		"Aroma": "floral, wood, coconut and distinct whiskey/bourbon",
+		"Beer Styles": "",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hersbrucker",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 5.5,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.3
+		},
+		"Co-Humulone LOW (%)": 19,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 15,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "A landrace variety originating from the Hersbruck region of Southern Germany, Hersbrucker has expanded and is now widely grown throughout the Hallertau and Spalt regions. It displays a delicate aroma profile that is often compared to other noble varieties.",
+		"Aroma": "hay, tobacco and orange",
+		"Beer Styles": "Dunkel, Strong Ale, Pilsner, Altbier, Weizenbock, Golden Ale, Marzen, Pale Ale, Wheat, Specialty Ale, Hefeweizen, Light Ale, Lager",
+		"Substitutions": "Hallertauer Tradition, Spalter Select, Mount Hood, Strisselspalter, Hallertau, Liberty",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hersbrucker Pure",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4.2,
+		"Alpha Acid HIGH (%)": 5.2,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 2.8,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.7
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 27,
+		"Myrcene LOW (% of total oil)": 22,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 13,
+		"Humulene LOW (% of total oil)": 25,
+		"Humulene HIGH (% of total oil)": 29,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "The offspring of Hallertauer Mittelfrüh, Saaz and a wild German hop, Hersbrucker Pure was originally tested by brewing giant Anheuser Busch as a replacement for Hersbrucker. After their interest waned in the variety, it failed to catch on as a viable commercial prospect. It has an noble aroma and flavor profile similar to that of its parents",
+		"Aroma": "noble aroma",
+		"Beer Styles": "Pilsner, Hefeweizen, Lager",
+		"Substitutions": "Hersbrucker, Hallertauer Mittelfrüh",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Huell Melon",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 6.9,
+		"Alpha Acid HIGH (%)": 7.5,
+		"Beta Acid LOW (%)": 7.3,
+		"Beta Acid HIGH (%)": 7.9,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.9
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 37,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Institute in Hüll, this hop variety has bold flavors and is not necessarily associated with typical hop variety aromas.",
+		"Aroma": "honeydew melon and strawberry",
+		"Beer Styles": "Belgian Ales, Hefeweizens",
+		"Substitutions": "Belma, Jarrylo",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Liberty",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 5,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 40,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1983, Liberty is an extension of the Hallertau hop family. It is a half-sister to Ultra, Mt. Hood and Crystal. Liberty demonstrates some tolerance to downy mildew, is susceptible to powdery mildew and has small size cones that can be difficult to harvest.",
+		"Aroma": "noble, delicate, floral bouquet, spice",
+		"Beer Styles": "Bock, Lager, Pale Ale",
+		"Substitutions": "Hallertau, Mount Hood, Traditon",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Lublin/Lubelski",
+		"Origin": "Poland",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 5,
+		"Beta Acid LOW (%)": 2.5,
+		"Beta Acid HIGH (%)": 3.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 40,
+		"Farnesene (% of total oil)": "10 - 12",
+		"Description": "Often thought to be a Polish hop, Lubelska actually originates in Zatec, Czechoslovakia. Sometimes marketed as Lublin or Lubelski, Lubelska’s high humulene content is trumped only by its rare, high levels of farnesene. This oil profile results in interesting aromas of magnolia and lavender. It is considered to very noble-like in character. Thought to be a landrace cultivar of Saaz, it is now a mainstay of Polish breweries.",
+		"Aroma": "noble character with aromas of lavendar and magnolia",
+		"Beer Styles": "Pilsner, Lager",
+		"Substitutions": "Saaz, Sterling",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Mandarina Bavaria",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 7,
+		"Alpha Acid HIGH (%)": 10,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 2.1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.3
+		},
+		"Co-Humulone LOW (%)": 31,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 70,
+		"Myrcene HIGH (% of total oil)": 72,
+		"Caryophyllene LOW (% of total oil)": 1,
+		"Caryophyllene HIGH (% of total oil)": 5,
+		"Humulene LOW (% of total oil)": 5,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Institute in Hüll, Mandarina Bavaria displays pleasant fruitiness in finished beers",
+		"Aroma": "citrus, fruity, tangerine",
+		"Beer Styles": "Belgian Ale, French Ale",
+		"Substitutions": "Columbus, Nugget, Cascade(US)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Mosaic®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 10.5,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 21,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 48,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 3,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Hop Breeding Company and released in 2012, Mosaic® Brand HBC 369 contains high alpha content and features a unique and complex aroma profile that translates favorably into a variety of beer styles. It is a daughter of Simcoe® Brand YCR 14 and a Nugget derived male. Mosaic® is named in honor of the artistic assortment of aromas and flavors it is capable of presenting",
+		"Aroma": "earthy, blueberry, tangerine papya, rose, blossoms, grass and bubble gum",
+		"Beer Styles": "India Pale Ale, Pale Ale, Double IPAs",
+		"Substitutions": "Citra, Simcoe",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Motueka",
+		"Origin": "New Zealand",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 6.5,
+		"Alpha Acid HIGH (%)": 7.5,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.9
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 47,
+		"Myrcene HIGH (% of total oil)": 49,
+		"Caryophyllene LOW (% of total oil)": 1,
+		"Caryophyllene HIGH (% of total oil)": 3,
+		"Humulene LOW (% of total oil)": 3.5,
+		"Humulene HIGH (% of total oil)": 3.7,
+		"Farnesene (% of total oil)": "12.1 - 12.3",
+		"Description": "Bred as part of the Hops with a Difference programme, Motueka is an excellent hop in many applications from first kettle additions through late gifting. This hop offers a unique aroma and flavour profile suitable for producing bigger styles. Excellent when employed in multiple additions from a single hop bill and sits well on the palate to balance specialty malt sweetness. It is an excellent variety for a wide range of styles from Saison through to Pilsners. It is extremely versatile in the brewery",
+		"Aroma": "crushed fresh citrus, Mojito lime, lively lemon and lime tones with undercurrents of a tropical fruit",
+		"Beer Styles": "European Ale, English Ale, Dark Lager, Pilsner, Belgian Ales, Lager, Maibock, Ales",
+		"Substitutions": "Saaz, Sterling",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Mount Hood",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 8,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 7.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.3
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 23,
+		"Myrcene LOW (% of total oil)": 55,
+		"Myrcene HIGH (% of total oil)": 65,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Released in 1989, Mount Hood is an American-bred cultivar stemming from Hallertau Mittelfrüher. Popular among American craft brewers, it makes a good aroma hop, with characteristics similar to a Hallertau or Hersbrucker and is also half-sister to Crystal, Ultra and Liberty.",
+		"Aroma": "herbal, pungent, spicy",
+		"Beer Styles": "Hefeweizen, Doppelbock, Russian Imperial Stout, Brown Ale, Golden Ale, Pale Ale, Amber Ale, Weizenbock, India Pale Ale, Holiday Lager, Bock, American Wheat, Alt Munich Helles, American Lager",
+		"Substitutions": "Crystal, Strisselspalter, Hersbrucker",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pacific Hallertau",
+		"Origin": "New Zealand",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 6.5,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 7,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.3
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 35,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in New Zealand, triploid aroma hop Pacifica, or Pacific Hallertau as it is sometimes known, is the result of open pollination breeding of German hop Hallertauer Mittelfrüher. The hop was released by HortResearch, New Zealand following promising brewing trials in 1994. Like Hallertauer Mittelfrüher, Pacifica is mostly known for its aromatic properties. It features moderately low cohumulone and higher carophyllene, which give it a spicy and decidedly floral aroma. Citrus notes are also evident and it is said to impart aromas of orange when used late in the boil.",
+		"Aroma": "Citrusy, spicy, orange and floral aromas",
+		"Beer Styles": "Porter",
+		"Substitutions": "Liberty",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pacifica",
+		"Origin": "New Zealand",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 5.9,
+		"Beta Acid HIGH (%)": 6.1,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.1
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 12,
+		"Myrcene HIGH (% of total oil)": 13,
+		"Caryophyllene LOW (% of total oil)": 16.6,
+		"Caryophyllene HIGH (% of total oil)": 16.8,
+		"Humulene LOW (% of total oil)": 50.8,
+		"Humulene HIGH (% of total oil)": 51,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "A triploid aroma type developed through the HortResearch, New Zealand Hop Breeding programme, Pacifica brings something of a blend of new and old-world taste descriptors to the brewers' forum. It is ideally suited to traditional German lager styles but is finding wider application to a new generation through the international craft market's insatiable thirst for Pale Ale",
+		"Aroma": "orange zest marmalade, classic Hallertau characteristics with floral notes",
+		"Beer Styles": "Porter",
+		"Substitutions": "Liberty",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Palisade®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 6.5,
+		"Alpha Acid HIGH (%)": 10,
+		"Beta Acid LOW (%)": 5.5,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 26,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 52,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 16,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "<1",
+		"Description": "Developed by Select Botanicals Group, Palisade® Brand YCR 4 is known for its high yield and unique aroma profile. The variety has low susceptibility to powdery mildew but has good pickability of medium to large cones.",
+		"Aroma": "apricot, grass and clean floral characteristics",
+		"Beer Styles": "Golden Ale, Pale Ale, English Ales, American Pale Ale",
+		"Substitutions": "Styrian Golding, Willamette, Glacier, Chinook",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Riwaka",
+		"Origin": "New Zealand",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4.5,
+		"Alpha Acid HIGH (%)": 6.5,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 31,
+		"Co-Humulone HIGH (%)": 33,
+		"Myrcene LOW (% of total oil)": 67,
+		"Myrcene HIGH (% of total oil)": 69,
+		"Caryophyllene LOW (% of total oil)": 3.9,
+		"Caryophyllene HIGH (% of total oil)": 4.1,
+		"Humulene LOW (% of total oil)": 8.9,
+		"Humulene HIGH (% of total oil)": 9.1,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "A triploid aroma type bred during the development of New Zealand Hops “Hops with a Difference” programme, Riwaka is a quintessential New Zealand hop variety. The pure weight of the oil character experienced during selection carries right through to the glass and is a punchy addition to the New World styles of Pales Ale and New Zealand Pilsners.",
+		"Aroma": "powerful tropical passionfruit with grapefruit and citrus",
+		"Beer Styles": "India Pale Ale, Pilsner, American Pale Ale",
+		"Substitutions": "Czech Saaz",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Saaz",
+		"Origin": "Czech Republic",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 4.5,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.7
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 40,
+		"Humulene HIGH (% of total oil)": 45,
+		"Farnesene (% of total oil)": "1 - 15",
+		"Description": "The classic noble aroma hop with long and strong traditions, associated with the renowned pilsner lager.",
+		"Aroma": "mild with pleasant earthy, herbal and floral character",
+		"Beer Styles": "Bohemian-style beers, Continental lagers, Wheats, Pilsener lagers.",
+		"Substitutions": "Polish Lublin, US Saaz, US Sterling, Tettnang",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Saaz Triploid B",
+		"Origin": "New Zealand",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 6.5,
+		"Alpha Acid HIGH (%)": 8.5,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 5.8,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 60,
+		"Myrcene HIGH (% of total oil)": 80,
+		"Caryophyllene LOW (% of total oil)": 1,
+		"Caryophyllene HIGH (% of total oil)": 2,
+		"Humulene LOW (% of total oil)": 1,
+		"Humulene HIGH (% of total oil)": 3,
+		"Farnesene (% of total oil)": "7 - 13",
+		"Description": "Formerly known as Belgian Saaz or B Saaz, Motueka is a premier New Zealand hop. Developed by HortResearch, this triploid was bred from Saaz and an unnamed New Zealand breeding strain and lends itself well to Lagers, Pilsners and Belgian Ales.",
+		"Aroma": "citrus and tropical fruit",
+		"Beer Styles": "European Ale, English Ale, Dark Lager, Pilsner, Belgian Ales, Lager, Maibock, Ales",
+		"Substitutions": "Saaz, Saaz (US), Sterling",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Santiam",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 7,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.5
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": 27,
+		"Myrcene HIGH (% of total oil)": 36,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 23,
+		"Humulene HIGH (% of total oil)": 26,
+		"Farnesene (% of total oil)": "14 - 16",
+		"Description": "Released in 1997 by the USDA, Santiam is a triploid selection from Tettnang, Hallertau Mittelfrüh and a cultivar derived from Cascade. It is an American aroma variety with noble hop characteristics",
+		"Aroma": "black pepper, floral and spice",
+		"Beer Styles": "American Blonde Ale, American Lager, India Pale Ale, American Pale Ale, Wheat, Bock",
+		"Substitutions": "Tettnanger, Spalter, Spalter Select, Hallertau, Liberty",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Saphir",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 2,
+		"Alpha Acid HIGH (%)": 4,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 7,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.4
+		},
+		"Co-Humulone LOW (%)": 12,
+		"Co-Humulone HIGH (%)": 17,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 14,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 30,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Saphir is a good aroma variety with a distinct hoppy tang and an average bitter value.",
+		"Aroma": "spicy, fruity, floral with hints of tangerine",
+		"Beer Styles": "Pilsners, German lagers, Belgian whites",
+		"Substitutions": "Hallertau Mittelfrüh, Hallertau Tradition, Spalter Select",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Savinjski Golding",
+		"Origin": "Slovenia",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4.5,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 2.5,
+		"Beta Acid HIGH (%)": 3.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 27,
+		"Myrcene HIGH (% of total oil)": 33,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 34,
+		"Humulene HIGH (% of total oil)": 38,
+		"Farnesene (% of total oil)": "2 - 5",
+		"Description": "Originating from UK Fuggle, Styrian Savinjski Golding is a traditional Slovenian variety with pleasant bittering and noble aroma characteristics.",
+		"Aroma": "noble",
+		"Beer Styles": "Extra Special Bitter, Ale, Lager, Belgian Ale",
+		"Substitutions": "Fuggle, Willametter, Bobek",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Select",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 6.5,
+		"Beta Acid LOW (%)": 2.4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.9
+		},
+		"Co-Humulone LOW (%)": 21,
+		"Co-Humulone HIGH (%)": 27,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 22,
+		"Farnesene (% of total oil)": "15 - 22",
+		"Description": "Also called Spalter Select Bred at the Hop Research Center in Hüll and released in 1993, Select is often referred to as “Spalter Select.” It was bred to be like the Spalt, Tettnang, and Saaz groups.",
+		"Aroma": "spicy, grass",
+		"Beer Styles": "Kolsch, Marzen, Lager, Pilsner, Alt, Helles, Bock",
+		"Substitutions": "Saaz, Tettnanger(GR), Spalt, Hersbrucker",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Spalt",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 3,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "10 - 15",
+		"Description": "A landrace variety originating from the Spalt region in Southern Germany, Spalt (or Spalter) is an aroma variety with characteristics similar to German Tettnang. It belongs to the Saaz group and displays fine, noble characteristics.",
+		"Aroma": "noble characteristics, earthy, herbal",
+		"Beer Styles": "German Ale, Lager, Pilsner, Bock, Kolsch",
+		"Substitutions": "Saaz, Tettnanger, Spalt, Santiam, Liberty, Hallertau",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Spalter",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3.5,
+		"Alpha Acid HIGH (%)": 5.5,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.1
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 15,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 18,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "10 - 15",
+		"Description": "A landrace variety originating from the Spalt region in Southern Germany, Spalt (or Spalter) is an aroma variety with characteristics similar to German Tettnang. It belongs to the Saaz group and displays fine, noble characteristics.",
+		"Aroma": "noble characteristics, earthy, herbal",
+		"Beer Styles": "German Ale, Lager, Pilsner, Bock, Kolsch",
+		"Substitutions": "Saaz, Tettnanger, Spalt, Santiam, Liberty, Hallertau",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Spalter Select",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 21,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 15,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "15 - 25",
+		"Description": "Bred at the Hop Research Center in Hüll and released in 1993, Select is often referred to as “Spalter Select.” It was bred to be like the Spalt, Tettnang, and Saaz groups.",
+		"Aroma": "spicy & grass",
+		"Beer Styles": "Kölsch, Belgian Ale, French Ale, Lager, Bock, Helles, Alt, Pilsner, Marzen",
+		"Substitutions": "Saaz, Tettnanger, Spalt, Hersbrucker, Perle, Hallertau Tradition",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Strisselspalt",
+		"Origin": "France",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 5,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.9
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 30,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Strisselpalt is from the Alsace area of France, near Strasbourg. It is globally accepted as a good aroma hop with similar characteristics to Hersbrucker.",
+		"Aroma": "spicy, citrusy, floral, fruity and herbal",
+		"Beer Styles": "Lager, Saison, Blonde Ale, Amber Ale, Belgian Ale, Bock, Maibock, Golden Ale, Belgian Pale Ale",
+		"Substitutions": "Liberty, Hallertau, Mt Hood, Crystal, Hersbrucker",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Styrian Golding",
+		"Origin": "Slovenia",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4.5,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 27,
+		"Myrcene HIGH (% of total oil)": 33,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 34,
+		"Humulene HIGH (% of total oil)": 38,
+		"Farnesene (% of total oil)": "2 - 5",
+		"Description": "Styrian Golding or Savinjski Golding as it is commonly known, goes by a multitude of sometimes confusing aliases. Confusing still is the fact it actually doesn’t come from a Golding at all, but is rather the result of the clonal selection of Fuggle and as such exhibits many Fuggle-like characteristics. It was considered a major crop in the 1930’s in both Styria, a state in Austria and across the Savinja river in Slovenia (former Yugoslavia). Its staying power has been attributed to its disease resistance, specifically, its resistance to mildew. It is now world-renowned hop and in high demand. From a brewer’s perspective, Styrian Golding is a lovely aroma hop and exhibits resinous, earthy flavors that are perhaps considered slightly more refined than Fuggle",
+		"Aroma": "resinous, earthy, with notes of white pepper",
+		"Beer Styles": "Extra Special Bitter, Ale, Lager, Belgian Ale",
+		"Substitutions": "Fuggle, Willamette, Bobek",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Summer",
+		"Origin": "Australia",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5.6,
+		"Alpha Acid HIGH (%)": 6.4,
+		"Beta Acid LOW (%)": 4.8,
+		"Beta Acid HIGH (%)": 6.1,
+		"Total Oil LOW (mL": {
+			"100g)": 1.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 29,
+		"Myrcene HIGH (% of total oil)": 38,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 28,
+		"Humulene HIGH (% of total oil)": 50,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1997 at Tasmanian Bushy Park Breeding Garden, Summer™ is the result of open pollination of a tetraploid Czech Saaz. It features balanced citrus and stone fruit flavors, but showcases distinct apricot and melon characteristics in dry hopping applications",
+		"Aroma": "apricot and melon.",
+		"Beer Styles": "",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Sussex",
+		"Origin": "United Kingdom",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4.3,
+		"Alpha Acid HIGH (%)": 5.8,
+		"Beta Acid LOW (%)": 2.4,
+		"Beta Acid HIGH (%)": 3.2,
+		"Total Oil LOW (mL": {
+			"100g)": 0.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.6
+		},
+		"Co-Humulone LOW (%)": 32,
+		"Co-Humulone HIGH (%)": 43,
+		"Myrcene LOW (% of total oil)": 42,
+		"Myrcene HIGH (% of total oil)": 42,
+		"Caryophyllene LOW (% of total oil)": null,
+		"Caryophyllene HIGH (% of total oil)": null,
+		"Humulene LOW (% of total oil)": 23,
+		"Humulene HIGH (% of total oil)": 23,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Discovered in 2005 at Gate Court, Northiam in East Sussex, Sussex is a “chance find” variety. It is likely to have resulted from open pollination of a wild hop.",
+		"Aroma": "earthy, grass, mint, citrus and vanilla",
+		"Beer Styles": "English Ale, Pale Ale, Belgian Ale",
+		"Substitutions": "Progress, Whitbread Golding, Fuggle",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Sylva",
+		"Origin": "Australia",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5.6,
+		"Alpha Acid HIGH (%)": 7.3,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4.6,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.4
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 26,
+		"Myrcene HIGH (% of total oil)": 36,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 18,
+		"Humulene HIGH (% of total oil)": 27,
+		"Farnesene (% of total oil)": "25 - 25",
+		"Description": "Bred in 1997 at Tasmanian Bushy Park Breeding Garden, Sylva™ is a result of open pollination of Czech Saaz. Brewing characteristics closely resemble that of its parent, with complex yet subtle floral and herbal characteristics.",
+		"Aroma": "floral, herbal and noble characteristics.",
+		"Beer Styles": "Pilsner, Lager, California Common, Pale Ale",
+		"Substitutions": "Hallertau Mittlefrüh, Helga, Saaz",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Tahoma",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 6,
+		"Alpha Acid HIGH (%)": 7.5,
+		"Beta Acid LOW (%)": 7,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 15,
+		"Co-Humulone HIGH (%)": 17,
+		"Myrcene LOW (% of total oil)": 55,
+		"Myrcene HIGH (% of total oil)": 65,
+		"Caryophyllene LOW (% of total oil)": 3,
+		"Caryophyllene HIGH (% of total oil)": 5,
+		"Humulene LOW (% of total oil)": 8,
+		"Humulene HIGH (% of total oil)": 12,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Released by Washington State University in 2013, Tahoma is one of three new public varieties to come to market. It retains the very low cohumulone characteristic of Glacier but displays slightly high alpha acid content. Tahoma is considered to be Cascade-like with a pleasant and predominantly citrus aroma profile.",
+		"Aroma": "lemon, grapefruit, cedar, pine, spice and pepper",
+		"Beer Styles": "Blonde Ale, Wheat, Lager",
+		"Substitutions": "??",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Tettnanger",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 5,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.8
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 36,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 18,
+		"Humulene HIGH (% of total oil)": 23,
+		"Farnesene (% of total oil)": "",
+		"Description": "This variety has created so much industry confusion. In fact, you can still find sites online that describe American Tettnanger as a true Tettnanger. In reality, it is a clone of rhizomes imported as Swiss Tettnanger. Recent tests have shown it to be genetically distinct from the original land race, Tettnang Tettnanger. Instead, the US varietal is more likely a Fuggle open pollinated with Tettnang Tettnanger. The original import was from a region in Switzerland directly across Lake Constance from Tettnang, Germany. American Tettnanger enjoyed some great popularity early on, being grown in Idaho, Washington and Oregon. It has noble hops aroma qualities with a bouquet of floral spice. However, in recent years, Anheuser Busch abandoned the variety. It is said that US Tettnanger is a good hop for the boil as well as dry hopping whereas the original German variety is better used as a late addition.",
+		"Aroma": "Floral, spice",
+		"Beer Styles": "Bitter, Blonde Ale, Red Ale, Pilsner, Lager, American Lager",
+		"Substitutions": "Spalter Select, Santiam, Czech Saaz, Spalter",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Tettnanger",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 3.5,
+		"Alpha Acid HIGH (%)": 5.5,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 29,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "12 - 16",
+		"Description": "A landrace variety originating from the Tettnang region on Lake Constance in Germany, Tettnang (or Tettnanger) is from the Saaz group. It displays fine, noble characteristics with a slight spiciness.",
+		"Aroma": "herbal, spicy, pepper and black tea",
+		"Beer Styles": "Bitter, California Blonde Ale, Red Ale, Pilsner, Lager, American Amber Ale, Winter Ale, Pale Ale, Wheat Beer, Bavarian Hefeweizen, Cream Ale, American Lager",
+		"Substitutions": "Czech Saaz, Spalter, Santiam, Spalter Select, Saaz, Tettnanger (US)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Tradition",
+		"Origin": "Germany",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 7,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 17,
+		"Myrcene HIGH (% of total oil)": 32,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 50,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Institute in Hüll, Germany and registered in 1993, Tradition imparts beer with a harmonic bitterness.",
+		"Aroma": "medium to intense floral, herbal and grassy notes; some fruity aromas",
+		"Beer Styles": "Lagers, Pilsner, Bock, Wheat, Weizen ",
+		"Substitutions": "Magnum, Hersbrucker, Taurus",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Triplepearl",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 10.3,
+		"Alpha Acid HIGH (%)": 11.2,
+		"Beta Acid LOW (%)": 3.3,
+		"Beta Acid HIGH (%)": 4.2,
+		"Total Oil LOW (mL": {
+			"100g)": 1.1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.8
+		},
+		"Co-Humulone LOW (%)": null,
+		"Co-Humulone HIGH (%)": null,
+		"Myrcene LOW (% of total oil)": null,
+		"Myrcene HIGH (% of total oil)": null,
+		"Caryophyllene LOW (% of total oil)": null,
+		"Caryophyllene HIGH (% of total oil)": null,
+		"Humulene LOW (% of total oil)": 7,
+		"Humulene HIGH (% of total oil)": 11,
+		"Farnesene (% of total oil)": "",
+		"Description": "Released by USDA-ARS in 2013, TriplePearl is an open pollinated cross between a tetraploid Perle female and an unknown diploid male. Its lineage includes Northern Brewer and Hallertau. TriplePearl is similar to Perle but features more pronounced aroma characteristics.",
+		"Aroma": "melon, orange, resin, spice and pepper",
+		"Beer Styles": "",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Triskel",
+		"Origin": "France",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 8,
+		"Alpha Acid HIGH (%)": 9,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 4.7,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 23,
+		"Myrcene LOW (% of total oil)": 59,
+		"Myrcene HIGH (% of total oil)": 61,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 6.2,
+		"Humulene LOW (% of total oil)": 13.4,
+		"Humulene HIGH (% of total oil)": 13.6,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed in 2006 as a cross between Strisselspalt and Yeoman, Triskel contains many of the same characteristics as Strisselspalt but displays a more pronounced flavor profile.",
+		"Aroma": "spicy, strong floral, herbal, citrus",
+		"Beer Styles": "Belgian Ale, Saison, Kolsch, Pilsner, Pale Ale, India Pale Ale, Lager, Wheat",
+		"Substitutions": "Strisselspalt, Ahtanum™, Centennial, Chinook, Simcoe®",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Ultra",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 2,
+		"Alpha Acid HIGH (%)": 3.5,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 38,
+		"Myrcene LOW (% of total oil)": 15,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 50,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred by the hops research program in Corvallis, Oregon in 1983 and released in 1995 by the USDA, Ultra is a triploid seedling of Hallertau mf. and half sister to Mt. Hood, Liberty and Crystal. It is resistant to downy mildew and features small size cones. Ultra is related to traditional German varieties and can be utilized in similar applications.",
+		"Aroma": "mild, spicy and floral bouquet",
+		"Beer Styles": "Oktoberfest, Blonde Ale, Harvest Ale, Lager, Pilsner, Pale Ale, American Lager, Bock",
+		"Substitutions": "Tettnanger (GR), Saaz, Hallertauer Tradition, Liberty",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Vanguard",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 5,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 15,
+		"Co-Humulone HIGH (%)": 20,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 40,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1982 by the USDA and released in 1997, Vanguard is an aroma variety with similar characteristics to Hallertau Mittelfrüh. Vanguard is typically utilized in traditional German-style beers as a noble type variety.",
+		"Aroma": "woody, cedary ",
+		"Beer Styles": "Lagers, Pilsners, Bocks, Kolsch, Wheats, Munich Helles, Belgian-Style Ales",
+		"Substitutions": "Hallertau, German Hersbrucker, Mt. Hood, Liberty",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Wai-iti",
+		"Origin": "New Zealand",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 2.5,
+		"Alpha Acid HIGH (%)": 3.5,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": null,
+		"Myrcene HIGH (% of total oil)": 3,
+		"Caryophyllene LOW (% of total oil)": 8.9,
+		"Caryophyllene HIGH (% of total oil)": 9.1,
+		"Humulene LOW (% of total oil)": 27.9,
+		"Humulene HIGH (% of total oil)": 28.1,
+		"Farnesene (% of total oil)": "12.9 - 13.1",
+		"Description": "Developed by the New Zealand Institute for Plant and Food Research hop breeding program and released in 2011, Wai-iti is a granddaughter of Liberty and is derived from 1/3 Hallertau MIttelfrüh. Fresh peaches and stone fruit dominate the aroma in single hopped beers and when combining with other varieties in late additions. Wai-iti is best known for its fruity, aroma-driven results.",
+		"Aroma": "fresh peaches, apricot, limes with top notes of mixed citrus and spice",
+		"Beer Styles": "Pale Ale, India Pale Ale, Wheat Beer",
+		"Substitutions": "Riwaka",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Whitbread Golding",
+		"Origin": "United Kingdom",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 5.4,
+		"Alpha Acid HIGH (%)": 7.7,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3.3,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 32,
+		"Co-Humulone HIGH (%)": 43,
+		"Myrcene LOW (% of total oil)": 19,
+		"Myrcene HIGH (% of total oil)": 27,
+		"Caryophyllene LOW (% of total oil)": 11,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 42,
+		"Farnesene (% of total oil)": "1 - 2",
+		"Description": "Developed through grower selection circa 1911, Whitbread Golding (WGV) is not a true Golding. It displays many similar characteristics but has more robust and slightly sweet, hoppy flavor.",
+		"Aroma": "Earthy, floral and botanical with sweet fruit flavors",
+		"Beer Styles": "Ale, Pale Ale, Bitter",
+		"Substitutions": "Fuggle, East Kent Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Zythos®",
+		"Origin": "United States",
+		"Type": "Aroma",
+		"Alpha Acid LOW (%)": 10,
+		"Alpha Acid HIGH (%)": 12.5,
+		"Beta Acid LOW (%)": 4.7,
+		"Beta Acid HIGH (%)": 6.2,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 31,
+		"Myrcene LOW (% of total oil)": null,
+		"Myrcene HIGH (% of total oil)": null,
+		"Caryophyllene LOW (% of total oil)": null,
+		"Caryophyllene HIGH (% of total oil)": null,
+		"Humulene LOW (% of total oil)": null,
+		"Humulene HIGH (% of total oil)": null,
+		"Farnesene (% of total oil)": "",
+		"Description": "Designed to complement existing IPA and Pale Ale hop varieties, Zythos® is an excellent blend for any hop forward beer.",
+		"Aroma": "Pineapple, citrus and mild pine character",
+		"Beer Styles": "American Ale, IPAs, Pale Ales",
+		"Substitutions": "Simcoe, Amarillo, Cascade",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Admiral",
+		"Origin": "United Kingdom",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 13.5,
+		"Alpha Acid HIGH (%)": 15.5,
+		"Beta Acid LOW (%)": 4.8,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.7
+		},
+		"Co-Humulone LOW (%)": 37,
+		"Co-Humulone HIGH (%)": 45,
+		"Myrcene LOW (% of total oil)": 39,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 7,
+		"Humulene HIGH (% of total oil)": 8,
+		"Farnesene (% of total oil)": "1 -  2",
+		"Description": "A high alpha hop with balanced bitterness and an acceptable aroma profile; a versatile replacement for both high alpha and dual purpose varieties.",
+		"Aroma": "pleasant, resinous hop aroma with hints of citrus (orange) and herbal flavors.",
+		"Beer Styles": "English IPA, American IPA & Double IPA, Extra Special Bitter (ESB), Bitter, Pale Ales & Red Ales, India Red Ale & India Black Ale",
+		"Substitutions": "First Gold, Target, Northdown, Challenger, Brambling Cross, Cascade, Amarillo",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Bravo",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 15,
+		"Alpha Acid HIGH (%)": 18,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 2.3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3.5
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 55,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 8,
+		"Humulene HIGH (% of total oil)": 11,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Hopsteiner Breeding Company and released in 2006, Bravo is a second generation super-alpha variety. It is an excellent bittering variety but showcases pleasant fruit and sweet floral aroma characteristics too.",
+		"Aroma": "orange, vanilla and floral.",
+		"Beer Styles": "India Pale Ale, American Pale Ale, Extra Special Bitter",
+		"Substitutions": "Columbus, Zeus, Apollo, Magnum, Nugget",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Brewers Gold",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 8,
+		"Alpha Acid HIGH (%)": 11,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 6.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 40,
+		"Co-Humulone HIGH (%)": 48,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 12,
+		"Humulene HIGH (% of total oil)": 18,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at Wye College in 1919, Brewer’s Gold is an ancestor to many major high alpha hops including Sterling, Galena, Horizon, Centennial and Nugget. It is an English variety, however American-grown Brewer’s Gold contains higher levels of alpha acids than its English counterpart.",
+		"Aroma": "blackcurrant and spicy",
+		"Beer Styles": "IPA",
+		"Substitutions": "Bullion, Cascade, Galena, Northern Brewer, Northdown",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Chelan",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14.5,
+		"Beta Acid LOW (%)": 8.5,
+		"Beta Acid HIGH (%)": 9.8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.9
+		},
+		"Co-Humulone LOW (%)": 33,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 12,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Similar to Galena but with higher alpha acids, Chelan was developed by the John I Haas, Inc. breeding company and released in 1994.",
+		"Aroma": "mild floral and citrus characteristics",
+		"Beer Styles": "American Ale",
+		"Substitutions": "Galena, Nugget",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Columbus",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 14,
+		"Alpha Acid HIGH (%)": 16,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Originally selected by Charles Zimmerman for Hopunion, Inc., Columbus is a descendant of Nugget. It is a high alpha variety and is primarily used for bittering purposes. Columbus is often referred to as CTZ, a trio of similar hops including Tomahawk® and Zeus.",
+		"Aroma": "black pepper, licorice, curry and subtle citrus.",
+		"Beer Styles": "American Pale Ale, IPA's & Imperial IPA's, Imperial Red Ale, Imperial Brown Ale, Barley Wine, Stout, Lager",
+		"Substitutions": "Zeus, Tomahawk, Chinook, Galena, Millennium, Nugget",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Comet",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 8,
+		"Alpha Acid HIGH (%)": 10.5,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 34,
+		"Co-Humulone HIGH (%)": 37,
+		"Myrcene LOW (% of total oil)": 40,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 1,
+		"Humulene HIGH (% of total oil)": 2,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Selected in 1961 and released in 1974 by the USDA, Comet was originally utilized for its high alpha acid content and adapability to growing conditions in the Yakima Valley. Commercial production ceased in the early 1980s in favor of newer super-alpha hops, however, Comet has made a recent comeback, finding favor with some brewers in dual purpose applications for its subtle and unique, wild American aroma.",
+		"Aroma": "subtle, wild American, grassy and grapefruit.",
+		"Beer Styles": "Lager, American Ale, India Pale Ale, Ale",
+		"Substitutions": "Galena, Summit™",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Galena",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 7,
+		"Beta Acid HIGH (%)": 9,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 38,
+		"Co-Humulone HIGH (%)": 42,
+		"Myrcene LOW (% of total oil)": 55,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 3,
+		"Caryophyllene HIGH (% of total oil)": 5,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by the USDA breeding program in Idaho in 1968 and released in 1978, Galena is a high alpha variety with increasingly popular aroma characteristics. It has moderate tolerance to downy mildew and is susceptible to powdery mildew, but has good pickability of medium size, compact cones.",
+		"Aroma": "weet fruits, pear, pineapple, blackcurrant, grapefruit, lime, gooseberry and spicy wood.",
+		"Beer Styles": "Imperial Stout, Stout, India Pale Ale, Barley Wine",
+		"Substitutions": "Nugget, Columbus, Zeus, Chinook, Pride of Ringwood, Eroica, Newport, Cluster, Brewers Gold",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Green Bullet",
+		"Origin": "New Zealand",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 13,
+		"Alpha Acid HIGH (%)": 15,
+		"Beta Acid LOW (%)": 6.5,
+		"Beta Acid HIGH (%)": 7,
+		"Total Oil LOW (mL": {
+			"100g)": 1.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.9
+		},
+		"Co-Humulone LOW (%)": 41,
+		"Co-Humulone HIGH (%)": 43,
+		"Myrcene LOW (% of total oil)": 60,
+		"Myrcene HIGH (% of total oil)": 70,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 6,
+		"Humulene LOW (% of total oil)": 12,
+		"Humulene HIGH (% of total oil)": 18,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Green Bullet is a triploid alpha variety bred by open cross pollination of the New Zealand Smoothcone variety. Used extensively as a utility brew house workhorse and found in breweries across the world. This “go to” hop is a traditional bittering type that now finds applications throughout the brewery from late additions through the hop back/ whirlpool and dry hopping.",
+		"Aroma": "spicy, dried fruit, with lots of floral character that balance and complement pine, resin hop tones ",
+		"Beer Styles": "Bock, Saison, India Pale Ale",
+		"Substitutions": "Liberty, Hallertauer, Crystal, Mount Hood, Ultra",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hallertauer Taurus",
+		"Origin": "Germany",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 16,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 28,
+		"Myrcene HIGH (% of total oil)": 32,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 28,
+		"Humulene HIGH (% of total oil)": 32,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "German born Hallertau Taurus features an earthy, strong aroma with hints of chocolate and banana, spice and pepper and finishes with a zesty curry undertone. It was released in 1995.",
+		"Aroma": " Chocolate, banana, spice, pepper, curry",
+		"Beer Styles": "Schwarzbier, Oktoberfest",
+		"Substitutions": "Hallertauer Magnum, Merkur, Hercules",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "HBC 682",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 18,
+		"Alpha Acid HIGH (%)": 21,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 48,
+		"Myrcene HIGH (% of total oil)": 52,
+		"Caryophyllene LOW (% of total oil)": 4.5,
+		"Caryophyllene HIGH (% of total oil)": 5.5,
+		"Humulene LOW (% of total oil)": 13,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "",
+		"Description": "A descendant of HBC 463 and a UK male, HBC 682 is a super alpha hop cultivar still in the experimental phase. It has a mild and pleasant aroma with herbal, floral and spicy characteristics. When used as a bittering variety, HBC 682 provides a very neutral flavor and pleasant bitterness. In single hop applications, it has been described as having a strong earthy aroma. HBC 682 is currently available in limited quantities, and as a variety specific Resinate® CO2 Hop Extract product",
+		"Aroma": "strong, earthy, spicy, herbal",
+		"Beer Styles": "",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Herkules",
+		"Origin": "Germany",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 17,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.4
+		},
+		"Co-Humulone LOW (%)": 32,
+		"Co-Humulone HIGH (%)": 38,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 50,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 30,
+		"Humulene HIGH (% of total oil)": 45,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Center in Hüll, Germany, Herkules imparts robust, hoppy flavors.",
+		"Aroma": "robust, hoppy, with some citrus and melon",
+		"Beer Styles": "German ale",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Magnum",
+		"Origin": "Germany",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.3
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 34,
+		"Humulene HIGH (% of total oil)": 40,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Center in Hüll in 1980 and released in 1993, Magnum is a daughter of Galena. It is a high alpha variety with some spice and fruit characteristics",
+		"Aroma": "spicy, fruity, apple, pepper",
+		"Beer Styles": "India Pilsner, Belgian India Pale Ale, American Ale, Blonde Ale, Pale Ale, Nut Brown Ale, Dark Ale, Pilsner, Bright Ale, Hefeweizen",
+		"Substitutions": "Hallertauer Taurus, Columbus, Nugget",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Magnum",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 15.5,
+		"Beta Acid LOW (%)": 5.5,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 25,
+		"Humulene HIGH (% of total oil)": 30,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Center in Hüll in 1980 and released in 1993, Magnum is a German variety (also grown in the US) and daughter of Galena. It is a high alpha cultivar and is often used as the base bittering variety. Magnum does not display any distinct aroma characteristics, however, subtle spice and fruit characteristics have been noted by some brewers",
+		"Aroma": "bittering hop with no distinc aroma characteristics",
+		"Beer Styles": "American Pale Ale, American India Pale Ale, Strong Ale, American Lager",
+		"Substitutions": "Galena, German Magnum, Horizon, Northdown, Northern Brewer",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Merkur",
+		"Origin": "Germany",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 5.2,
+		"Total Oil LOW (mL": {
+			"100g)": 2.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 18,
+		"Co-Humulone HIGH (%)": 19,
+		"Myrcene LOW (% of total oil)": 48,
+		"Myrcene HIGH (% of total oil)": 50,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 29,
+		"Humulene HIGH (% of total oil)": 32,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Institute in Hüll and registered in 2001, Merkur was the first mildew-resistant hop variety from the research center. It is a cross between Magnum and German experimental variety 81/8/13. It is a high alpha variety with low co-humulone oil percentages. In some dual purpose applications, Merkur displays subtle earth and citrus notes.",
+		"Aroma": "sugar, pineapple, mint",
+		"Beer Styles": "IPAs, Lagers, Belgian Ales",
+		"Substitutions": "German Magnum, German Taurus, German Tradition",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Millennium",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 15.5,
+		"Alpha Acid HIGH (%)": 18.5,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 6.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 29,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred by the John I. Haas breeding program and released in 2000, Millennium is a super-alpha variety with mild, herbal aromas. It is tolerant to downy mildew and powdery mildew, and has good pickability of medium size cones.",
+		"Aroma": "floral, fruity, herbal, resin, toffee and pear",
+		"Beer Styles": "Stout, Ale, American Ale",
+		"Substitutions": "Nugget, Columbus, Summit™, CTZ",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Newport",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 13.5,
+		"Alpha Acid HIGH (%)": 17,
+		"Beta Acid LOW (%)": 7.2,
+		"Beta Acid HIGH (%)": 9.1,
+		"Total Oil LOW (mL": {
+			"100g)": 1.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3.3
+		},
+		"Co-Humulone LOW (%)": 36,
+		"Co-Humulone HIGH (%)": 38,
+		"Myrcene LOW (% of total oil)": 47,
+		"Myrcene HIGH (% of total oil)": 54,
+		"Caryophyllene LOW (% of total oil)": 4.5,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 9,
+		"Humulene HIGH (% of total oil)": 14,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1992 by Oregon State University and released in 1992 through the USDA, Newport is a descendant of the classic bittering variety, Magnum. It offers high alpha acid, co-humulone and myrcene content, offering more distinct aroma characteristics than its parent. Newport is resistant to downy mildew and powdery mildew and has good pickability of medium to large size, loose cones.",
+		"Aroma": "earth, citrus, wine and balsamic",
+		"Beer Styles": "Pale Ale, American Lager",
+		"Substitutions": "Brewer's Gold, Fuggle, Galena, Magnum, Nugget",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Nugget",
+		"Origin": "Germany",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 11.5,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.3
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 27,
+		"Myrcene HIGH (% of total oil)": 42,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 16,
+		"Humulene HIGH (% of total oil)": 19,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed through the USDA program at Oregon State University, Nugget is a high alpha variety that is tolerant to a range of soil conditions, generally producing a high yield.",
+		"Aroma": "mild, pleasant, herbal",
+		"Beer Styles": "IPA, Pale Ale, Blonde, American Wheat, ESB, APA, Imperial IPA, Irish Stout, Oktoberfest, Rye Ale, Best Bitter, EPA, Barley Wine, Strong Ale",
+		"Substitutions": "Galena, Columbus, Tomahawk, Zeus, Hallerauer Magnum, Target",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Nugget",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.3
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 51,
+		"Myrcene HIGH (% of total oil)": 59,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 12,
+		"Humulene HIGH (% of total oil)": 22,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Nugget can be used as a bittering hop. It has pleasant, mild, herbal aromas.",
+		"Aroma": "mild, pleasant, herbal",
+		"Beer Styles": "India Pale Ale, Imperial India Pale Ale, Ales, Stouts, Barley Wines, Saisons, Biere de Garde",
+		"Substitutions": "Galena, Magnum, Columbus",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pacific Gem",
+		"Origin": "New Zealand",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 14,
+		"Alpha Acid HIGH (%)": 17,
+		"Beta Acid LOW (%)": 7.5,
+		"Beta Acid HIGH (%)": 8.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.4
+		},
+		"Co-Humulone LOW (%)": 37,
+		"Co-Humulone HIGH (%)": 40,
+		"Myrcene LOW (% of total oil)": 50,
+		"Myrcene HIGH (% of total oil)": 65,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 13,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "A triploid alpha type developed through the New Zealand Hop breeding program, Pacific Gem fills the brew house with enticing aromas during kettle addition and has been described as producing oaken flavors with a distinct blackberry aroma. It is typically used as a first hop addition and makes its presence felt through an excellent tempered bitterness and flavor while later additions deliver citrus and pine aroma notes. Pacific Gem is a good all purpose hop that delivers quality bitterness along with flavor and aromas. It is excellent in international lagers and can also be used in IPA’s and other big styles.",
+		"Aroma": "spicy black pepper and berry fruit aromas with subtle notes of blackberry, floral and oak",
+		"Beer Styles": "Strong Ale, European Lagers",
+		"Substitutions": "Fuggle",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pacific Sunrise",
+		"Origin": "New Zealand",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12.5,
+		"Alpha Acid HIGH (%)": 14.5,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 6.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 19,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Released in 2000 by HortResearch in New Zealand, Pacific Sunrise’s take up by commercial breweries has been sluggish. Despite this, it features favorable bittering properties and a pleasant piney aroma. It is the result of a cross between the result of a European and New Zealand male on one side and a California Late Cluster and a Fuggle on the other.",
+		"Aroma": "pleasant pine aromas",
+		"Beer Styles": "Lager ",
+		"Substitutions": "Pacific Gem",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Southern Star",
+		"Origin": "South Africa",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 15.5,
+		"Beta Acid LOW (%)": 4.8,
+		"Beta Acid HIGH (%)": 5.2,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.7
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 37,
+		"Myrcene HIGH (% of total oil)": 41,
+		"Caryophyllene LOW (% of total oil)": 13,
+		"Caryophyllene HIGH (% of total oil)": 17,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 24,
+		"Farnesene (% of total oil)": "12",
+		"Description": "Released in 2001, Southern Star was developed in South Africa around 10 years after Outeniqua and Southern Promise. Like it’s two predecessors it is also considered a day neutral variety, meaning it can be grown in locations with reduced daylight. It is used primarily for bittering but also features a spicy, tangy flavor and some aroma.",
+		"Aroma": "spicy, tangy flavor with berry notes",
+		"Beer Styles": "Lager, Pale Ale, IPA, Stout, Barley Wine",
+		"Substitutions": "Outeniqua",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Summit™",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 15,
+		"Alpha Acid HIGH (%)": 17,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 29,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 12,
+		"Caryophyllene HIGH (% of total oil)": 16,
+		"Humulene LOW (% of total oil)": 18,
+		"Humulene HIGH (% of total oil)": 22,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred by the American Dwarf Hop Association and released in 2003, Summit™ is a cross between Lexus and an unspecified male derived from numerous hops including Zeus, Nugget and male USDA varieties. It is the first dwarf hop to be bred for production in the United States. Summit™ is mainly used as a bittering hop, but does have earthy aromatic characteristics and subtle hints of citrus.",
+		"Aroma": "pepper, incense, anise, orange, pink grapefruit and tangerine",
+		"Beer Styles": "IPAs, Imperial IPAs, Pale Ales, Stouts, Barley Wines",
+		"Substitutions": "Apollo, Bravo,CTZ, Zeus,Warrior, Simcoe",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Sun",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 16,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 7,
+		"Total Oil LOW (mL": {
+			"100g)": 2.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 5
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 40,
+		"Myrcene LOW (% of total oil)": 55,
+		"Myrcene HIGH (% of total oil)": 70,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Currently considered as in-development at the S. S. Steiner Hop Farms in Washington State, Sun has not yet been registered or acquired USDA accession. Not much is known about its lineage yet but it is thought to be derived from Brewer’s Gold and sister to Zeus. It has also been suggested that it possesses characteristic similarities to Galena. What little we do know about the variety includes its classification as a high-alpha varietal, though not as high as Zues and that it exhibits very strong yield potential. ",
+		"Aroma": "herbaceous aroma and flavor",
+		"Beer Styles": "Barley Wine, Imperial Stout",
+		"Substitutions": "Magnum, Galena, Zeus",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Target",
+		"Origin": "United Kingdom",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 9.5,
+		"Alpha Acid HIGH (%)": 12.5,
+		"Beta Acid LOW (%)": 4.3,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.4
+		},
+		"Co-Humulone LOW (%)": 35,
+		"Co-Humulone HIGH (%)": 39,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 17,
+		"Humulene HIGH (% of total oil)": 22,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "a flexible hop",
+		"Aroma": "green sage, spicy and peppery, and hints of citrus marmalade",
+		"Beer Styles": "Bitter, Pale Ale, Kentish Bitter, India Pale Ale, Brown Ale, American Lager",
+		"Substitutions": "Fuggle, Willamette",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Tomahawk®",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 15,
+		"Alpha Acid HIGH (%)": 17.5,
+		"Beta Acid LOW (%)": 4.6,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 2.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 4.5
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 9,
+		"Humulene HIGH (% of total oil)": 14,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred by Chales Zimmermann, Tomahawk® Brand F10 cv. was the first commercially grown “Super Alpha” variety. It is tolerant to downy mildew, but susceptible to powdery mildew and features good pickability of large, compact cones. Tomahawk is often referred to as CTZ, standing for Columbus, Tomahawk®, and Zeus.",
+		"Aroma": "pungent, herbal, spicy, black pepper, licorice, curry and subtle citrus",
+		"Beer Styles": "US IPAs, US Pale Ales, Stouts, Barley Wines, Lagers",
+		"Substitutions": "Centennial, Chinook, Galena, Nugget, Millennium",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Victoria",
+		"Origin": "Australia",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 14,
+		"Alpha Acid HIGH (%)": 15,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 38,
+		"Co-Humulone HIGH (%)": 40,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 14,
+		"Humulene HIGH (% of total oil)": 16,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Vic Secret had her first commercial harvest in 2013. Developed in 2000 in Victoria, Australia alongside sister variety Topaz, Vic Secret features elements of tropical fruit, herbs and pine with clean notes of pineapple and passionfruit. Tested abundantly by brewers, Vic Secret’s is best utilized via whirlpool and dry hopping. It is also worth noting that late kettle additions impart a wonderful earthiness, but the fruitiness doesn’t come through.",
+		"Aroma": "tropical fruit, pine, herbal",
+		"Beer Styles": "Pale Ale, IPA, Stout, Porter, Red Ale, Barley Wine, Imperial IPA, Extra Pale Ale, Golden Ale",
+		"Substitutions": "Galaxy",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Warrior®",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 15,
+		"Alpha Acid HIGH (%)": 17,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 40,
+		"Myrcene HIGH (% of total oil)": 50,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Select Botanicals Group, Warrior® Brand YCR 5 was selected for its high alpha content, low co-humulone, good storage stability and tolerance to powdery mildew. It is primarily used in brewing for its mild, clean bittering properties and has good pickability of a medium size cone in the field.",
+		"Aroma": "mild, resinous and subtle pine.",
+		"Beer Styles": "India Pale Ale, American Ales",
+		"Substitutions": "Nugget, Columbus",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Zeus",
+		"Origin": "United States",
+		"Type": "Bittering",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 18,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 65,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Although genetically different, Zeus is often referred to as part of CTZ along with Columbus and Tomahawk®, a trio of similar hops.",
+		"Aroma": "spicy, herbal, pungent, black pepper, licorice, and curry",
+		"Beer Styles": "US IPAs, US Pale Ales, Stouts, Barley Wines, Lagers",
+		"Substitutions": "Columbus,Centennial, Chinook, Galena, Nugget, Millennium",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Bitter Gold",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14.5,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 36,
+		"Co-Humulone HIGH (%)": 41,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 18,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Released in 1999, Bitter Gold is a high alpha variety with excellent aroma capabilities. Its lineage includes Brewer's Gold, Bullion, Comet and Fuggle. Bitter Gold offers limited aroma when used as a bittering hop but delivers diverse stone and tropical fruit flavors in later additions.",
+		"Aroma": "pear, watermelon, stone fruit and fresh cut grass.",
+		"Beer Styles": "Ale, Lager, Pilsner, Bitter, India Pale Ale",
+		"Substitutions": "Galena, Nugget",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Bramling Cross",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6,
+		"Alpha Acid HIGH (%)": 7.8,
+		"Beta Acid LOW (%)": 2.2,
+		"Beta Acid HIGH (%)": 2.8,
+		"Total Oil LOW (mL": {
+			"100g)": 0.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 26,
+		"Co-Humulone HIGH (%)": 31,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 14,
+		"Caryophyllene HIGH (% of total oil)": 18,
+		"Humulene LOW (% of total oil)": 28,
+		"Humulene HIGH (% of total oil)": 33,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed at Wye College by Professor Salmon. Often used in traditional cask conditioned beers due to its distinct characteristics.",
+		"Aroma": "strong spice, blackcurrant, loganberry and lemon",
+		"Beer Styles": "ESB, bitter, pale ale",
+		"Substitutions": "U.K. Kent Golding, U.K. Progress, Whitbread Golding Variety\t",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Celeia",
+		"Origin": "Slovenia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3.3,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3.6
+		},
+		"Co-Humulone LOW (%)": 26,
+		"Co-Humulone HIGH (%)": 29,
+		"Myrcene LOW (% of total oil)": 26,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 18,
+		"Humulene HIGH (% of total oil)": 23,
+		"Farnesene (% of total oil)": "3 - 7",
+		"Description": "A hybrid of Styrian Golding, Aurora and a Slovenia wild hop, Celeia is known for its noble characteristics. It has widespread usage in lager and ale-style beers.",
+		"Aroma": "noble characteristics.",
+		"Beer Styles": "English Ale, Lager, American Lager, Pilsner, English Ale, Extra Special Bitter",
+		"Substitutions": "Saaz, Bobek, Styrian Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Centennial",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 9.5,
+		"Alpha Acid HIGH (%)": 11.5,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.3
+		},
+		"Co-Humulone LOW (%)": 29,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 18,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1974 and released by Washington State University in 1990, Centennial is an aroma-type cultivar that has found favor as one of the most popular varieties in craft brewing. It is often referred to as a super-Cascade (containing nearly double the alpha content) and can be used for bittering purposes. Centennial is a diploid cross between Brewer's Gold and a USDA male.",
+		"Aroma": "lemon and floral",
+		"Beer Styles": "Pale Ale, Amber Ale, American IPA, American Blonde, American Stout, American Wheat, Double IPA, Barley Wine, Red Ale",
+		"Substitutions": "Cascade, Amarillo, chinook, Simcoe",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Challenger",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6.5,
+		"Alpha Acid HIGH (%)": 8.5,
+		"Beta Acid LOW (%)": 2.5,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.5
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 42,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 25,
+		"Humulene HIGH (% of total oil)": 32,
+		"Farnesene (% of total oil)": "1 - 3",
+		"Description": "Bred at Wye College and introduced in 1972, Challenger is a granddaughter of Northern Brewer and niece of Northdown. It is a versatile variety with wide application in both early and late kettle additions.",
+		"Aroma": "cedar, green tea and sweet fruit",
+		"Beer Styles": "Golden Ale, Barley Wine, Imperial Stout",
+		"Substitutions": "Perle (US), Northern Brewer, Admiral",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Chinook",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.5
+		},
+		"Co-Humulone LOW (%)": 29,
+		"Co-Humulone HIGH (%)": 34,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by the USDA breeding program in Washington State and released in 1985 as a high alpha bittering variety, Chinook is a cross between Petham Golding and a USDA male. In recent years, it has found favor as a dual purpose hop in the craft brewing community as a result of its spice and pine aroma characteristics.",
+		"Aroma": "grapefruit, spice, and pine",
+		"Beer Styles": "American Pale Ale & India Pale Ale, American Stout & Porter, American Amber, American Brown, American Barley Wine, American Lagers, Winter Ale",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Cluster",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 5.5,
+		"Alpha Acid HIGH (%)": 8.5,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.8
+		},
+		"Co-Humulone LOW (%)": 36,
+		"Co-Humulone HIGH (%)": 42,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 18,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Cluster is one of the oldest hop varieties grown in the United States and until the late 1970s, accounted for the majority of the country’s hop acreage. Its pedigree is unknown, however hybridization of imported varieties and indigenous male hops has been suggested. Cluster is an excellent dual purpose hop and is often used in the reproduction of historical beer styles.",
+		"Aroma": "floral, earthy and sweet fruit",
+		"Beer Styles": "Barley Wine, Porter, English Pale Ale, Amber Ale, Honey Ale, Cream Ale, American Lager",
+		"Substitutions": "Eroica, Galena",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Dr. Rudi",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 10,
+		"Alpha Acid HIGH (%)": 12,
+		"Beta Acid LOW (%)": 7,
+		"Beta Acid HIGH (%)": 8.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.3
+		},
+		"Co-Humulone LOW (%)": 33,
+		"Co-Humulone HIGH (%)": 36,
+		"Myrcene LOW (% of total oil)": 29,
+		"Myrcene HIGH (% of total oil)": 30,
+		"Caryophyllene LOW (% of total oil)": 10.1,
+		"Caryophyllene HIGH (% of total oil)": 10.1,
+		"Humulene LOW (% of total oil)": 33.2,
+		"Humulene HIGH (% of total oil)": 33.2,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed at the New Zealand Horticultural Research Centre (now New Zealand Institute for Plant and Food Research) and released in 1976 as Super Alpha, Dr. Rudi is a triploid variety bred from New Zealand Smoothcone. Its name was changed to Dr. Rudi in 2012. Dr. Rudi works well in single-hopped beers or in conjunction with multiple aroma varieties.",
+		"Aroma": "resin, pine, and lemongrass.",
+		"Beer Styles": "Lager, India Pale Ale",
+		"Substitutions": "Green Bullet",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Ella",
+		"Origin": "Australia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 13.3,
+		"Alpha Acid HIGH (%)": 16.3,
+		"Beta Acid LOW (%)": 4.8,
+		"Beta Acid HIGH (%)": 7.8,
+		"Total Oil LOW (mL": {
+			"100g)": 2.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3.4
+		},
+		"Co-Humulone LOW (%)": 34,
+		"Co-Humulone HIGH (%)": 38,
+		"Myrcene LOW (% of total oil)": 40,
+		"Myrcene HIGH (% of total oil)": 50,
+		"Caryophyllene LOW (% of total oil)": 12,
+		"Caryophyllene HIGH (% of total oil)": 18,
+		"Humulene LOW (% of total oil)": 16,
+		"Humulene HIGH (% of total oil)": 22,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Reminiscent of, yet distinctly different from, noble European varieties - one of the most versatile hops available.",
+		"Aroma": "distinct grapefruit and tropical flavor",
+		"Beer Styles": "Lager, Pilsner, Pale Ale, Stout",
+		"Substitutions": "Perle, Palisade",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "First Gold",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 5.6,
+		"Alpha Acid HIGH (%)": 8.7,
+		"Beta Acid LOW (%)": 2.4,
+		"Beta Acid HIGH (%)": 3.6,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.5
+		},
+		"Co-Humulone LOW (%)": 29,
+		"Co-Humulone HIGH (%)": 34,
+		"Myrcene LOW (% of total oil)": 27,
+		"Myrcene HIGH (% of total oil)": 28,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 24,
+		"Farnesene (% of total oil)": "3",
+		"Description": "Bred at Wye College in 1995, First Gold is a cross between WGV (Whitbread Golding Variety) and a dwarf male. It features many of the flavor characteristics of WGV and has found favor in both general kettle and late or dry hopping applications.",
+		"Aroma": "smooth, with tangerine, orange marmalade, apricot, geranium and magnolia.",
+		"Beer Styles": "Porter, English Bitter, Wheat Beer, Celtic Ale, Summer Ale, Amber Ale, Dark Amber Ale, India Pale Ale, Imperial India Pale Ale",
+		"Substitutions": "Willamette, East Kent Golding, Styrian Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Fuggle",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 3,
+		"Alpha Acid HIGH (%)": 5.5,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.4
+		},
+		"Co-Humulone LOW (%)": 29,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 24,
+		"Myrcene HIGH (% of total oil)": 28,
+		"Caryophyllene LOW (% of total oil)": 11,
+		"Caryophyllene HIGH (% of total oil)": 13,
+		"Humulene LOW (% of total oil)": 34,
+		"Humulene HIGH (% of total oil)": 40,
+		"Farnesene (% of total oil)": "5 - 7",
+		"Description": "The most revered and famous English hop, known for its full bodied flavor in traditional ales.",
+		"Aroma": "delicate and pleasant mint, grass and floral tones.",
+		"Beer Styles": "English Ale, Porter, Mild Ale, Bitter, Extra Special Bitter, Lambic, Amber Ale, Cask Ale, Stout, Oatmeal Stout, Strong Ale, Nut Brown Ale, Golden Ale, Christmas Ale",
+		"Substitutions": "Fuggle (US), Willamette, Styrian Golding, Tettnanger, Newport",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Galaxy",
+		"Origin": "Australia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 11.6,
+		"Alpha Acid HIGH (%)": 16,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 6.9,
+		"Total Oil LOW (mL": {
+			"100g)": 3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 5
+		},
+		"Co-Humulone LOW (%)": 32,
+		"Co-Humulone HIGH (%)": 42,
+		"Myrcene LOW (% of total oil)": 33,
+		"Myrcene HIGH (% of total oil)": 69,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 1,
+		"Humulene HIGH (% of total oil)": 2,
+		"Farnesene (% of total oil)": "2 - 4",
+		"Description": "Typically used as a late addition - the aroma and flavor characteristics become more pronounced the later the addition.",
+		"Aroma": "distinct passionfruit and clean citrus aromas",
+		"Beer Styles": "Pale Ale, India Pale Ale, ESB",
+		"Substitutions": "Citra®, Amarillo®, Centennial",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Glacier",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 3.3,
+		"Alpha Acid HIGH (%)": 9.7,
+		"Beta Acid LOW (%)": 5.4,
+		"Beta Acid HIGH (%)": 9.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 11,
+		"Co-Humulone HIGH (%)": 13,
+		"Myrcene LOW (% of total oil)": 33,
+		"Myrcene HIGH (% of total oil)": 62,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 24,
+		"Humulene HIGH (% of total oil)": 36,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Released in 2000 by Washington State University, Glacier is an offspring of French Elsasser, Brewer's Gold and Northern Brewer. It was selected for its good yield potential and low co-humulone, providing smoothness and balanced bitterness in beer",
+		"Aroma": "plum, blackberry and wood",
+		"Beer Styles": "Extra Special Bitter, India Pale Ale, Wheat Beer, American Pale Ale",
+		"Substitutions": "Willamette, Fuggle (US), Tettnanger (GR), Golding (US)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hallertau Aroma",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 7,
+		"Alpha Acid HIGH (%)": 10,
+		"Beta Acid LOW (%)": 7.5,
+		"Beta Acid HIGH (%)": 9,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 65,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 8,
+		"Humulene HIGH (% of total oil)": 17,
+		"Farnesene (% of total oil)": "3 - 6",
+		"Description": "A dual purpose hop which has been used to replace Perle",
+		"Aroma": "subtle floral with aroma of fresh zested lime",
+		"Beer Styles": "Pale Ale, Pilsner, Lager, Bitter, Bock",
+		"Substitutions": "Hallertauer Mittelfruh",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "HBC 431",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 14,
+		"Alpha Acid HIGH (%)": 16,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.5
+		},
+		"Co-Humulone LOW (%)": 18,
+		"Co-Humulone HIGH (%)": 18,
+		"Myrcene LOW (% of total oil)": 33,
+		"Myrcene HIGH (% of total oil)": 37,
+		"Caryophyllene LOW (% of total oil)": 13,
+		"Caryophyllene HIGH (% of total oil)": 14,
+		"Humulene LOW (% of total oil)": 22,
+		"Humulene HIGH (% of total oil)": 26,
+		"Farnesene (% of total oil)": "",
+		"Description": "Interestingly, it carries the highest xanthohumol content of any hop. Xanthohumol is a potent antioxidant, 200 times more powerful than antioxidants found in red wine. Used in Paulaner’s hop selection for their Oktoberfest bier",
+		"Aroma": "peach, berry, tropical fruit, citrus and herbal.",
+		"Beer Styles": "",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": "https://gizmodo.com/drinking-experimental-hops-in-the-sixpoint-beer-of-the-1572891684"
+	},
+	{
+		"Variety": "HBC 438",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12.4,
+		"Alpha Acid HIGH (%)": 14.9,
+		"Beta Acid LOW (%)": 5.1,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3.4
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 61,
+		"Myrcene HIGH (% of total oil)": 66,
+		"Caryophyllene LOW (% of total oil)": 9.7,
+		"Caryophyllene HIGH (% of total oil)": 10.5,
+		"Humulene LOW (% of total oil)": 8.5,
+		"Humulene HIGH (% of total oil)": 8.7,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Hop Breeding Company, HBC 438 is an experimental variety originating from the open pollination of YCR 123, a cultivar derived from the subspecies neomexicanus. It is the sister to the well-known experimental HBC 472 and exhibits many of the same characteristics. Specific aroma descriptors include mango, coconut, grapefruit, lemon grass and wood. Vinnie Cilurzo and Russian River Brewing Company created Ron Mexico, a special HBC 438 beer exclusive. ",
+		"Aroma": "peachy stone fruit, tropical pineapple, and lime with herbal notes of cedar and coconut; exceptionally distinct and pleasant.",
+		"Beer Styles": "",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Helga",
+		"Origin": "Australia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 5.4,
+		"Alpha Acid HIGH (%)": 7.3,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 7,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 23,
+		"Myrcene LOW (% of total oil)": 1,
+		"Myrcene HIGH (% of total oil)": 13,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 55,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1986 and formerly known as Southern Hallertau, Helga™ is a descendant of Hallertau Mittelfrüh. Its brewing characteristics resemble that of its parent, however it demonstrates a forgiving and refined character in a variety of beer styles and hop applications.",
+		"Aroma": "pleasant, noble characteristics, herbal, earthy",
+		"Beer Styles": "Ales",
+		"Substitutions": "Hallertau",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Herald",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 11,
+		"Alpha Acid HIGH (%)": 13,
+		"Beta Acid LOW (%)": 4.8,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.9
+		},
+		"Co-Humulone LOW (%)": 35,
+		"Co-Humulone HIGH (%)": 37,
+		"Myrcene LOW (% of total oil)": 38,
+		"Myrcene HIGH (% of total oil)": 42,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 13,
+		"Humulene HIGH (% of total oil)": 17,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Herald hops were one of a first wave of dwarf hops introduced to the industry. It was released in 1996 alongside sisters Pilgrim and Pioneer. Some brewers were initially reluctant to use Herald despite its clean bitterness and a nice nose of orange and grapefruit. Today Herald is employed by a multitude of craft breweries, particularly in the UK",
+		"Aroma": "orange, grapefruit aromas",
+		"Beer Styles": "Pale Ale, Golden Ale",
+		"Substitutions": "Pioneer",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Horizon",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 10.2,
+		"Alpha Acid HIGH (%)": 16.5,
+		"Beta Acid LOW (%)": 6.5,
+		"Beta Acid HIGH (%)": 8.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.7
+		},
+		"Co-Humulone LOW (%)": 17,
+		"Co-Humulone HIGH (%)": 22,
+		"Myrcene LOW (% of total oil)": 65,
+		"Myrcene HIGH (% of total oil)": 70,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 6,
+		"Humulene LOW (% of total oil)": 8,
+		"Humulene HIGH (% of total oil)": 10,
+		"Farnesene (% of total oil)": "2",
+		"Description": "Bred in Oregon in 1970 and released in 1997, Horizon is a descendant of Brewer's Gold and half-sister to Nugget. Its low co-humulone is similar to noble varieties and provides smoothness to beer, however alpha acid levels can reach as high as 12%. Horizon can be utilized in every stage of the brewing process.",
+		"Aroma": "floral, spicy",
+		"Beer Styles": "Light Ale, Red Ale, Pumpkin Ale",
+		"Substitutions": "Hallertauer Magnum",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Hüller Bitterer",
+		"Origin": "Germany",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 6.3,
+		"Beta Acid LOW (%)": 4.8,
+		"Beta Acid HIGH (%)": 5.2,
+		"Total Oil LOW (mL": {
+			"100g)": 1.3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.7
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 27,
+		"Myrcene HIGH (% of total oil)": 29,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 22,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed in the late 1960’s and released in 1978, Hüller Bitterer has the distinction of being the first wilt resistant variety to come from the German Hüll hop breeding program. Descended from Northern Brewer, it is an excellent dual-use hop and is still known for its clean bittering character. In commercial use, it has now largely been replaced with other wilt resistant varieties, specifically Perle.",
+		"Aroma": "n/a",
+		"Beer Styles": "Schwarzbier, Lager",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Kohatu",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6,
+		"Alpha Acid HIGH (%)": 7,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 22,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 36,
+		"Caryophyllene LOW (% of total oil)": 11.5,
+		"Caryophyllene HIGH (% of total oil)": 11.5,
+		"Humulene LOW (% of total oil)": 36,
+		"Humulene HIGH (% of total oil)": 37,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by the New Zealand Institute for Plant and Food Research hop breeding program and released in 2011, Kohatu is a descendant of Hallertau Mittelfrüh. It works well in single hop applications and is described as having intense fruit characteristics",
+		"Aroma": "fresh tropical fruit characters and an excellent finish and bitterness.",
+		"Beer Styles": "Ale, Pale Ale, India Pale Ale",
+		"Substitutions": "Wai-iti, Motueka",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Loral®",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 11.3,
+		"Alpha Acid HIGH (%)": 12.2,
+		"Beta Acid LOW (%)": 4.9,
+		"Beta Acid HIGH (%)": 5.3,
+		"Total Oil LOW (mL": {
+			"100g)": 1.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.9
+		},
+		"Co-Humulone LOW (%)": 21,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": 52,
+		"Myrcene HIGH (% of total oil)": 58,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 5.7,
+		"Humulene LOW (% of total oil)": 17.8,
+		"Humulene HIGH (% of total oil)": 17.9,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Hop Breeding Company and released in 2016, Loral® Brand HBC 291 has a noble heritage that straddles the fence between old and new world hop aromatics. It has the ability to complement all beer styles, making it a very versatile hop in the brewery. Loral® has been described as pleasant with floral, citrus, peppery and some dark fruit characteristics",
+		"Aroma": "very pleasant, floral, peppery, lemon-citrus and dark fruit, herbal",
+		"Beer Styles": "IPA, APA, American Wheat Ales",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Marynka",
+		"Origin": "Czech Republic",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 9,
+		"Alpha Acid HIGH (%)": 12,
+		"Beta Acid LOW (%)": 10.2,
+		"Beta Acid HIGH (%)": 13,
+		"Total Oil LOW (mL": {
+			"100g)": 1.8
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.2
+		},
+		"Co-Humulone LOW (%)": 26,
+		"Co-Humulone HIGH (%)": 33,
+		"Myrcene LOW (% of total oil)": 28,
+		"Myrcene HIGH (% of total oil)": 31,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 13,
+		"Humulene LOW (% of total oil)": 26,
+		"Humulene HIGH (% of total oil)": 33,
+		"Farnesene (% of total oil)": "1 - 2",
+		"Description": "Marynka hops are another widely produced Polish hop from the region as Lublin. It is moderate in most things: yield, growth, stability, but her flavor profile is way above average. Despite being used primarily for bittering, Marynka features a forward, earthy and herbal flavors and aromas. It is the offspring of Brewer’s Gold and was official registered in 1988.",
+		"Aroma": "earthy, herbal",
+		"Beer Styles": "Bitter, India Pale Ale, Pale Ale, Pilsner",
+		"Substitutions": "Tettnanager(GR)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Mount Rainier",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 7,
+		"Beta Acid LOW (%)": 8,
+		"Beta Acid HIGH (%)": 10,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.5
+		},
+		"Co-Humulone LOW (%)": 21,
+		"Co-Humulone HIGH (%)": 23,
+		"Myrcene LOW (% of total oil)": 50,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 6,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred by Oregon State University, Mt. Rainier is a dual purpose variety with noble aroma characteristics. It is similar to the classic German variety, Hallertau Mittelfrüh, but features more bittering strength.",
+		"Aroma": "noble, licorice, floral",
+		"Beer Styles": "Lager, American Ale, Porter",
+		"Substitutions": "Hallertau, Fuggle",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Nelson Sauvin",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 50,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by the New Zealand Institute for Plant and Food Research hop breeding program and released in 2000, Nelson Sauvin is a triploid variety bred from the New Zealand Smoothcone and a selected New Zealand male. It is known for being one of the most unique hop varieties, displaying strong fruit and white wine aroma characteristics.",
+		"Aroma": "white wine, fruity, crushed gooseberry, and grape",
+		"Beer Styles": "American Pale Ale, India Pale Ale, Pale Ale",
+		"Substitutions": "Pacific Jade, Pacifica",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Northdown",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6.8,
+		"Alpha Acid HIGH (%)": 9.5,
+		"Beta Acid LOW (%)": 3.3,
+		"Beta Acid HIGH (%)": 6.2,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.2
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 23,
+		"Myrcene HIGH (% of total oil)": 29,
+		"Caryophyllene LOW (% of total oil)": 13,
+		"Caryophyllene HIGH (% of total oil)": 17,
+		"Humulene LOW (% of total oil)": 40,
+		"Humulene HIGH (% of total oil)": 45,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "An excellent dual purpose hop that works well on its own, or in conjunction with an aroma variety.",
+		"Aroma": "pleasant spice cedar, pine, subtle floral and hints of berry",
+		"Beer Styles": "Blonde Ale",
+		"Substitutions": "Challenger, Admiral, Target",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Northern Brewer",
+		"Origin": "Germany",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6,
+		"Alpha Acid HIGH (%)": 10,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 20,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 50,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Originally bred in England in 1934, Northern Brewer is a cross between Canterbury Golding and a male seedling of Brewer's Gold. It was originally grown in the North of England, but has become one of the main varieties in the Hallertau region of Germany. Northern Brewer displays pleasant pine and mint characteristics in dual purpose brewing applications.",
+		"Aroma": "mint, pine and grass",
+		"Beer Styles": "Steam Beer, German Ale, German Lager",
+		"Substitutions": "Perle, Northern Brewer(US)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Northern Brewer",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 7,
+		"Alpha Acid HIGH (%)": 10,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 34,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 11,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 27,
+		"Humulene HIGH (% of total oil)": 31,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in England in 1934 from a Canterbury Golding plant and male seedling of Brewer's Gold, Northern Brewer is mainly grown in the United States and Germany. US Northern Brewer contains slightly higher alpha acids and high myrcene oil content resulting in herbal, wood and peppery aroma characteristics; it is suitable for any stage of the brewing process.",
+		"Aroma": "evergreen, wood and mint",
+		"Beer Styles": "Porters, Ales, Kolsch, Munich Helles, ESBs, German Lagers, Steam beers,",
+		"Substitutions": "Galena, Perle, Magnum, Chinook, German Northern Brewer",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Opal",
+		"Origin": "Australia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 13,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.1
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 34,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "0.2",
+		"Description": "Developed at the Hüll Research Center, Opal exhibits excellent aroma characteristics combined with a respectable alpha acid level.",
+		"Aroma": "spice, pepper, citrus, with fruity, floral and herbal characteristics",
+		"Beer Styles": "Pilsner, Hefeweizen, Helles, Lager, Brown Ale, Saison, Tripel, Wheat, Kolsch, Blonde Ale",
+		"Substitutions": "East Kent Golding, Styrian Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Orion",
+		"Origin": "Germany",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6,
+		"Alpha Acid HIGH (%)": 8.5,
+		"Beta Acid LOW (%)": 3.2,
+		"Beta Acid HIGH (%)": 4.2,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.1
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 28,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 35,
+		"Humulene HIGH (% of total oil)": 39,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "The German Hop Research Institute in Huell, Germany developed Orion hops sometime during the 1980s. It is the result of a cross between Perle and a German male. To date Orion is not widely produced and mostly relegated to Germany. Its pleasant European bittering and aroma qualities have made it popular for German Helles-type beers, which were originally brewed to compete with Czech Pils. It has a very low cohumulone content and high myrcene. The other oils are in fair balance. This variety is not easy to find commercially.",
+		"Aroma": "",
+		"Beer Styles": "Helles, Dunkel",
+		"Substitutions": "Perle",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Outeniqua",
+		"Origin": "South Africa",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 13.5,
+		"Beta Acid LOW (%)": 4.1,
+		"Beta Acid HIGH (%)": 5.1,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.7
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 38,
+		"Myrcene HIGH (% of total oil)": 43,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 28,
+		"Humulene HIGH (% of total oil)": 33,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Mild, pleasant and slightly spicy, Outeniqua is an excellent, high alpha bittering hop from the land of milk and honey—a moniker of the South African region where it is grown. Primarily used only locally, Outeniqua features a well-balanced oil profile and a strong, punchy, hoppy aroma. Outeniqua is also the mother of high-alpha variety, Southern Star.",
+		"Aroma": "strong, punchy, hoppy aroma",
+		"Beer Styles": "Pilsner",
+		"Substitutions": "Southern Star",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pacific Jade",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 7,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.4
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 33,
+		"Myrcene HIGH (% of total oil)": 34,
+		"Caryophyllene LOW (% of total oil)": 10.2,
+		"Caryophyllene HIGH (% of total oil)": 10.2,
+		"Humulene LOW (% of total oil)": 32.9,
+		"Humulene HIGH (% of total oil)": 32.9,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by the New Zealand Institute for Plant and Food Research hop breeding program and released in 2004, Pacific Jade is a cross of New Zealand First Choice (a relative of the Late Cluster) and a Saaz male. It is suited for use as a bittering hop but also delivers bold citrus and spice aroma characteristics",
+		"Aroma": "fresh citrus, complex spice characters, bold herbal aromas, subtle black pepper",
+		"Beer Styles": "Lagers, Ales,Pale Ale, India Pale Ale",
+		"Substitutions": "Hallertau, Magnum",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Perle",
+		"Origin": "Germany",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 5,
+		"Alpha Acid HIGH (%)": 7.5,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.3
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 17,
+		"Myrcene HIGH (% of total oil)": 25,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 30,
+		"Humulene HIGH (% of total oil)": 38,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Perle is a highly acceptable aroma variety with high yields and good tolerance to most diseases.",
+		"Aroma": "herbal, spicy with subtle floral, fruit and mint ",
+		"Beer Styles": "Hefeweizen, Belgian Strong Ale, Lager, Pilsner, Kölsch",
+		"Substitutions": "Perle (US), Northern Brewer (GR)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Perle",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 7,
+		"Alpha Acid HIGH (%)": 9.5,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.9
+		},
+		"Co-Humulone LOW (%)": 27,
+		"Co-Humulone HIGH (%)": 32,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 12,
+		"Humulene LOW (% of total oil)": 28,
+		"Humulene HIGH (% of total oil)": 33,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Institute in Hüll and released in 1978, Perle is a cross between Northern Brewer and 63/5/27M. It is tolerant to most diseases and is grown in both Germany and the United States. Perle is known for adding a traditional, German-like quality to beer.",
+		"Aroma": "floral, spicy",
+		"Beer Styles": "Hefeweizen, Belgian Strong Ale, Lager, Pilsner, Kölsch",
+		"Substitutions": "Perle (GR), Northern Brewer (GR)",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Phoenix",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 15,
+		"Beta Acid LOW (%)": 3.3,
+		"Beta Acid HIGH (%)": 5.3,
+		"Total Oil LOW (mL": {
+			"100g)": 1.3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.5
+		},
+		"Co-Humulone LOW (%)": 24,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 24,
+		"Myrcene HIGH (% of total oil)": 32,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 25,
+		"Humulene HIGH (% of total oil)": 32,
+		"Farnesene (% of total oil)": "1 - 2",
+		"Description": "Bred at Wye College and released in 1996, Phoenix is a seedling of Yeoman. In brewing trials, Phoenix has produced excellent results in both bittering and flavor applications.",
+		"Aroma": "spicy, floral and chocolate",
+		"Beer Styles": "India Pale Ale, Bitter, Golden Ale, Triple India Pale Ale, English Ale, Extra Special Bitter, Stout, Brown Ale",
+		"Substitutions": "Northdown, Challenger, East Kent Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pilgrim",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 10,
+		"Alpha Acid HIGH (%)": 13,
+		"Beta Acid LOW (%)": 4.2,
+		"Beta Acid HIGH (%)": 5.2,
+		"Total Oil LOW (mL": {
+			"100g)": 1.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 36,
+		"Co-Humulone HIGH (%)": 38,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 19,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Often compared to UK Target, Pilgrim performs well as a replacement for high alpha or dual purpose hops.",
+		"Aroma": "fruit and spice with pleasant lemon, grapefruit, pear and berry flavors",
+		"Beer Styles": "English Pale Ale, India Pale Ale, Wheat Beer, Stout, Barley Wine, Imperial Stout",
+		"Substitutions": "Target, Pioneer, Challenger",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pioneer",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 8,
+		"Alpha Acid HIGH (%)": 10,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.8
+		},
+		"Co-Humulone LOW (%)": 36,
+		"Co-Humulone HIGH (%)": 40,
+		"Myrcene LOW (% of total oil)": 31,
+		"Myrcene HIGH (% of total oil)": 36,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 22,
+		"Humulene HIGH (% of total oil)": 24,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Combines a pleasant aroma with a moderately high alpha acid content.",
+		"Aroma": "lemon, grapefruit and hints of herbal, cedar flavors",
+		"Beer Styles": "India Pale Ale, Red Ale, Specialty Ale, Strong Bitter",
+		"Substitutions": "East Kent Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Polaris",
+		"Origin": "Germany",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 18,
+		"Alpha Acid HIGH (%)": 23,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 5
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 49,
+		"Myrcene HIGH (% of total oil)": 51,
+		"Caryophyllene LOW (% of total oil)": 8,
+		"Caryophyllene HIGH (% of total oil)": 13,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 35,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at the Hop Research Institute in Hüll and released in 2012, Polaris was commercialized as a new, German variety in response to growing demand from the craft beer industry for distinct flavor profiles. It features extremely high alpha content along with intense mint flavors",
+		"Aroma": "mint, pineapple and menthol",
+		"Beer Styles": "Ales, Pale Ales, India Pale Ale",
+		"Substitutions": "Herkules",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Premiant",
+		"Origin": "Czech Republic",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 7,
+		"Alpha Acid HIGH (%)": 10,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 18,
+		"Co-Humulone HIGH (%)": 23,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 13,
+		"Humulene LOW (% of total oil)": 25,
+		"Humulene HIGH (% of total oil)": 40,
+		"Farnesene (% of total oil)": "1 - 3",
+		"Description": "Bred from Saaz and released in 1996, Premiant has a relatively high alpha content for Czech varieties. As a result, it has found some application as a dual purpose variety.",
+		"Aroma": "pleasant and mild",
+		"Beer Styles": "Pilsner, Ale, Pale Ale, Belgian Ales, Belgian Pilsners",
+		"Substitutions": "Styrian Golding, Saaz",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Pride of Ringwood",
+		"Origin": "Australia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 9,
+		"Alpha Acid HIGH (%)": 12,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 33,
+		"Co-Humulone HIGH (%)": 39,
+		"Myrcene LOW (% of total oil)": 25,
+		"Myrcene HIGH (% of total oil)": 50,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 3,
+		"Humulene HIGH (% of total oil)": 8,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred in 1953 and commercially grown since the 1960s. One of Australia's most known and utilized hop varieties. Predominantly used for early kettle additions.",
+		"Aroma": "cedar, oak, herbal",
+		"Beer Styles": "Amber Ale, Lager, Fruit Lambic, Pale Ale, Australian Lager, Strong Ale, Golden Ale, American Pale Ale",
+		"Substitutions": "East Kent Goldings, Centennial, Galena, Cluster",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Progress",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6,
+		"Alpha Acid HIGH (%)": 7.5,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 2.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.8
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 36,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 35,
+		"Caryophyllene LOW (% of total oil)": 12,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 40,
+		"Humulene HIGH (% of total oil)": 47,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Bred at Wye College in 1951 and released in 1964, Progress is a cross between WGV (Whitbread Golding Variety) and a wild, American male hop. It was originally introduced as an alternative to Fuggle, but showcases a slightly sweeter aroma.",
+		"Aroma": "grass, mint, honey and blackcurrant",
+		"Beer Styles": "English Bitters, Pale Ale, Porter, Stout, Czech Pilsner, Bock, Cask Ale, Wheat",
+		"Substitutions": "East Kent Goldings, Fuggle",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Rakau",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 10,
+		"Alpha Acid HIGH (%)": 11,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 2.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.2
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 25,
+		"Myrcene LOW (% of total oil)": 56,
+		"Myrcene HIGH (% of total oil)": 56,
+		"Caryophyllene LOW (% of total oil)": 5.2,
+		"Caryophyllene HIGH (% of total oil)": 5.2,
+		"Humulene LOW (% of total oil)": 16.3,
+		"Humulene HIGH (% of total oil)": 16.3,
+		"Farnesene (% of total oil)": "4.5 - 4.5",
+		"Description": "Re-released in 2007 from the New Zealand hop breeding program, Rakau is often described as “the whole orchard.” It is often used in New World styles where brash fruity character and big but well constructed bitterness is desired. Rakau performs best when used in combination of late additions and dry hopping",
+		"Aroma": "stone fruit, fig, fresh orchard fruits, apricot, resinous pine needles",
+		"Beer Styles": "Pale Ale, Lager, Belgian Ales, IPAs",
+		"Substitutions": "Amarillo, Summit",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Simcoe®",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 4.5,
+		"Beta Acid HIGH (%)": 5,
+		"Total Oil LOW (mL": {
+			"100g)": 2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.5
+		},
+		"Co-Humulone LOW (%)": 15,
+		"Co-Humulone HIGH (%)": 20,
+		"Myrcene LOW (% of total oil)": 60,
+		"Myrcene HIGH (% of total oil)": 65,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Developed by Select Botanicals Group and released in 2000, Simcoe® Brand YCR 14 is known for its brewing versatility and unique aroma characteristics. It contains high alpha and low-cohumlone which has found favor in the craft and home brewing industries for dual purpose applications. Simcoe® is moderately tolerant to powdery mildew and has good pickability of a medium size cone.",
+		"Aroma": "earthy, passion fruit, pine, berry ",
+		"Beer Styles": "US-Style Ales, Pale Ales, IPAs, Double IPAs",
+		"Substitutions": "Summit, Magnum, Amarillo, Cascade, Centennial",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Smaragd",
+		"Origin": "Germany",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 3.5,
+		"Beta Acid HIGH (%)": 5.5,
+		"Total Oil LOW (mL": {
+			"100g)": 0.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.8
+		},
+		"Co-Humulone LOW (%)": 13,
+		"Co-Humulone HIGH (%)": 18,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 40,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 14,
+		"Humulene LOW (% of total oil)": null,
+		"Humulene HIGH (% of total oil)": null,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Formerly known as Emerald, Smaragd is a fine aroma variety with high bitter value. This variety shows high yields and good production characteristics.",
+		"Aroma": "floral, spicy and mild fruity.",
+		"Beer Styles": "Ale, Amber, Pilsners, German Ales, German Lagers, Belgian Styles, Weissbier",
+		"Substitutions": "Hallertau Mittelfruh",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Sorachi Ace",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 11.5,
+		"Alpha Acid HIGH (%)": 14.5,
+		"Beta Acid LOW (%)": 6,
+		"Beta Acid HIGH (%)": 7.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 3
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 26,
+		"Farnesene (% of total oil)": "2 - 5",
+		"Description": "Developed in Japan in 1984 for Sapporo Breweries, Ltd., Sorachi Ace is a cross between Brewer's Gold, Saaz and Beikei No. 2 male. It is available in limited quantities, however, it remains a popular variety among craft brewers for its unique citrus fruit, herbal and dill aromas.",
+		"Aroma": "lemon, lime and dill.",
+		"Beer Styles": "Saison",
+		"Substitutions": "Southern Cross",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Southern Brewer",
+		"Origin": "South Africa",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 9,
+		"Alpha Acid HIGH (%)": 10.5,
+		"Beta Acid LOW (%)": 3.6,
+		"Beta Acid HIGH (%)": 4.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.4
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.6
+		},
+		"Co-Humulone LOW (%)": 38,
+		"Co-Humulone HIGH (%)": 41,
+		"Myrcene LOW (% of total oil)": 39,
+		"Myrcene HIGH (% of total oil)": 43,
+		"Caryophyllene LOW (% of total oil)": 9,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 17,
+		"Humulene HIGH (% of total oil)": 21,
+		"Farnesene (% of total oil)": "13",
+		"Description": "Parent of Southern Promise, Southern Brewer was developed in the early 1970’s after the primary South African hops variety at the time, Golden Cluster, was devastated by black root rot. It is the result of an open pollinated cross of Fuggle. Southern Brewer is used primarily for bittering and is not considered to be particularly distinguished in either aroma or flavor.Southern Brewer did not do well with relatively limited hours of sunlight and required supplemental grow lighting. This made the variety considerably more expensive to produce. The development and introduction of Southern Promise and Outeniqua solved much of that issue.",
+		"Aroma": "",
+		"Beer Styles": "Pilsner, Pale Ale",
+		"Substitutions": "Southern Promise",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Southern Cross",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12,
+		"Alpha Acid HIGH (%)": 14.6,
+		"Beta Acid LOW (%)": 5,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.5
+		},
+		"Co-Humulone LOW (%)": 25,
+		"Co-Humulone HIGH (%)": 28,
+		"Myrcene LOW (% of total oil)": 55,
+		"Myrcene HIGH (% of total oil)": 70,
+		"Caryophyllene LOW (% of total oil)": 3,
+		"Caryophyllene HIGH (% of total oil)": 5,
+		"Humulene LOW (% of total oil)": 10,
+		"Humulene HIGH (% of total oil)": 14,
+		"Farnesene (% of total oil)": "3 - 5",
+		"Description": "Developed by the New Zealand Institute for Plant and Food Research hop breeding program and released in 1994, Southern Cross is a triploid cross between New Zealand Smoothcone and a 1950’s research variety bred from a crossing of Californian and English Fuggle. It has excellent essential oils and low co-humulone delivering a delicate balance of citrus and spice when added at the end of boil.",
+		"Aroma": "citrus, tropical fruits with hints of lemon zest, lime, pine and spice",
+		"Beer Styles": "Pale Ale, IPA, Lager",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Southern Promise",
+		"Origin": "South Africa",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 9.5,
+		"Alpha Acid HIGH (%)": 11.5,
+		"Beta Acid LOW (%)": 3.6,
+		"Beta Acid HIGH (%)": 5.4,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 0.8
+		},
+		"Co-Humulone LOW (%)": 20,
+		"Co-Humulone HIGH (%)": 22,
+		"Myrcene LOW (% of total oil)": 20,
+		"Myrcene HIGH (% of total oil)": 23,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 11,
+		"Humulene LOW (% of total oil)": 23,
+		"Humulene HIGH (% of total oil)": 28,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Southern Promise was bred specifically for the South African region. Created from Southern Brewer and a wild Slovenian male, it was developed in an effort to produce a variety that would grow well in areas with limited sunlight. It has fairly high alpha acids and low cohumulone giving it bright and smooth bittering qualities. It is largely considered a nice dual-use hop with a pleasant and unobtrusive woody and earthy quality.",
+		"Aroma": "subtle woody, earthy, bright, smooth, bitterness",
+		"Beer Styles": "Lager, Pale Ale",
+		"Substitutions": "Southern Brewer",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Sovereign",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 4.5,
+		"Alpha Acid HIGH (%)": 6.5,
+		"Beta Acid LOW (%)": 2.1,
+		"Beta Acid HIGH (%)": 3.1,
+		"Total Oil LOW (mL": {
+			"100g)": 0.6
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1
+		},
+		"Co-Humulone LOW (%)": 26,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": null,
+		"Myrcene HIGH (% of total oil)": null,
+		"Caryophyllene LOW (% of total oil)": 7.9,
+		"Caryophyllene HIGH (% of total oil)": 8.1,
+		"Humulene LOW (% of total oil)": null,
+		"Humulene HIGH (% of total oil)": null,
+		"Farnesene (% of total oil)": "3.5 - 3.7",
+		"Description": "Works well with Goldings and as a single hop.",
+		"Aroma": "pleasant but intense fruity flavors with mild floral, grassy, herbal and mint characteristics.",
+		"Beer Styles": "American Lager, American Pale Ale",
+		"Substitutions": "Fuggle",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Status ",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12.5,
+		"Alpha Acid HIGH (%)": 14,
+		"Beta Acid LOW (%)": 8.5,
+		"Beta Acid HIGH (%)": 9,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.8
+		},
+		"Co-Humulone LOW (%)": 32,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 40,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 10,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "",
+		"Aroma": "",
+		"Beer Styles": "",
+		"Substitutions": "",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Sterling",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6,
+		"Alpha Acid HIGH (%)": 9,
+		"Beta Acid LOW (%)": 4,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1.3
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.9
+		},
+		"Co-Humulone LOW (%)": 23,
+		"Co-Humulone HIGH (%)": 24,
+		"Myrcene LOW (% of total oil)": 44,
+		"Myrcene HIGH (% of total oil)": 48,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 19,
+		"Humulene HIGH (% of total oil)": 23,
+		"Farnesene (% of total oil)": "11 - 17",
+		"Description": "Bred in 1990 and released in 1998, Sterling is an aroma variety with noble hop characteristics. It shows moderate tolerance to powdery mildew and has good pickability of compact cones.",
+		"Aroma": "noble & spicy",
+		"Beer Styles": "IPA",
+		"Substitutions": "Saaz",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Sticklebract",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 13,
+		"Alpha Acid HIGH (%)": 14.5,
+		"Beta Acid LOW (%)": 7.5,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2
+		},
+		"Co-Humulone LOW (%)": 42,
+		"Co-Humulone HIGH (%)": 44,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 7,
+		"Humulene LOW (% of total oil)": 8,
+		"Humulene HIGH (% of total oil)": 15,
+		"Farnesene (% of total oil)": "4 - 8",
+		"Description": "Sticklebract is a dual-use New Zealand variety and another variety bred to stem the issues from Black Root Rot that were present in the country during the mid 20th century. It was selected as a seedling in the 1970’s from open pollinated First Choice.",
+		"Aroma": "pine, citrus aromas",
+		"Beer Styles": "ESB",
+		"Substitutions": "Northern Brewer",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Super Alpha",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 12.5,
+		"Alpha Acid HIGH (%)": 15,
+		"Beta Acid LOW (%)": 7,
+		"Beta Acid HIGH (%)": 8.5,
+		"Total Oil LOW (mL": {
+			"100g)": 1.2
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.2
+		},
+		"Co-Humulone LOW (%)": 36,
+		"Co-Humulone HIGH (%)": 39,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 60,
+		"Caryophyllene LOW (% of total oil)": 5,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 16,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Originally known as Super Alpha, the variety was renamed to Dr Rudi in 2012. It was bred from New Zealand Smooth Cone and is largely grown in New Zealand. It was originally released in 1976. Originally considered a bittering hop, Dr Rudi is now widely regarded as dual-use and features a grassy, piney, citrus character. It is also well known for its clean and crisp bittering despite its high cohumulone content. Works well in single-hopped beer",
+		"Aroma": "Grass, pine and citrus flavors",
+		"Beer Styles": "Lagers, Pilsners, Bitters",
+		"Substitutions": "Green Bullet",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Super Pride",
+		"Origin": "Australia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 14,
+		"Alpha Acid HIGH (%)": 15,
+		"Beta Acid LOW (%)": 7,
+		"Beta Acid HIGH (%)": 8,
+		"Total Oil LOW (mL": {
+			"100g)": 1.7
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.9
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 34,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 45,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 9,
+		"Humulene LOW (% of total oil)": 1,
+		"Humulene HIGH (% of total oil)": 2,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Similar to Pride of Ringwood but with higher levels of alpha acids.",
+		"Aroma": "mild and pleasant subtle resin and fruit tones.",
+		"Beer Styles": "Imperial Pale Ale, Lager",
+		"Substitutions": "Pride of Ringwood",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Super Styrian (Aurora)",
+		"Origin": "Slovenia",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 7.5,
+		"Alpha Acid HIGH (%)": 8.8,
+		"Beta Acid LOW (%)": 3.6,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.2
+		},
+		"Co-Humulone LOW (%)": 22,
+		"Co-Humulone HIGH (%)": 26,
+		"Myrcene LOW (% of total oil)": 29,
+		"Myrcene HIGH (% of total oil)": 31,
+		"Caryophyllene LOW (% of total oil)": 4,
+		"Caryophyllene HIGH (% of total oil)": 6,
+		"Humulene LOW (% of total oil)": 18,
+		"Humulene HIGH (% of total oil)": 20,
+		"Farnesene (% of total oil)": "6 - 8",
+		"Description": "A diploid hybrid of Northern Brewer and a TG seedling of unknown origin, Aurora displays an intense yet pleasant aroma in finished beers. It is also known as Super Styrian.",
+		"Aroma": "noble characteristics",
+		"Beer Styles": "American Pale Ale, Dark Lager",
+		"Substitutions": "Styrian Golding, Northern Brewer",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Waimea",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 16,
+		"Alpha Acid HIGH (%)": 19,
+		"Beta Acid LOW (%)": 3.3,
+		"Beta Acid HIGH (%)": 6,
+		"Total Oil LOW (mL": {
+			"100g)": 1.5
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 2.5
+		},
+		"Co-Humulone LOW (%)": 26,
+		"Co-Humulone HIGH (%)": 32.5,
+		"Myrcene LOW (% of total oil)": 30,
+		"Myrcene HIGH (% of total oil)": 50,
+		"Caryophyllene LOW (% of total oil)": 10,
+		"Caryophyllene HIGH (% of total oil)": 15,
+		"Humulene LOW (% of total oil)": 15,
+		"Humulene HIGH (% of total oil)": 25,
+		"Farnesene (% of total oil)": "< 1",
+		"Description": "Released from The New Zealand Institute for Plant & Food Research Limited’s Motueka Research Centre, Waimea is well-suited to dual purpose applications from early kettle additions right through to dry hopping. It exudes quality bitterness and aroma abound with fruity citrus and pine characters from this hop's big weight of oil. A big hop for big beers, it an be used across a wide array of styles in a variety of brewhouse and dry hopping applications.",
+		"Aroma": "pine, citrus, tangelo",
+		"Beer Styles": "India Pale Ale, Pale Ale, Lagers",
+		"Substitutions": "Columbus, Pacific Jade",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Wakatu",
+		"Origin": "New Zealand",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 6.5,
+		"Alpha Acid HIGH (%)": 8.5,
+		"Beta Acid LOW (%)": 8.4,
+		"Beta Acid HIGH (%)": 8.6,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.1
+		},
+		"Co-Humulone LOW (%)": 28,
+		"Co-Humulone HIGH (%)": 30,
+		"Myrcene LOW (% of total oil)": 35,
+		"Myrcene HIGH (% of total oil)": 36,
+		"Caryophyllene LOW (% of total oil)": 8.1,
+		"Caryophyllene HIGH (% of total oil)": 8.3,
+		"Humulene LOW (% of total oil)": 16.7,
+		"Humulene HIGH (% of total oil)": 16.9,
+		"Farnesene (% of total oil)": "6.6 - 6.8",
+		"Description": "Developed by the New Zealand Institute for Plant and Food Research hop breeding program and released in 1988, as Hallertau Aroma, Wakatu was renamed in 2011. It is a triplod variety with two thirds Hallertau Mittelfrüh parentage. Wakatu is a well rounded variety with strong, fresh citrus characteristics and some bittering capabilities.",
+		"Aroma": "understated floral notes and citrusy lime aromas",
+		"Beer Styles": "Lager, Pale Ale, Belgian Ale",
+		"Substitutions": "Hallertauer Mittelfrüh, Nelson Sauvin",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "WGV",
+		"Origin": "United Kingdom",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 5.4,
+		"Alpha Acid HIGH (%)": 7.7,
+		"Beta Acid LOW (%)": 2,
+		"Beta Acid HIGH (%)": 3.3,
+		"Total Oil LOW (mL": {
+			"100g)": 0.9
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.4
+		},
+		"Co-Humulone LOW (%)": 32,
+		"Co-Humulone HIGH (%)": 43,
+		"Myrcene LOW (% of total oil)": 21,
+		"Myrcene HIGH (% of total oil)": 27,
+		"Caryophyllene LOW (% of total oil)": 12,
+		"Caryophyllene HIGH (% of total oil)": 14,
+		"Humulene LOW (% of total oil)": 39,
+		"Humulene HIGH (% of total oil)": 44,
+		"Farnesene (% of total oil)": "1 - 3",
+		"Description": "Developed through grower selection circa 1911, Whitbread Golding (WGV) is not a true Golding. It displays many similar characteristics but has more robust and slightly sweet, hoppy flavor.",
+		"Aroma": "earthy, botanical, floral, sweet fruit flavor",
+		"Beer Styles": "Bitter, Scottish Ale, Pale Ale, Best Bitter",
+		"Substitutions": "Fuggle, Styrian Golding, East Kent Golding",
+		"Sources (DO NOT IMPORT)": ""
+	},
+	{
+		"Variety": "Willamette",
+		"Origin": "United States",
+		"Type": "Dual Purpose",
+		"Alpha Acid LOW (%)": 4,
+		"Alpha Acid HIGH (%)": 6,
+		"Beta Acid LOW (%)": 3,
+		"Beta Acid HIGH (%)": 4,
+		"Total Oil LOW (mL": {
+			"100g)": 1
+		},
+		"Total Oil HIGH (mL": {
+			"100g)": 1.5
+		},
+		"Co-Humulone LOW (%)": 30,
+		"Co-Humulone HIGH (%)": 35,
+		"Myrcene LOW (% of total oil)": 45,
+		"Myrcene HIGH (% of total oil)": 55,
+		"Caryophyllene LOW (% of total oil)": 7,
+		"Caryophyllene HIGH (% of total oil)": 8,
+		"Humulene LOW (% of total oil)": 20,
+		"Humulene HIGH (% of total oil)": 30,
+		"Farnesene (% of total oil)": "5 - 6",
+		"Description": "Released in 1976 from the USDA breeding program, Willamette is a triploid seedling of English Fuggle. For years, it was the most widely grown aroma variety in the US. It is named after Oregon’s Willamette River which runs through the heart of the state’s hop growing region.",
+		"Aroma": "floral, incense, and elderberry aromas",
+		"Beer Styles": "Ale, American Ales, Pale Ale, Brown Ale, English Ales, Porter",
+		"Substitutions": "Fuggle, Styrian Golding, Tettnanger (US), Glacier, Styrian Golding",
+		"Sources (DO NOT IMPORT)": ""
+	}
+]
