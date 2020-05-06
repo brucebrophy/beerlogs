@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateYeastRecipeTable extends Migration
+class CreateRecipeYeastTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateYeastRecipeTable extends Migration
      */
     public function up()
     {
-        Schema::create('yeast_recipe', function (Blueprint $table) {
+        Schema::create('recipe_yeast', function (Blueprint $table) {
             $table->integer('yeast_id')->unsigned();
             $table->integer('recipe_id')->unsigned();
         });

@@ -13,8 +13,8 @@
 						<ul class="mt-4">
 							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Malts:</span> 2-Row (Rahr), Golden Promise, Pale Ale, Pale Wheat, Carafoam, Chit, Acidulated</li>
 							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Hops:</span> Cascade, Simcoe, Amarillo, Citra</li>
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Yeast:</span>: Vermont Ale</li>
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Adjuncts:</span>: Lactose, Dextrose, Key Lime Juice Concentrate, Vanilla Bean</li>
+							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Yeast:</span> Vermont Ale</li>
+							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Adjuncts:</span> Lactose, Dextrose, Key Lime Juice Concentrate, Vanilla Bean</li>
 						</ul>
 					</div>
 				</div>

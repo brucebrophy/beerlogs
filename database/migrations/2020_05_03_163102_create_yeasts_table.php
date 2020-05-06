@@ -16,6 +16,7 @@ class CreateYeastsTable extends Migration
         Schema::create('yeasts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('strain')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });

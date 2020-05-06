@@ -3,7 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Models\User;
+use App\Models\Beers\Yeast;
 use App\Models\Beers\Hop;
+use App\Models\Beers\Malt;
 use App\Models\Beers\Beer;
 use App\Models\Beers\Recipe;
 use Faker\Generator as Faker;
@@ -21,7 +23,11 @@ $factory->define(Recipe::class, function (Faker $faker) {
     ];
 });
 
-$factory->afterCreating(Recipe::class, function ($beer, $faker) {
+$factory->afterCreating(Recipe::class, function ($recipe, $faker) {
     $hops = Hop::inRandomOrder()->limit(3)->get();
-    $beer->hops()->sync($hops);
+    $malts = Malt::inRandomOrder()->limit(3)->get();
+    $yeasts = Yeast::inRandomOrder()->limit(1)->get();
+    $recipe->hops()->sync($hops);
+    $recipe->malts()->sync($malts);
+    $recipe->yeasts()->sync($yeasts);
 });
