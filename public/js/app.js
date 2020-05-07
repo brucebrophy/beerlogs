@@ -1971,8 +1971,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.user = window.user;
@@ -19677,17 +19675,7 @@ var render = function() {
                 "flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
             },
             [
-              _c("div", { staticClass: "flex-shrink-0" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "flex items-center w-full h-full",
-                    attrs: { href: "#" }
-                  },
-                  [_vm._t("logo")],
-                  2
-                )
-              ]),
+              _c("div", { staticClass: "flex-shrink-0" }, [_vm._t("logo")], 2),
               _vm._v(" "),
               _c("div", { staticClass: "hidden sm:block sm:ml-6" }, [
                 _c("div", { staticClass: "flex" }, [_vm._t("main")], 2)
