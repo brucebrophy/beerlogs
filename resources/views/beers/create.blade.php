@@ -3,7 +3,6 @@
 @section('content')
 	<div class="container mx-auto">
 		<div class="row">
-			<h1>Create Beer</h1>
 			<div class="col-12 md:col-8 md:offset-2">
 				<div class="rounded-lg shadow-lg bg-white">
 					{!! Form::open(['route' => 'beers.store']) !!}

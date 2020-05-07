@@ -15,6 +15,7 @@ class UserSeeder extends Seeder
     {
         $users = [
             [
+                'username' => 'brucebrophy',
                 'name' => 'Bruce Brophy',
                 'email' => 'bruce@brucebrophy.com',
                 'email_verified_at' => now(),
@@ -25,6 +26,7 @@ class UserSeeder extends Seeder
         foreach ($users as $user) {
             $user = (object) $user;
             User::create([
+                'username' => $user->username,
                 'name' => $user->name,
                 'email' => $user->email,
                 'email_verified_at' => $user->email_verified_at,

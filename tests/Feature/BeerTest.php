@@ -112,7 +112,7 @@ class BeerTest extends TestCase
         // assert
         $response
             ->assertStatus(200)
-            ->assertSee('Create Beer');
+            ->assertSee('Continue to Recipe');
     }
 
     public function testAuthenticatedUserCanCreateRecord()
