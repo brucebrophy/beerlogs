@@ -19595,7 +19595,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("nav", { staticClass: "bg-indigo-800" }, [
+  return _c("nav", { staticClass: "bg-indigo-800 mb-6" }, [
     _c("div", { staticClass: "max-w-7xl mx-auto px-2 sm:px-6 lg:px-8" }, [
       _c(
         "div",

@@ -10,15 +10,17 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white h-screen antialiased leading-none">
+<body class="bg-gray-100 h-screen antialiased leading-none">
     <div id="app">
         @include('layouts.partials.navigation')
         @yield('content')
     </div>
 
+    @auth    
     <script>
         window.user = {!! auth()->user() !!}
     </script>
+    @endauth
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
