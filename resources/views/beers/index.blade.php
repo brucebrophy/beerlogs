@@ -5,9 +5,9 @@
 		<div class="row">
 			@foreach ($beers as $beer)
 				<div class="col-6 md:col-4 lg:col-3">
-					<a href="#" class="inline-block rounded-lg my-2 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
+					<a href="{{ route('beers.show', $beer->id) }}" class="inline-block rounded-lg my-2 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
 						<div class="px-6 py-6">
-							<span class="uppercase text-indigo-400 font-bold text-xs">{{ $beer->style->name }}</span>
+							<span class="uppercase text-indigo-400 font-mono font-bold text-xs">{{ $beer->style->name }}</span>
 							<div class="font-bold font-mono text-xl mt-2 mb-2 text-indigo-600 capitalize">{{ $beer->name }}</div>
 							<p class="text-gray-700 font-mono tracking-tight text-sm leading-tight lowercase">{{ Str::limit($beer->notes, 50) }}</p>
 							<p class="text-gray-700 text-base mt-2 leading-tight">{{ \Str::limit($beer->description, 90) }}</p>

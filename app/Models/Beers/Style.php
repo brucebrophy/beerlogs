@@ -6,7 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Style extends Model
 {
-    protected $fillable = [
-        'name'
-    ];
+    protected $guarded = [];
 }

@@ -11,6 +11,7 @@ class SampleSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Models\Beers\Beer::class, 50)->create();
+        factory(App\Models\Beers\Recipe::class, 50)
+            ->create();
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateYeastsTable extends Migration
+class CreateMaltRecipeTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateYeastsTable extends Migration
      */
     public function up()
     {
-        Schema::create('yeasts', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('strain')->nullable();
-            $table->text('description')->nullable();
-            $table->timestamps();
+        Schema::create('malt_recipe', function (Blueprint $table) {
+            $table->integer('malt_id')->unsigned();
+            $table->integer('recipe_id')->unsigned();
         });
     }
 
@@ -29,6 +26,6 @@ class CreateYeastsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('yeasts');
+        Schema::dropIfExists('malt_recipe');
     }
 }

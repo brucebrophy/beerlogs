@@ -35,7 +35,7 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->group(function () {
-    Route::resource('beers', 'BeerController');
+    Route::resource('beers', 'BeerController')->except(['index', 'show']);
 });
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
