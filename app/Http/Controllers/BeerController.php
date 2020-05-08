@@ -50,7 +50,7 @@ class BeerController extends Controller
         $beer->user_id = auth()->id();
         $beer->save();
 
-        return redirect()->route('beers.show', $beer->id);
+        return redirect()->route('beers.show', $beer->slug);
     }
 
     /**
@@ -123,7 +123,7 @@ class BeerController extends Controller
 
         if ($request->input('name') !== $beer->name) {
             return redirect()
-                ->route('beers.edit', $beer->id)
+                ->route('beers.edit', $beer->slug)
                 ->with('error', 'The typed name does not match.');
         }
 

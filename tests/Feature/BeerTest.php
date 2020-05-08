@@ -83,7 +83,7 @@ class BeerTest extends TestCase
 
         // act
         $response = $this->followingRedirects()
-            ->delete(route('beers.destroy', $beer->id), [
+            ->delete(route('beers.destroy', $beer->slug), [
                 'name' => 'foobar',
             ]);
 
@@ -143,7 +143,7 @@ class BeerTest extends TestCase
 
         // act
         $response = $this->actingAs($user)
-            ->get(route('beers.edit', $beer->id));
+            ->get(route('beers.edit', $beer->slug));
 
         // assert
         $response
@@ -159,7 +159,7 @@ class BeerTest extends TestCase
 
         // act
         $response = $this->actingAs($user)
-            ->get(route('beers.edit', $beer->id));
+            ->get(route('beers.edit', $beer->slug));
 
         // assert
         $response
@@ -178,7 +178,7 @@ class BeerTest extends TestCase
         // act
         $response = $this->followingRedirects()
             ->actingAs($user)
-            ->delete(route('beers.destroy', $beer->id), [
+            ->delete(route('beers.destroy', $beer->slug), [
                 'name' => 'foobar',
             ]);
 
@@ -202,7 +202,7 @@ class BeerTest extends TestCase
         // act
         $response = $this->followingRedirects()
             ->actingAs($user)
-            ->delete(route('beers.destroy', $beer->id), [
+            ->delete(route('beers.destroy', $beer->slug), [
                 'name' => $beer->name,
             ]);
 

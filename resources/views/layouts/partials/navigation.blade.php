@@ -8,8 +8,8 @@
 		<a href="{{ route('beers.index') }}" class="ml-4 px-3 py-2 rounded-md text-sm font-mono tracking-wider font-medium leading-5 text-white hover:text-white hover:bg-indigo-900 focus:outline-none focus:text-white focus:bg-indigo-900 transition duration-150 ease-in-out">Beers</a>
 	</template>
 	<template v-slot:mobile>
-		<a href="#" class="block px-3 py-2 rounded-md text-base font-mono tracking-wider font-medium text-white bg-indigo-900 focus:outline-none focus:bg-indigo-900 transition duration-150 ease-in-out">Dashboard</a>
-		<a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-mono tracking-wider font-medium text-white hover:text-white hover:bg-indigo-900 focus:outline-none focus:bg-indigo-900 transition duration-150 ease-in-out">Team</a>
+		{{-- <a href="#" class="block px-3 py-2 rounded-md text-base font-mono tracking-wider font-medium text-white bg-indigo-900 focus:outline-none focus:bg-indigo-900 transition duration-150 ease-in-out">Dashboard</a> --}}
+		<a href="{{ route('beers.index') }}" class="mt-1 block px-3 py-2 rounded-md text-base font-mono tracking-wider font-medium text-white hover:text-white hover:bg-indigo-900 focus:outline-none focus:bg-indigo-900 transition duration-150 ease-in-out">Beers</a>
 		@guest
 			<a class="mt-1 block px-3 py-2 rounded-md text-base font-mono tracking-wider font-medium text-white hover:text-white hover:bg-indigo-900 focus:outline-none focus:bg-indigo-900 transition duration-150 ease-in-out" href="{{ route('login') }}">{{ __('Login') }}</a>
 			<a class="mt-1 block px-3 py-2 rounded-md text-base font-mono tracking-wider font-medium text-white hover:text-white hover:bg-indigo-900 focus:outline-none focus:bg-indigo-900 transition duration-150 ease-in-out" href="{{ route('register') }}">{{ __('Register') }}</a>

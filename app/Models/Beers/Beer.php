@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Models\Beers;
+
+use App\Models\User;
+use App\Models\Beers\Recipe;
+use App\Models\Beers\Style;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 
@@ -16,6 +20,16 @@ class Beer extends Model
         'style_id',
         'user_id',
     ];
+
+    /**
+     * Get the value of the model's route key.
+     *
+     * @return mixed
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 
     /**
      * Return the sluggable configuration array for this model.
