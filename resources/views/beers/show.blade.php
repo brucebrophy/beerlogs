@@ -22,7 +22,7 @@
 			<div class="md:col-5 mt-6 md:mt-0">
 				<div class="rounded-lg shadow-lg bg-white">
 					<div class="p-8">
-						<h2 class="text-center mb-4 uppercase font-mono text-xl">Receipe</h2>
+						<h2 class="text-center mb-4 uppercase font-mono text-xl">Recipe</h2>
 						<div class="rounded bg-indigo-600">
 							<div class="flex justify-around pt-4 pb-2 px-4">
 								<div class="w-full text-center">
