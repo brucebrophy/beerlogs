@@ -9,7 +9,7 @@
 						<span class="uppercase font-mono text-indigo-400 font-bold text-sm">{{ $beer->style->name }}</span>
 						<h1 class="font-mono text-2xl font-bold leading-tight capitalize my-4 text-indigo-600">{{ $beer->name }}</h1>
 						<p class="font-mono leading-normal">{{ $beer->notes }}</p>
-						<p class="mt-4 leading-normal">{{ $beer->description }}</p>
+						<p class="mt-4 leading-normal">{!! nl2br($beer->description) !!}</p>
 						<ul class="mt-4">
 							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Malts:</span> 2-Row (Rahr), Golden Promise, Pale Ale, Pale Wheat, Carafoam, Chit, Acidulated</li>
 							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Hops:</span> Cascade, Simcoe, Amarillo, Citra</li>

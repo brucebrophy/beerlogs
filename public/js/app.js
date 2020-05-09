@@ -19697,7 +19697,7 @@ var render = function() {
                         "button",
                         {
                           staticClass:
-                            "flex font-mono tracking-wider text-base text-white focus:outline-none transition duration-150 ease-in-out",
+                            "flex font-mono tracking-wider text-sm md:text-base text-white focus:outline-none transition duration-150 ease-in-out",
                           attrs: {
                             id: "user-menu",
                             "aria-label": "User menu",
@@ -19719,7 +19719,7 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg",
+                          "origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10",
                         class: _vm.profileIsOpen ? "block" : "hidden"
                       },
                       [

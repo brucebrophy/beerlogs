@@ -15,9 +15,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6 mt-6 md:mt-0">
+			<div class="col-12 md:col-6 mt-6 md:mt-0">
 				@foreach ($user->beers as $beer)
-					<div href="{{ route('beers.show', $beer->id) }}" class="rounded-lg mb-2 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
+					<div class="rounded-lg mb-2 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
 						<div class="px-6 py-6">
 							<span class="uppercase text-indigo-400 font-mono font-bold text-xs">{{ $beer->style->name }}</span>
 							<div class="font-bold font-mono text-xl mt-2 mb-2 text-indigo-600 capitalize">{{ $beer->name }}</div>

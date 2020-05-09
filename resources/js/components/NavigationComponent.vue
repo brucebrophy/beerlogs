@@ -36,11 +36,11 @@
 					<!-- Authenticated User Dropdown -->
 					<div v-if="user" class="ml-3 relative">
 						<div>
-							<button @click="toggleProfileMenu" class="flex font-mono tracking-wider text-base text-white focus:outline-none transition duration-150 ease-in-out" id="user-menu" aria-label="User menu" aria-haspopup="true">
+							<button @click="toggleProfileMenu" class="flex font-mono tracking-wider text-sm md:text-base text-white focus:outline-none transition duration-150 ease-in-out" id="user-menu" aria-label="User menu" aria-haspopup="true">
 								{{ user.username }}
 							</button>
 						</div>
-						<div :class="profileIsOpen ? 'block' : 'hidden'" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+						<div :class="profileIsOpen ? 'block' : 'hidden'" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10">
 							<div class="py-1 rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
 								<slot name="profile" />
 							</div>
