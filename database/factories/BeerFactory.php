@@ -14,7 +14,6 @@ $factory->define(Beer::class, function (Faker $faker) {
     $style = Style::inRandomOrder()->limit(1)->first();
     return [
         'name' => $name,
-        'slug' => Str::slug($name),
         'notes' => $faker->words(12, true),
         'description' => $faker->words(100, true),
         'style_id' => $style->id,

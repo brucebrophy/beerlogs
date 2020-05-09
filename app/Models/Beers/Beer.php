@@ -40,7 +40,7 @@ class Beer extends Model
     {
         return [
             'slug' => [
-                'source' => 'name'
+                'source' => ['user.username', 'name']
             ]
         ];
     }
