@@ -166,6 +166,31 @@ class BeerTest extends TestCase
             ->assertStatus(403);
     }
 
+    public function testAuthenticatedUserCanUpdateResource()
+    {
+        // arrange
+        $this->seed(BeerStyleSeeder::class);
+        $user = factory(User::class)->create();
+        $beer = factory(Beer::class)->create([
+            'user_id' => $user->id
+        ]);
+
+        // act
+        $response = $this->actingAs($user)
+            ->patch(route('beers.update', $beer->slug), [
+                'name' => 'Testing Beer Update',
+            ]);
+
+        // assert
+        $response
+            ->assertStatus(200)
+            ->assertSee('Testing Beer Update');
+
+        $this->assertDatabaseHas('beers', [
+            'name' => 'Testing Beer Update'
+        ]);
+    }
+
     public function testAuthenticatedUserCannotDeleteRecordIfNameIsNotConfirmed()
     {
         // arrange

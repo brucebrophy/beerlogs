@@ -4,6 +4,8 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use App\Models\User;
+use BeerStyleSeeder;
+use App\Models\Beers\Beer;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -19,6 +21,19 @@ class UserTest extends TestCase
         // act
         $this->get(route('users.show', $user->username))
             ->assertStatus(200);
+    }
+
+    public function testUsersBeersAreShownOnTheirProfile()
+    {
+        // arrange 
+        $this->seed(BeerStyleSeeder::class);
+        $user = factory(User::class)->create();
+        $beer = factory(Beer::class)->create([ 'user_id' => $user->id ]);
+
+        // act
+        $this->get(route('users.show', $user->username))
+            ->assertStatus(200)
+            ->assertSee($beer->name);
     }
 
     public function testUserCanEditOwnProfile()

@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-12 md:col-8 md:offset-2">
 				<div class="rounded-lg shadow-lg bg-white">
-					{!! Form::model($beer, ['route' => ['beers.update', $beer->id], 'method' => 'PATCH']) !!}
+					{!! Form::model($beer, ['route' => ['beers.update', $beer->slug], 'method' => 'PATCH']) !!}
 					<div class="p-8">
 						@include('beers.partials.form')
 						<div class="flex justify-end">
