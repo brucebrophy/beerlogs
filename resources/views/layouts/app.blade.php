@@ -15,6 +15,7 @@
         @include('layouts.partials.navigation')
         @yield('content')
     </div>
+     @include('layouts.partials.footer')
 
     @auth    
     <script>

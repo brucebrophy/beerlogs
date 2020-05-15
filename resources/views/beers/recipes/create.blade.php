@@ -10,16 +10,7 @@
 						Create Recipe
 						<div class="mb-5">
 							<div>
-								<ingredient-selector-component
-									endpoint="http://beer.localhost/api/hops"
-									resource="hops"
-								/>
-							</div>
-							<div>
-								<ingredient-selector-component
-									endpoint="http://beer.localhost/api/malts"
-									resource="malts"
-								/>
+								<hop-selector-component />
 							</div>
 						</div>
 						<div class="flex justify-end">
