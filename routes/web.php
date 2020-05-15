@@ -37,6 +37,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware(['auth'])->group(function () {
     // Beers - Authenticated
     Route::resource('beers', 'BeerController')->except(['index', 'show']);
+    Route::resource('beers.recipes', 'RecipeController')->except(['index', 'show']);
 
     // Profiles - Authenticated 
     Route::get('/@{user:username}/edit', 'UserController@edit')->name('users.edit');

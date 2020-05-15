@@ -128,8 +128,12 @@ class BeerTest extends TestCase
         // assert
         $response
             ->assertStatus(200)
-            ->assertSee($beer->name)
-            ->assertSee($beer->description);
+            ->assertSee('Create Recipe');
+
+        $this->assertDatabaseHas('beers', [
+            'name' => $beer->name,
+            'notes' => $beer->notes,
+        ]);
     }
 
     public function testAuthenticatedUserCanEditResource()

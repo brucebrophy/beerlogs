@@ -49,7 +49,7 @@ class BeerController extends Controller
         $beer->user_id = auth()->id();
         $beer->save();
 
-        return redirect()->route('beers.show', $beer->slug);
+        return redirect()->route('beers.recipes.create', $beer->slug);
     }
 
     /**
