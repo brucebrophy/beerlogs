@@ -5,8 +5,8 @@
 				<div class="row">
 					<div class="col-6">
 						<div class="mb-2 font-mono block">
-							<label class="text-indigo-600 uppercase" for="unit">Hops</label>
-							<select name="hop_id" id="hop_input" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
+							<label class="text-indigo-600 uppercase" :for="`hop-${n}`">Hops</label>
+							<select :name="`hops[${n}][hop_id]`" :id="`hop-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
 								<option disabled selected>Select...</option>
 								<option v-for="hop in hops" :key="hop.id">{{ hop.name }}</option>
 							</select>
@@ -14,8 +14,8 @@
 					</div>
 					<div class="col-6">
 						<div class="mb-2 font-mono block">
-							<label class="text-indigo-600 uppercase" for="unit">Type</label>
-							<select name="hop_id" id="hop_input" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
+							<label class="text-indigo-600 uppercase" :for="`type-${n}`">Type</label>
+							<select :name="`hops[${n}][hop_type_id]`" :id="`type-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
 								<option v-for="type in types" :key="type.id">{{ type.name }}</option>
 							</select>
 						</div>
@@ -24,20 +24,20 @@
 				<div class="row">
 					<div class="lg:col-4">
 						<div class="mb-2 font-mono block">
-							<label class="text-indigo-600 uppercase" for="minute">Minute</label>
-							<input type="number" min="0" name="" id="" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
+							<label class="text-indigo-600 uppercase" :for="`minute-${n}`">Minute</label>
+							<input type="number" :name="`hops[${n}][minute]`" min="0" :id="`minute-${n}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
 						</div>
 					</div>
 					<div class="lg:col-4">
 						<div class="mb-2 font-mono block">
-							<label class="text-indigo-600 uppercase" for="unit">Amount</label>
-							<input type="number" name="" id="" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
+							<label class="text-indigo-600 uppercase" :for="`amount-${n}`">Amount</label>
+							<input type="number" :name="`hops[${n}][amount]`" :id="`amount-${n}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
 						</div>
 					</div>
 					<div class="lg:col-4">
 						<div class="mb-2 font-mono block">
-							<label class="text-indigo-600 uppercase" for="unit">Unit</label>
-							<select name="unit" id="hop_input" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
+							<label class="text-indigo-600 uppercase" :for="`unit-${n}`">Unit</label>
+							<select :name="`hops[${n}][unit]`" :id="`unit-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
 								<option>g</option>
 								<option>kg</option>
 								<option>oz</option>

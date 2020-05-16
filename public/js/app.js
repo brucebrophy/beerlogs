@@ -19771,7 +19771,7 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "unit" }
+                        attrs: { for: "hop-" + n }
                       },
                       [_vm._v("Hops")]
                     ),
@@ -19781,7 +19781,10 @@ var render = function() {
                       {
                         staticClass:
                           "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
-                        attrs: { name: "hop_id", id: "hop_input" }
+                        attrs: {
+                          name: "hops[" + n + "][hop_id]",
+                          id: "hop-" + n
+                        }
                       },
                       [
                         _c(
@@ -19807,7 +19810,7 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "unit" }
+                        attrs: { for: "type-" + n }
                       },
                       [_vm._v("Type")]
                     ),
@@ -19817,7 +19820,10 @@ var render = function() {
                       {
                         staticClass:
                           "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
-                        attrs: { name: "hop_id", id: "hop_input" }
+                        attrs: {
+                          name: "hops[" + n + "][hop_type_id]",
+                          id: "type-" + n
+                        }
                       },
                       _vm._l(_vm.types, function(type) {
                         return _c("option", { key: type.id }, [
@@ -19830,7 +19836,90 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm._m(0, true),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "lg:col-4" }, [
+                  _c("div", { staticClass: "mb-2 font-mono block" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "text-indigo-600 uppercase",
+                        attrs: { for: "minute-" + n }
+                      },
+                      [_vm._v("Minute")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass:
+                        "form-input font-mono w-full border mt-2 focus:border-indigo-600",
+                      attrs: {
+                        type: "number",
+                        name: "hops[" + n + "][minute]",
+                        min: "0",
+                        id: "minute-" + n
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "lg:col-4" }, [
+                  _c("div", { staticClass: "mb-2 font-mono block" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "text-indigo-600 uppercase",
+                        attrs: { for: "amount-" + n }
+                      },
+                      [_vm._v("Amount")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass:
+                        "form-input font-mono w-full border mt-2 focus:border-indigo-600",
+                      attrs: {
+                        type: "number",
+                        name: "hops[" + n + "][amount]",
+                        id: "amount-" + n
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "lg:col-4" }, [
+                  _c("div", { staticClass: "mb-2 font-mono block" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "text-indigo-600 uppercase",
+                        attrs: { for: "unit-" + n }
+                      },
+                      [_vm._v("Unit")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        staticClass:
+                          "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
+                        attrs: {
+                          name: "hops[" + n + "][unit]",
+                          id: "unit-" + n
+                        }
+                      },
+                      [
+                        _c("option", [_vm._v("g")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("kg")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("oz")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("lb")]),
+                        _vm._v(" "),
+                        _c("option", [_vm._v("ml")])
+                      ]
+                    )
+                  ])
+                ])
+              ]),
               _vm._v(" "),
               _vm.numberOfHopAdditions > n
                 ? _c("hr", { staticClass: "my-3" })
@@ -19862,85 +19951,7 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "lg:col-4" }, [
-        _c("div", { staticClass: "mb-2 font-mono block" }, [
-          _c(
-            "label",
-            {
-              staticClass: "text-indigo-600 uppercase",
-              attrs: { for: "minute" }
-            },
-            [_vm._v("Minute")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass:
-              "form-input font-mono w-full border mt-2 focus:border-indigo-600",
-            attrs: { type: "number", min: "0", name: "", id: "" }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "lg:col-4" }, [
-        _c("div", { staticClass: "mb-2 font-mono block" }, [
-          _c(
-            "label",
-            {
-              staticClass: "text-indigo-600 uppercase",
-              attrs: { for: "unit" }
-            },
-            [_vm._v("Amount")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass:
-              "form-input font-mono w-full border mt-2 focus:border-indigo-600",
-            attrs: { type: "number", name: "", id: "" }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "lg:col-4" }, [
-        _c("div", { staticClass: "mb-2 font-mono block" }, [
-          _c(
-            "label",
-            {
-              staticClass: "text-indigo-600 uppercase",
-              attrs: { for: "unit" }
-            },
-            [_vm._v("Unit")]
-          ),
-          _vm._v(" "),
-          _c(
-            "select",
-            {
-              staticClass:
-                "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
-              attrs: { name: "unit", id: "hop_input" }
-            },
-            [
-              _c("option", [_vm._v("g")]),
-              _vm._v(" "),
-              _c("option", [_vm._v("kg")]),
-              _vm._v(" "),
-              _c("option", [_vm._v("oz")]),
-              _vm._v(" "),
-              _c("option", [_vm._v("lb")]),
-              _vm._v(" "),
-              _c("option", [_vm._v("ml")])
-            ]
-          )
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

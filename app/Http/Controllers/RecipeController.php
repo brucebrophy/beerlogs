@@ -27,12 +27,7 @@ class RecipeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(Beer $beer)
-    {       
-        \JavaScript::put([
-            'malts' => Malt::orderBy('name')->get(['id', 'name']),
-            'hops' => Hop::orderBy('name')->get(['id', 'name']),
-        ]);
-        
+    {          
         return view('beers.recipes.create', [
             'beer' => $beer,
             'recipe' => new Recipe,
@@ -48,6 +43,7 @@ class RecipeController extends Controller
     public function store(Request $request, Beer $beer)
     {
         // TODO: Create Recipe
+        dd($request->all());
     }
 
     /**
