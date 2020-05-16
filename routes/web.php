@@ -28,8 +28,8 @@ if (config('app.env') === 'local') {
     });
     Route::get('styles/components', function() {
         JavaScript::put([
-            'malts' => App\Models\Beers\Malt::orderBy('name')->get(['id', 'name']),
-            'hops' => App\Models\Beers\Hop::orderBy('name')->get(['id', 'name']),
+            'malts' => App\Malts\Malt::orderBy('name')->get(['id', 'name']),
+            'hops' => App\Hops\Hop::orderBy('name')->get(['id', 'name']),
         ]);
         return view('styleguide.components');
     });

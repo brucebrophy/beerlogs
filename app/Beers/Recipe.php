@@ -1,7 +1,11 @@
 <?php
 
-namespace App\Models\Beers;
+namespace App\Beers;
 
+use App\Hops\Hop;
+use App\Malts\Malt;
+use App\Beers\Beer;
+use App\Yeasts\Yeast;
 use Illuminate\Database\Eloquent\Model;
 
 class Recipe extends Model

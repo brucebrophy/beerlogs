@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Beers;
+namespace App\Hops;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Style extends Model
+class HopType extends Model
 {
     protected $guarded = [];
 }

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\Beers\Hop;
+use App\Hops\Hop;
 use Illuminate\Http\Request;
 
 class HopController extends Controller
@@ -46,7 +46,7 @@ class HopController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Beers\Hop  $hop
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
     public function show(Hop $hop)
@@ -57,7 +57,7 @@ class HopController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Beers\Hop  $hop
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
     public function edit(Hop $hop)
@@ -69,7 +69,7 @@ class HopController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Beers\Hop  $hop
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Hop $hop)
@@ -80,7 +80,7 @@ class HopController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Beers\Hop  $hop
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
     public function destroy(Hop $hop)

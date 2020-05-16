@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Models\Beers;
+namespace App\Hops;
 
+use App\Beers\Recipe;
 use Illuminate\Database\Eloquent\Model;
 
 class Hop extends Model

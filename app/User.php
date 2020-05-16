@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
-use App\Models\Beers\Beer;
+use App\Beers\Beer;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;

@@ -3,9 +3,9 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use App\Models\User;
+use App\User;
 use BeerStyleSeeder;
-use App\Models\Beers\Beer;
+use App\Beers\Beer;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

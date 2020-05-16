@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Beers;
+namespace App\Beers;
 
-use App\Models\User;
-use App\Models\Beers\Recipe;
-use App\Models\Beers\Style;
+use App\User;
+use App\Beers\Recipe;
+use App\Beers\Style;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 

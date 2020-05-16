@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Beers\Hop;
-use App\Models\Beers\Malt;
-use App\Models\Beers\Beer;
-use App\Models\Beers\Recipe;
+use App\Hops\Hop;
+use App\Malts\Malt;
+use App\Beers\Beer;
+use App\Beers\Recipe;
 
 class RecipeController extends Controller
 {
@@ -28,7 +28,7 @@ class RecipeController extends Controller
      */
     public function create(Beer $beer)
     {       
-        JavaScript::put([
+        \JavaScript::put([
             'malts' => Malt::orderBy('name')->get(['id', 'name']),
             'hops' => Hop::orderBy('name')->get(['id', 'name']),
         ]);

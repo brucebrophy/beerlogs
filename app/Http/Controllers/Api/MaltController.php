@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
-use App\Models\Beers\Malt;
+use App\Malts\Malt;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class MaltController extends Controller
 {
@@ -46,7 +46,7 @@ class MaltController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Beers\Malt  $malt
+     * @param  \App\Malts\Malt  $malt
      * @return \Illuminate\Http\Response
      */
     public function show(Malt $malt)
@@ -57,7 +57,7 @@ class MaltController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Beers\Malt  $malt
+     * @param  \App\Malts\Malt  $malt
      * @return \Illuminate\Http\Response
      */
     public function edit(Malt $malt)
@@ -69,7 +69,7 @@ class MaltController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Beers\Malt  $malt
+     * @param  \App\Malts\Malt  $malt
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Malt $malt)
@@ -80,7 +80,7 @@ class MaltController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Beers\Malt  $malt
+     * @param  \App\Malts\Malt  $malt
      * @return \Illuminate\Http\Response
      */
     public function destroy(Malt $malt)

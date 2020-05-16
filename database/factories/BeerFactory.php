@@ -4,10 +4,9 @@
 
 use Faker\Generator as Faker;
 
-use App\Models\User;
-use App\Models\Beers\Hop;
-use App\Models\Beers\Beer;
-use App\Models\Beers\Style;
+use App\User;
+use App\Beers\Beer;
+use App\Beers\Style;
 
 $factory->define(Beer::class, function (Faker $faker) {
     $name = $faker->words(2, true);
