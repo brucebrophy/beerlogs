@@ -27,10 +27,6 @@ if (config('app.env') === 'local') {
         return view('styleguide.forms');
     });
     Route::get('styles/components', function() {
-        JavaScript::put([
-            'malts' => App\Malts\Malt::orderBy('name')->get(['id', 'name']),
-            'hops' => App\Hops\Hop::orderBy('name')->get(['id', 'name']),
-        ]);
         return view('styleguide.components');
     });
 }
@@ -39,7 +35,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->group(function () {
     // Beers - Authenticated
@@ -47,17 +43,17 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('beers.recipes', 'RecipeController')->except(['index', 'show']);
 
     // Profiles - Authenticated 
-    Route::get('/@{user:username}/edit', 'UserController@edit')->name('users.edit');
-    Route::patch('/@{user:username}', 'UserController@update')->name('users.update');
-    Route::delete('/@{user:username}', 'UserController@destroy')->name('users.destroy');
+    Route::get('@{user:username}/edit', 'UserController@edit')->name('users.edit');
+    Route::patch('@{user:username}', 'UserController@update')->name('users.update');
+    Route::delete('@{user:username}', 'UserController@destroy')->name('users.destroy');
 });
 
 // Beers - Public
-Route::get('/beers', 'BeerController@index')->name('beers.index');
-Route::get('/beers/{beer}', 'BeerController@show')->name('beers.show');
+Route::get('beers', 'BeerController@index')->name('beers.index');
+Route::get('beers/{beer}', 'BeerController@show')->name('beers.show');
 
 // Profiles - Public
-Route::get('/@{user:username}', 'UserController@show')->name('users.show');
+Route::get('@{user:username}', 'UserController@show')->name('users.show');
 
 Auth::routes(['verify' => true]);
 
