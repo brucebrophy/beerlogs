@@ -26,6 +26,13 @@ if (config('app.env') === 'local') {
     Route::get('styles/forms', function() {
         return view('styleguide.forms');
     });
+    Route::get('styles/components', function() {
+        JavaScript::put([
+            'malts' => App\Models\Beers\Malt::orderBy('name')->get(['id', 'name']),
+            'hops' => App\Models\Beers\Hop::orderBy('name')->get(['id', 'name']),
+        ]);
+        return view('styleguide.components');
+    });
 }
 
 Route::get('/', function () {

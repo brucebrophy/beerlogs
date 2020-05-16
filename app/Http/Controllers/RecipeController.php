@@ -28,7 +28,7 @@ class RecipeController extends Controller
      */
     public function create(Beer $beer)
     {       
-        \JavaScript::put([
+        JavaScript::put([
             'malts' => Malt::orderBy('name')->get(['id', 'name']),
             'hops' => Hop::orderBy('name')->get(['id', 'name']),
         ]);

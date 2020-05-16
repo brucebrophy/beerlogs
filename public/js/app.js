@@ -1950,6 +1950,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {},
   mounted: function mounted() {
@@ -19718,51 +19725,64 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-8 lg:col-10" }, [
-        _c(
-          "div",
-          { staticClass: "mb-5 font-mono text-indigo-600 block uppercase" },
-          [
-            _c("label", { attrs: { for: "hop_input" } }, [_vm._v("Add Hops")]),
-            _vm._v(" "),
+  return _c(
+    "div",
+    {
+      staticClass:
+        "rounded-lg my-2 md:my-0 overflow-hidden border border-gray-200 shadow-md bg-white"
+    },
+    [
+      _c("div", { staticClass: "p-6" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-8" }, [
             _c(
-              "select",
-              {
-                staticClass:
-                  "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
-                attrs: { name: "", id: "hop_input" }
-              },
+              "div",
+              { staticClass: "mb-5 font-mono text-indigo-600 block uppercase" },
               [
-                _c("option", { attrs: { disabled: "", selected: "" } }, [
-                  _vm._v("Select...")
+                _c("label", { attrs: { for: "hop_input" } }, [
+                  _vm._v("Add Hops")
                 ]),
                 _vm._v(" "),
-                _vm._l(_vm.hops, function(hop) {
-                  return _c("option", { key: hop.id }, [
-                    _vm._v(_vm._s(hop.name))
-                  ])
-                })
-              ],
-              2
+                _c(
+                  "select",
+                  {
+                    staticClass:
+                      "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
+                    attrs: { name: "", id: "hop_input" }
+                  },
+                  [
+                    _c("option", { attrs: { disabled: "", selected: "" } }, [
+                      _vm._v("Select...")
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(_vm.hops, function(hop) {
+                      return _c("option", { key: hop.id }, [
+                        _vm._v(_vm._s(hop.name))
+                      ])
+                    })
+                  ],
+                  2
+                )
+              ]
             )
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(0)
-    ]),
-    _vm._v(" "),
-    _vm._m(1)
-  ])
+          ]),
+          _vm._v(" "),
+          _vm._m(0)
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2)
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-4 lg:col-2" }, [
+    return _c("div", { staticClass: "col-4" }, [
       _c(
         "div",
         { staticClass: "mb-5 font-mono text-indigo-600 block uppercase" },
@@ -19828,6 +19848,24 @@ var staticRenderFns = [
               attrs: { type: "text", name: "", id: "" }
             })
           ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "px-8 py-3 d-block w-full border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
+            attrs: { type: "button" }
+          },
+          [_vm._v("Add Hops")]
         )
       ])
     ])
