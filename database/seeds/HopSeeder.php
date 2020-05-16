@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Beers\Hop;
+use App\Hops\Hop;
 use Illuminate\Database\Seeder;
 
 class HopSeeder extends Seeder

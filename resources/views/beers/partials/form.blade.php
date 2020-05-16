@@ -6,7 +6,7 @@
 	Style
 	<select name="style_id" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
 		<option disabled selected>Select...</option>
-		@foreach (\App\Models\Beers\Style::orderBy('name')->get() as $style)								
+		@foreach (\App\Beers\Style::orderBy('name')->get() as $style)								
 			<option value="{{ $style->id }}">{{ $style->name }}</option>
 		@endforeach
 	</select>

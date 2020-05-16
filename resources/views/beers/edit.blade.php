@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-12 md:col-8 md:offset-2">
 				<div class="rounded-lg shadow-lg bg-white">
-					{!! Form::model($beer, ['route' => ['beers.update', $beer->id], 'method' => 'PUT']) !!}
+					{!! Form::model($beer, ['route' => ['beers.update', $beer->slug], 'method' => 'PATCH']) !!}
 					<div class="p-8">
 						@include('beers.partials.form')
 						<div class="flex justify-end">
@@ -20,7 +20,7 @@
 			<div class="col-12 md:col-8 md:offset-2">
 				<div class="rounded-lg shadow-lg border border-red-600 bg-white mt-6">
 					<div class="p-8">
-						{!! Form::open(['route' => ['beers.destroy', $beer->id], 'method' => 'DELETE']) !!}
+						{!! Form::open(['route' => ['beers.destroy', $beer->slug], 'method' => 'DELETE']) !!}
 							{{ Form::label('name', 'Delete Record', ['class' => 'font-mono font-semibold text-red-600 block']) }}
 							<div class="flex align-items-center mt-2">
 								{{ Form::text('name', null, ['class' => 'form-input font-mono w-full border', 'placeholder' => 'Type ' . $beer->name . ' to confirm delete']) }}

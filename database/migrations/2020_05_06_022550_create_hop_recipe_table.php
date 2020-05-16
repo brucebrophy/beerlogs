@@ -16,6 +16,9 @@ class CreateHopRecipeTable extends Migration
         Schema::create('hop_recipe', function (Blueprint $table) {
             $table->integer('hop_id')->unsigned();
             $table->integer('recipe_id')->unsigned();
+            $table->integer('hop_type_id')->unsigned();
+            $table->integer('grams');
+            $table->integer('minute');
         });
     }
 

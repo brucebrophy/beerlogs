@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-use App\Models\Beers\Style;
+use App\Beers\Style;
 
 class BeerStyleSeeder extends Seeder
 {

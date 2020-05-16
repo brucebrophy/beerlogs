@@ -3,10 +3,9 @@
 namespace App\Policies;
 
 use App\User;
-use App\Beers\Beer;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class BeerPolicy
+class UserPolicy
 {
     use HandlesAuthorization;
 
@@ -16,21 +15,21 @@ class BeerPolicy
      * @param  \App\User  $user
      * @return mixed
      */
-    public function viewAny()
+    public function viewAny(User $user)
     {
-        return true;
+        //
     }
 
     /**
      * Determine whether the user can view the model.
      *
      * @param  \App\User  $user
-     * @param  \App\Beers\Beer  $beer
+     * @param  \App\User  $user
      * @return mixed
      */
-    public function view(User $user, Beer $beer)
+    public function view(User $user, User $model)
     {
-        return true;
+        //
     }
 
     /**
@@ -41,54 +40,54 @@ class BeerPolicy
      */
     public function create(User $user)
     {
-        return true;
+        //
     }
 
     /**
      * Determine whether the user can update the model.
      *
      * @param  \App\User  $user
-     * @param  \App\Beers\Beer  $beer
+     * @param  \App\User  $model
      * @return mixed
      */
-    public function update(User $user, Beer $beer)
+    public function update(User $user, User $model)
     {
-        return $user->id === (int) $beer->user_id;
+        return $user->id === $model->id;
     }
 
     /**
      * Determine whether the user can delete the model.
      *
      * @param  \App\User  $user
-     * @param  \App\Beers\Beer  $beer
+     * @param  \App\User  $model
      * @return mixed
      */
-    public function delete(User $user, Beer $beer)
+    public function delete(User $user, User $model)
     {
-        return $user->id === (int) $beer->user_id;
+        return $user->id === $model->id;
     }
 
     /**
      * Determine whether the user can restore the model.
      *
      * @param  \App\User  $user
-     * @param  \App\Beers\Beer  $beer
+     * @param  \App\User  $model
      * @return mixed
      */
-    public function restore(User $user, Beer $beer)
+    public function restore(User $user, User $model)
     {
-        return $user->id === (int) $beer->user_id;
+        //
     }
 
     /**
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\User  $user
-     * @param  \App\Beers\Beer  $beer
+     * @param  \App\User  $model
      * @return mixed
      */
-    public function forceDelete(User $user, Beer $beer)
+    public function forceDelete(User $user, User $model)
     {
-        return $user->id === (int) $beer->user_id;
+        //
     }
 }

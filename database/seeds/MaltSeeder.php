@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Beers\Malt;
+use App\Malts\Malt;
 use Illuminate\Database\Seeder;
 
 class MaltSeeder extends Seeder

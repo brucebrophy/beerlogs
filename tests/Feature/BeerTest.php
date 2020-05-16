@@ -2,14 +2,12 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
-
+use App\User;
 use BeerStyleSeeder;
-
-use App\Models\User;
-use App\Models\Beers\Beer;
+use App\Beers\Beer;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class BeerTest extends TestCase
 {
@@ -85,7 +83,7 @@ class BeerTest extends TestCase
 
         // act
         $response = $this->followingRedirects()
-            ->delete(route('beers.destroy', $beer->id), [
+            ->delete(route('beers.destroy', $beer->slug), [
                 'name' => 'foobar',
             ]);
 
@@ -130,8 +128,12 @@ class BeerTest extends TestCase
         // assert
         $response
             ->assertStatus(200)
-            ->assertSee($beer->name)
-            ->assertSee($beer->description);
+            ->assertSee('Create Recipe');
+
+        $this->assertDatabaseHas('beers', [
+            'name' => $beer->name,
+            'notes' => $beer->notes,
+        ]);
     }
 
     public function testAuthenticatedUserCanEditResource()
@@ -145,7 +147,7 @@ class BeerTest extends TestCase
 
         // act
         $response = $this->actingAs($user)
-            ->get(route('beers.edit', $beer->id));
+            ->get(route('beers.edit', $beer->slug));
 
         // assert
         $response
@@ -161,11 +163,36 @@ class BeerTest extends TestCase
 
         // act
         $response = $this->actingAs($user)
-            ->get(route('beers.edit', $beer->id));
+            ->get(route('beers.edit', $beer->slug));
 
         // assert
         $response
             ->assertStatus(403);
+    }
+
+    public function testAuthenticatedUserCanUpdateResource()
+    {
+        // arrange
+        $this->seed(BeerStyleSeeder::class);
+        $user = factory(User::class)->create();
+        $beer = factory(Beer::class)->create([
+            'user_id' => $user->id
+        ]);
+
+        // act
+        $response = $this->actingAs($user)
+            ->patch(route('beers.update', $beer->slug), [
+                'name' => 'Testing Beer Update',
+            ]);
+
+        // assert
+        $response
+            ->assertStatus(200)
+            ->assertSee('Testing Beer Update');
+
+        $this->assertDatabaseHas('beers', [
+            'name' => 'Testing Beer Update'
+        ]);
     }
 
     public function testAuthenticatedUserCannotDeleteRecordIfNameIsNotConfirmed()
@@ -180,7 +207,7 @@ class BeerTest extends TestCase
         // act
         $response = $this->followingRedirects()
             ->actingAs($user)
-            ->delete(route('beers.destroy', $beer->id), [
+            ->delete(route('beers.destroy', $beer->slug), [
                 'name' => 'foobar',
             ]);
 
@@ -204,7 +231,7 @@ class BeerTest extends TestCase
         // act
         $response = $this->followingRedirects()
             ->actingAs($user)
-            ->delete(route('beers.destroy', $beer->id), [
+            ->delete(route('beers.destroy', $beer->slug), [
                 'name' => $beer->name,
             ]);
 

@@ -1,15 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
+use App\Hops\Hop;
 use Illuminate\Http\Request;
 
-use App\Hops\Hop;
-use App\Malts\Malt;
-use App\Beers\Beer;
-use App\Beers\Recipe;
-
-class RecipeController extends Controller
+class HopController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +15,11 @@ class RecipeController extends Controller
      */
     public function index()
     {
-        //
+        $hops = Hop::orderBy('name')->get(['id', 'name']);
+        
+        return response()->json([
+            'hops' => $hops,
+        ]);
     }
 
     /**
@@ -26,12 +27,9 @@ class RecipeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Beer $beer)
-    {          
-        return view('beers.recipes.create', [
-            'beer' => $beer,
-            'recipe' => new Recipe,
-        ]);
+    public function create()
+    {
+        //
     }
 
     /**
@@ -40,19 +38,18 @@ class RecipeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Beer $beer)
+    public function store(Request $request)
     {
-        // TODO: Create Recipe
-        dd($request->all());
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Recipe  $recipe
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
-    public function show(Recipe $recipe)
+    public function show(Hop $hop)
     {
         //
     }
@@ -60,10 +57,10 @@ class RecipeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Recipe  $recipe
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
-    public function edit(Recipe $recipe)
+    public function edit(Hop $hop)
     {
         //
     }
@@ -72,10 +69,10 @@ class RecipeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Recipe  $recipe
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Recipe $recipe)
+    public function update(Request $request, Hop $hop)
     {
         //
     }
@@ -83,10 +80,10 @@ class RecipeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Recipe  $recipe
+     * @param  \App\Hops\Hop  $hop
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Recipe $recipe)
+    public function destroy(Hop $hop)
     {
         //
     }

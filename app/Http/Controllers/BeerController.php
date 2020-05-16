@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Beers\Beer;
+use App\Beers\Beer;
 use Illuminate\Http\Request;
 
 class BeerController extends Controller
@@ -46,11 +46,10 @@ class BeerController extends Controller
     {
         $beer = new Beer;
         $beer->fill($request->input());
-        $beer->slug = \Str::slug($beer->name);
         $beer->user_id = auth()->id();
         $beer->save();
 
-        return redirect()->route('beers.show', $beer->id);
+        return redirect()->route('beers.recipes.create', $beer->slug);
     }
 
     /**
@@ -123,7 +122,7 @@ class BeerController extends Controller
 
         if ($request->input('name') !== $beer->name) {
             return redirect()
-                ->route('beers.edit', $beer->id)
+                ->route('beers.edit', $beer->slug)
                 ->with('error', 'The typed name does not match.');
         }
 

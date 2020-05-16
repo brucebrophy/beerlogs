@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Beers\Yeast;
+use App\Yeasts\Yeast;
 use Illuminate\Database\Seeder;
 
 class YeastSeeder extends Seeder
