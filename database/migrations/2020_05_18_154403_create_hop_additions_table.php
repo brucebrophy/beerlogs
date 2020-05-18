@@ -18,7 +18,7 @@ class CreateHopAdditionsTable extends Migration
             $table->integer('hop_id')->unsigned();
             $table->integer('recipe_id')->unsigned();
             $table->integer('hop_type_id')->unsigned();
-            $table->integer('grams');
+            $table->integer('amount');
             $table->integer('minute');
             $table->timestamps();
         });
