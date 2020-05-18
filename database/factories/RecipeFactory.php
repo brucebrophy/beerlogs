@@ -2,7 +2,6 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\User;
 use App\Malts\Malt;
 use App\Beers\Beer;
 use App\Yeasts\Yeast;
@@ -21,7 +20,6 @@ $factory->define(Recipe::class, function (Faker $faker) {
         'fg' => '1.0' . $faker->randomNumber(2),
         'srm' => $faker->numberBetween(1, 20),
         'adjuncts' => $faker->words(8, true),
-        'user_id' => factory(User::class),
         'beer_id' => factory(Beer::class),
     ];
 });

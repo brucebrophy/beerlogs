@@ -13,7 +13,7 @@ class HopAddition extends Model
         'hop_id',
         'recipe_id',
         'hop_type_id',
-        'grams',
+        'amount',
         'minute',
     ];
 

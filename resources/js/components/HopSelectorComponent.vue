@@ -8,7 +8,7 @@
 							<label class="text-indigo-600 uppercase" :for="`hop-${n}`">Hops</label>
 							<select :name="`hops[${n}][hop_id]`" :id="`hop-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
 								<option disabled selected>Select...</option>
-								<option v-for="hop in hops" :key="hop.id">{{ hop.name }}</option>
+								<option v-for="hop in hops" :key="hop.id" :value="hop.id">{{ hop.name }}</option>
 							</select>
 						</div>
 					</div>
@@ -16,7 +16,7 @@
 						<div class="mb-2 font-mono block">
 							<label class="text-indigo-600 uppercase" :for="`type-${n}`">Type</label>
 							<select :name="`hops[${n}][hop_type_id]`" :id="`type-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
-								<option v-for="type in types" :key="type.id">{{ type.name }}</option>
+								<option v-for="type in types" :key="type.id" :value="type.id">{{ type.name }}</option>
 							</select>
 						</div>
 					</div>

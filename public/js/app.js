@@ -19794,9 +19794,11 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _vm._l(_vm.hops, function(hop) {
-                          return _c("option", { key: hop.id }, [
-                            _vm._v(_vm._s(hop.name))
-                          ])
+                          return _c(
+                            "option",
+                            { key: hop.id, domProps: { value: hop.id } },
+                            [_vm._v(_vm._s(hop.name))]
+                          )
                         })
                       ],
                       2
@@ -19826,9 +19828,11 @@ var render = function() {
                         }
                       },
                       _vm._l(_vm.types, function(type) {
-                        return _c("option", { key: type.id }, [
-                          _vm._v(_vm._s(type.name))
-                        ])
+                        return _c(
+                          "option",
+                          { key: type.id, domProps: { value: type.id } },
+                          [_vm._v(_vm._s(type.name))]
+                        )
                       }),
                       0
                     )

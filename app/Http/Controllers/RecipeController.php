@@ -42,8 +42,24 @@ class RecipeController extends Controller
      */
     public function store(Request $request, Beer $beer)
     {
-        // TODO: Create Recipe
-        dd($request->all());
+        $recipe = new Recipe;
+        
+        $recipe->fill($request->only([
+            'abv',
+            'og',
+            'fb',
+            'srm',
+        ]));
+        
+        $recipe->beer_id = $beer->id;
+        
+        $recipe->save();
+
+        if ($request->has('hops')) {
+            $recipe->hop_additions()->createMany($request->input('hops'));
+        }
+
+        return redirect()->route('beers.show', $beer->slug);
     }
 
     /**

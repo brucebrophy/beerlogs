@@ -15,7 +15,7 @@ $factory->define(HopAddition::class, function (Faker $faker) {
         'hop_id' => $hop->id,
         'recipe_id' => factory(Recipe::class),
         'hop_type_id' => $type->id,
-        'grams' => $faker->numberBetween(5, 200),
+        'amount' => $faker->numberBetween(5, 200),
         'minute' => $faker->numberBetween(0, 60),
     ];
 });
