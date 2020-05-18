@@ -19,6 +19,7 @@ $factory->define(Recipe::class, function (Faker $faker) {
         'ibu' => $faker->randomNumber(2),
         'og' => '1.0' . $faker->randomNumber(2),
         'fg' => '1.0' . $faker->randomNumber(2),
+        'srm' => $faker->numberBetween(1, 20),
         'adjuncts' => $faker->words(8, true),
         'user_id' => factory(User::class),
         'beer_id' => factory(Beer::class),

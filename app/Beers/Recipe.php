@@ -19,6 +19,7 @@ class Recipe extends Model
         'ibu',
         'og',
         'fg',
+        'srm',
         'adjuncts',
         'beer_id',
     ];

@@ -9,7 +9,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class HopAddition extends Model
 {
-    protected $guarded = [];
+    protected $fillable = [
+        'hop_id',
+        'recipe_id',
+        'hop_type_id',
+        'grams',
+        'minute',
+    ];
 
     public function recipe()
     {
