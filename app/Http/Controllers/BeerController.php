@@ -61,7 +61,13 @@ class BeerController extends Controller
     public function show(Beer $beer)
     {
         $beer->load([
-            'style'
+            'style',
+            'recipes',
+            'recipes.hop_additions',
+            'recipes.hop_additions.hop',
+            'recipes.hop_additions.type',
+            'recipes.malt_additions.malt',
+            'recipes.yeast_additions.yeast',
         ]);
 
         return view('beers.show', [

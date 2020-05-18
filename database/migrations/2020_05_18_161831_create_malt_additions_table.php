@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHopRecipeTable extends Migration
+class CreateMaltAdditionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateHopRecipeTable extends Migration
      */
     public function up()
     {
-        Schema::create('hop_recipe', function (Blueprint $table) {
-            $table->integer('hop_id')->unsigned();
+        Schema::create('malt_additions', function (Blueprint $table) {
+            $table->id();
+            $table->integer('malt_id')->unsigned();
             $table->integer('recipe_id')->unsigned();
-            $table->integer('hop_type_id')->unsigned();
-            $table->integer('grams');
-            $table->integer('minute');
+            $table->timestamps();
         });
     }
 
@@ -29,6 +28,6 @@ class CreateHopRecipeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('hop_recipe');
+        Schema::dropIfExists('malt_additions');
     }
 }
