@@ -7,6 +7,8 @@ use App\Malts\Malt;
 use App\Beers\Beer;
 use App\Yeasts\Yeast;
 use App\Beers\HopAddition;
+use App\Beers\MaltAddition;
+use App\Beers\YeastAddition;
 use Illuminate\Database\Eloquent\Model;
 
 class Recipe extends Model
@@ -30,9 +32,9 @@ class Recipe extends Model
         return $this->belongsTo(Beer::class);
     }
 
-    public function malts()
+    public function malt_additions()
     {
-        return $this->belongsToMany(Malt::class);
+        return $this->hasMany(MaltAddition::class);
     }
 
     public function hop_additions()
@@ -40,8 +42,8 @@ class Recipe extends Model
         return $this->hasMany(HopAddition::class);
     }
 
-    public function yeasts()
+    public function yeast_additions()
     {
-        return $this->belongsToMany(Yeast::class);
+        return $this->hasMany(YeastAddition::class);
     }
 }
