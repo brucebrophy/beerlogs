@@ -3,9 +3,14 @@
 @section('content')
 	<div class="container mx-auto">
 		<div class="row">
-			<div class="md:col-7">
+			<div class="md:col-6">
 				<div class="rounded-lg shadow-lg bg-white">
 					<div class="p-8">
+						@can('update', $beer)
+							<div class="flex -mt-2 mb-4">
+								<a class="font-mono uppercase text-indigo-600 hover:text-indigo-900" href="{{ route('beers.edit', $beer->slug) }}">Edit</a>
+							</div>
+						@endcan
 						<span class="uppercase font-mono text-indigo-400 font-bold text-sm">{{ $beer->style->name }}</span>
 						<h1 class="font-mono text-2xl font-bold leading-tight capitalize my-4 text-indigo-600">{{ $beer->name }}</h1>
 						<p class="font-mono leading-normal">{{ $beer->notes }}</p>
@@ -19,7 +24,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="md:col-5 mt-6 md:mt-0">
+			<div class="md:col-6 mt-6 md:mt-0">
 				<div class="rounded-lg shadow-lg bg-white">
 					<div class="p-8">
 						<div class="text-center mb-4">
