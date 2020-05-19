@@ -30,11 +30,11 @@ class HopTypeSeeder extends Seeder
                 'slug' => 'pellet-hops',
             ],
             [
-                'name' => 'Hops Extract',
+                'name' => 'Hop Extract',
                 'slug' => 'hops-extract',
             ],
             [
-                'name' => 'Hops Powder',
+                'name' => 'Hop Powder',
                 'slug' => 'hops-powder',
             ],
         ];

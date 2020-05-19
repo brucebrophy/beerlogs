@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Beers\Beer;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreBeer;
+use App\Http\Requests\UpdateBeer;
 
 class BeerController extends Controller
 {
@@ -42,7 +44,7 @@ class BeerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreBeer $request)
     {
         $beer = new Beer;
         $beer->fill($request->input());
@@ -102,7 +104,7 @@ class BeerController extends Controller
      * @param  \App\Beer  $beer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Beer $beer)
+    public function update(UpdateBeer $request, Beer $beer)
     {
         $this->authorize('update', $beer);
 
