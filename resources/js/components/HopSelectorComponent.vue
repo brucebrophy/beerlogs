@@ -37,12 +37,8 @@
 					<div class="lg:col-4">
 						<div class="mb-2 font-mono block">
 							<label class="text-indigo-600 uppercase" :for="`unit-${n}`">Unit</label>
-							<select :name="`hops[${n}][unit]`" :id="`unit-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
-								<option>g</option>
-								<option>kg</option>
-								<option>oz</option>
-								<option>lb</option>
-								<option>ml</option>
+							<select :name="`hops[${n}][unit_id]`" :id="`unit-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
+								<option v-for="unit in filteredUnits" :key="unit.id" :value="unit.id">{{ unit.symbol }}</option>
 							</select>
 						</div>
 					</div>
@@ -68,8 +64,16 @@ export default {
 		return {
 			numberOfHopAdditions: 1,
 			hops: [],
-			types: []
+			types: [],
+			units: []
 		};
+	},
+	computed: {
+		filteredUnits() {
+			return this.units.filter(unit => {
+				return ["oz", "lb", "g", "kg", "ml"].includes(unit.symbol);
+			});
+		}
 	},
 	methods: {
 		getHopData() {
@@ -88,6 +92,16 @@ export default {
 				.then(data => {
 					let { types } = data.data;
 					this.types = types;
+				})
+				.catch(error => {
+					console.log(error);
+				});
+
+			axios
+				.get("/api/units")
+				.then(data => {
+					let { units } = data.data;
+					this.units = units;
 				})
 				.catch(error => {
 					console.log(error);
