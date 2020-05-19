@@ -24,7 +24,7 @@ class StoreBeer extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:beers|max:255',
+            'name' => 'required|max:255',
             'description' => 'required',
             'notes' => 'required|max:255',
             'style_id' => 'required',
