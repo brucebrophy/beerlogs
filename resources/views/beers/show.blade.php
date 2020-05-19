@@ -2,15 +2,22 @@
 
 @section('content')
 	<div class="container mx-auto">
+		@can('update', $beer)
+			<div class="row">
+				<div class="col-12">
+					<div class="flex justify-end mb-6">
+						<a href="{{ route('beers.edit', $beer->slug) }}" class="px-8 py-3 mr-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Beer</a>	
+						@if(count($beer->recipes))
+							<a href="{{ route('beers.recipes.edit', [$beer->slug, $current_recipe->id]) }}" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Recipe</a>
+						@endif
+					</div>
+				</div>
+			</div>
+		@endcan
 		<div class="row">
 			<div class="md:col-6">
 				<div class="rounded-lg shadow-lg bg-white">
 					<div class="p-8">
-						@can('update', $beer)
-							<div class="flex -mt-2 mb-4">
-								<a class="font-mono uppercase text-indigo-600 hover:text-indigo-900" href="{{ route('beers.edit', $beer->slug) }}">Edit</a>
-							</div>
-						@endcan
 						<span class="uppercase font-mono text-indigo-400 font-bold text-sm">{{ $beer->style->name }}</span>
 						<h1 class="font-mono text-2xl font-bold leading-tight capitalize my-4 text-indigo-600">{{ $beer->name }}</h1>
 						<p class="font-mono leading-normal">{{ $beer->notes }}</p>

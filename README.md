@@ -6,6 +6,8 @@
 - Brewed Counts for Beers
 
 ## Issues
+- Add Gates for Recipes
+- Add Validation for Requests
 - Tests for Recipe Creation
 - Beer/Recipe UI/UX
 - Add Units to Application for coversion of recipes
