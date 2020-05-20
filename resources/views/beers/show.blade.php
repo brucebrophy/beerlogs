@@ -24,10 +24,28 @@
 						<h1 class="font-mono text-2xl font-bold leading-tight capitalize my-4 text-indigo-600">{{ $beer->name }}</h1>
 						<p class="font-mono leading-normal">{{ $beer->notes }}</p>
 						<p class="mt-4 leading-normal">{!! nl2br($beer->description) !!}</p>
+						
 						<ul class="mt-4">
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Malts:</span> 2-Row (Rahr), Golden Promise, Pale Ale, Pale Wheat, Carafoam, Chit, Acidulated</li>
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Hops:</span> Cascade, Simcoe, Amarillo, Citra</li>
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Yeast:</span> Vermont Ale</li>
+							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Malts:</span> 
+								@foreach ($recipe->malt_additions as $malt_addition)
+									<span>
+										{{ $malt_addition->malt->name }}@if(!$loop->last),@endif
+									</span>
+								@endforeach
+							</li>
+							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Hops:</span> 
+								@foreach ($recipe->hop_additions as $hop_addition)
+									<span>
+										{{ $hop_addition->hop->name }}@if(!$loop->last),@endif
+									</span>
+								@endforeach
+							</li>
+							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Yeast:</span> 
+								@foreach ($recipe->yeast_additions as $yeast_addition)
+									<span>
+										{{ $yeast_addition->yeast->name }} ({{ $yeast_addition->yeast->strain }})@if(!$loop->last),@endif
+									</span>
+								@endforeach</li>
 							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Adjuncts:</span> Lactose, Dextrose, Key Lime Juice Concentrate, Vanilla Bean</li>
 						</ul>
 					</div>
@@ -46,21 +64,21 @@
 							<div class="flex justify-around pt-4 pb-2 px-4">
 								<div class="w-full text-center">
 									<span class="block text-white font-mono text-xl">IBU</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">40</span>
+									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->ibu }}</span>
 								</div>
 								<div class="w-full text-center">
 									<span class="block text-white font-mono text-xl">ABV</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">6%</span>
+									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->abv }}%</span>
 								</div>
 							</div>
 							<div class="flex justify-around pt-2 pb-4 px-4">
 								<div class="w-full text-center">
 									<span class="block text-white font-mono text-xl">OG</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">1.07</span>
+									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->og }}</span>
 								</div>
 								<div class="w-full text-center">
 									<span class="block text-white font-mono text-xl">FG</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">1.02</span>
+									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->fg }}</span>
 								</div>
 							</div>
 						</div>

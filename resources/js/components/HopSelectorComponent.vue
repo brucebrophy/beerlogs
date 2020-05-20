@@ -43,6 +43,16 @@
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="mb-2 font-mono block">
+							<label class="text-indigo-600 uppercase" :for="`method-${n}`">Hopping Method</label>
+							<select :name="`hops[${n}][hop_method_id]`" :id="`method-${n}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
+								<option v-for="method in methods" :key="method.id" :value="method.id" :selected="method.name === 'Boil'">{{ method.name }}</option>
+							</select>
+						</div>
+					</div>
+				</div>
 				<hr v-if="numberOfHopAdditions > n" class="my-3">
 			</div>
 			<div class="row">
@@ -65,6 +75,7 @@ export default {
 			numberOfHopAdditions: 1,
 			hops: [],
 			types: [],
+			methods: [],
 			units: []
 		};
 	},
@@ -102,6 +113,16 @@ export default {
 				.then(data => {
 					let { units } = data.data;
 					this.units = units;
+				})
+				.catch(error => {
+					console.log(error);
+				});
+
+			axios
+				.get("/api/hops/methods")
+				.then(data => {
+					let { methods } = data.data;
+					this.methods = methods;
 				})
 				.catch(error => {
 					console.log(error);

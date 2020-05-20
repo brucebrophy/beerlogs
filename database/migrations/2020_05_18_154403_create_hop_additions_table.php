@@ -21,7 +21,7 @@ class CreateHopAdditionsTable extends Migration
             $table->integer('hop_method_id')->unsigned();
             $table->integer('unit_id')->unsigned();
             $table->integer('amount');
-            $table->integer('minute');
+            $table->integer('minute')->nullable();
             $table->timestamps();
         });
     }

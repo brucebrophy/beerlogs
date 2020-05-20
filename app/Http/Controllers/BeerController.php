@@ -77,7 +77,7 @@ class BeerController extends Controller
 
         return view('beers.show', [
             'beer' => $beer,
-            'current_recipe' => $beer->recipes->first() ?? null,
+            'recipe' => $beer->recipes->first() ?? null,
         ]);
     }
 

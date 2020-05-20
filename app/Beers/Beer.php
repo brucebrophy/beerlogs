@@ -52,7 +52,7 @@ class Beer extends Model
 
     public function recipes()
     {
-        return $this->hasMany(Recipe::class);
+        return $this->hasMany(Recipe::class)->latest();
     }
 
     public function style()
