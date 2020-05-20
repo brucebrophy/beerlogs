@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('malts', 'Api\MaltController@index');
 Route::get('hops', 'Api\HopController@index');
 Route::get('hops/types', 'Api\HopTypeController@index');
+Route::get('hops/methods', 'Api\HopMethodController@index');
 Route::get('units', 'Api\UnitController@index');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {

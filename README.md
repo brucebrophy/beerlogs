@@ -1,4 +1,5 @@
 ## Features (To be completed)
+- HopMethod (https://www.beercraftr.com/introduction-hopping-methods/)
 - Filtering of Beers by Style
 - Filtering of Beers by SRM, ABV, IBU
 - Comments 

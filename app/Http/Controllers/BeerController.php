@@ -67,10 +67,10 @@ class BeerController extends Controller
     {
         $beer->load([
             'style',
-            'recipes',
-            'recipes.hop_additions',
             'recipes.hop_additions.hop',
             'recipes.hop_additions.type',
+            'recipes.hop_additions.method',
+            'recipes.hop_additions.unit',
             'recipes.malt_additions.malt',
             'recipes.yeast_additions.yeast',
         ]);

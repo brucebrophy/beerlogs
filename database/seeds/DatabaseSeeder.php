@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(BeerStyleSeeder::class);
         $this->call(HopSeeder::class);
         $this->call(HopTypeSeeder::class);
+        $this->call(HopMethodSeeder::class);
         $this->call(MaltSeeder::class);
         $this->call(YeastSeeder::class);
 
