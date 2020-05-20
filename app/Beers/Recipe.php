@@ -24,10 +24,6 @@ class Recipe extends Model
         'beer_id',
     ];
 
-    protected $casts = [
-        'instructions' => 'object'
-    ];
-
     public function beer()
     {
         return $this->belongsTo(Beer::class);

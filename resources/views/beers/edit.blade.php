@@ -23,9 +23,15 @@
 						{!! Form::open(['route' => ['beers.destroy', $beer->slug], 'method' => 'DELETE']) !!}
 							{{ Form::label('name', 'Delete Record', ['class' => 'font-mono font-semibold text-red-600 block']) }}
 							<div class="flex align-items-center mt-2">
-								{{ Form::text('name', null, ['class' => 'form-input font-mono w-full border', 'placeholder' => 'Type ' . $beer->name . ' to confirm delete']) }}
+								{{ Form::text('confirm_name', null, ['class' => 'form-input font-mono w-full border', 'placeholder' => 'Type ' . $beer->name . ' to confirm delete']) }}
 								<button type="submit" class="px-8 py-3 border-2 border-red-600 text-red-600 font-mono hover:bg-red-600 hover:text-white font-bold tracking-wide bg-white ml-2">Delete</button>
 							</div>
+							@error('confirm_name')
+								<span class="block mt-2 font-mono text-sm text-red-600">{{ $message }}</span>
+							@enderror
+							@if(session('error'))
+								<span class="block mt-2 font-mono text-sm text-red-600">{{ session('error') }}</span>
+							@endif
 						{!! Form::close() !!}
 					</div>
 				</div>

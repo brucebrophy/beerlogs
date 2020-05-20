@@ -4,8 +4,8 @@
 	<div class="container mx-auto pb-8">
 		<div class="md:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:col-gap-6 md:row-gap-6">
 			@foreach ($beers as $beer)
-				<div class="flex h-full">
-					<a href="{{ route('beers.show', $beer->slug) }}" class="flex rounded-lg my-2 md:my-0 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
+				<div class="flex">
+					<a href="{{ route('beers.show', $beer->slug) }}" class="flex w-full rounded-lg my-2 md:my-0 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
 						<div class="flex flex-col justify-between px-6 py-6">
 							<div>
 								<span class="uppercase text-indigo-400 font-mono font-bold text-xs">{{ $beer->style->name }}</span>
@@ -27,6 +27,14 @@
 					</a>
 				</div>		
 			@endforeach
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="mt-8">
+					{{ $beers->links() }}
+				</div>
+			</div>
 		</div>
 	</div>
 @endsection

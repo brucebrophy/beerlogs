@@ -1968,6 +1968,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {},
   mounted: function mounted() {
@@ -1977,8 +1983,17 @@ __webpack_require__.r(__webpack_exports__);
     return {
       numberOfHopAdditions: 1,
       hops: [],
-      types: []
+      types: [],
+      methods: [],
+      units: []
     };
+  },
+  computed: {
+    filteredUnits: function filteredUnits() {
+      return this.units.filter(function (unit) {
+        return ["oz", "lb", "g", "kg", "ml"].includes(unit.symbol);
+      });
+    }
   },
   methods: {
     getHopData: function getHopData() {
@@ -1993,6 +2008,18 @@ __webpack_require__.r(__webpack_exports__);
       axios.get("/api/hops/types").then(function (data) {
         var types = data.data.types;
         _this.types = types;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+      axios.get("/api/units").then(function (data) {
+        var units = data.data.units;
+        _this.units = units;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+      axios.get("/api/hops/methods").then(function (data) {
+        var methods = data.data.methods;
+        _this.methods = methods;
       })["catch"](function (error) {
         console.log(error);
       });
@@ -19905,21 +19932,59 @@ var render = function() {
                         staticClass:
                           "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
                         attrs: {
-                          name: "hops[" + n + "][unit]",
+                          name: "hops[" + n + "][unit_id]",
                           id: "unit-" + n
                         }
                       },
-                      [
-                        _c("option", [_vm._v("g")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("kg")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("oz")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("lb")]),
-                        _vm._v(" "),
-                        _c("option", [_vm._v("ml")])
-                      ]
+                      _vm._l(_vm.filteredUnits, function(unit) {
+                        return _c(
+                          "option",
+                          { key: unit.id, domProps: { value: unit.id } },
+                          [_vm._v(_vm._s(unit.symbol))]
+                        )
+                      }),
+                      0
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-12" }, [
+                  _c("div", { staticClass: "mb-2 font-mono block" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "text-indigo-600 uppercase",
+                        attrs: { for: "method-" + n }
+                      },
+                      [_vm._v("Hopping Method")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "select",
+                      {
+                        staticClass:
+                          "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
+                        attrs: {
+                          name: "hops[" + n + "][hop_method_id]",
+                          id: "method-" + n
+                        }
+                      },
+                      _vm._l(_vm.methods, function(method) {
+                        return _c(
+                          "option",
+                          {
+                            key: method.id,
+                            domProps: {
+                              value: method.id,
+                              selected: method.name === "Boil"
+                            }
+                          },
+                          [_vm._v(_vm._s(method.name))]
+                        )
+                      }),
+                      0
                     )
                   ])
                 ])

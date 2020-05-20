@@ -40,7 +40,7 @@ class Beer extends Model
     {
         return [
             'slug' => [
-                'source' => ['user.username', 'name']
+                'source' => ['name', 'user.username']
             ]
         ];
     }
@@ -52,7 +52,7 @@ class Beer extends Model
 
     public function recipes()
     {
-        return $this->hasMany(Recipe::class);
+        return $this->hasMany(Recipe::class)->latest();
     }
 
     public function style()

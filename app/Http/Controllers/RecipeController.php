@@ -79,9 +79,9 @@ class RecipeController extends Controller
      * @param  \App\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function edit(Recipe $recipe)
+    public function edit(Beer $beer, Recipe $recipe)
     {
-        //
+        dd($recipe->toArray());
     }
 
     /**

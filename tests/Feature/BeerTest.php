@@ -2,10 +2,10 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
 use App\User;
-use BeerStyleSeeder;
+use Tests\TestCase;
 use App\Beers\Beer;
+use BeerStyleSeeder;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -179,11 +179,12 @@ class BeerTest extends TestCase
             'user_id' => $user->id
         ]);
 
+        $beer->name = 'Testing Beer Update';
+
         // act
-        $response = $this->actingAs($user)
-            ->patch(route('beers.update', $beer->slug), [
-                'name' => 'Testing Beer Update',
-            ]);
+        $response = $this->followingRedirects()
+            ->actingAs($user)
+            ->patch(route('beers.update', $beer->slug), $beer->toArray());
 
         // assert
         $response
@@ -232,7 +233,7 @@ class BeerTest extends TestCase
         $response = $this->followingRedirects()
             ->actingAs($user)
             ->delete(route('beers.destroy', $beer->slug), [
-                'name' => $beer->name,
+                'confirm_name' => $beer->name,
             ]);
 
         // assert

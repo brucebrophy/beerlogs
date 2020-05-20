@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Beers\Beer;
+use App\Beers\Style;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreBeer;
+use App\Http\Requests\UpdateBeer;
 
 class BeerController extends Controller
 {
@@ -31,8 +34,10 @@ class BeerController extends Controller
     public function create()
     {
         $beer = new Beer;
+        $styles = Style::orderBy('name')->pluck('name', 'id');
         return view('beers.create', [
             'beer' => $beer,
+            'styles' => $styles,
         ]);
     }
 
@@ -42,7 +47,7 @@ class BeerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreBeer $request)
     {
         $beer = new Beer;
         $beer->fill($request->input());
@@ -62,16 +67,17 @@ class BeerController extends Controller
     {
         $beer->load([
             'style',
-            'recipes',
-            'recipes.hop_additions',
             'recipes.hop_additions.hop',
             'recipes.hop_additions.type',
+            'recipes.hop_additions.method',
+            'recipes.hop_additions.unit',
             'recipes.malt_additions.malt',
             'recipes.yeast_additions.yeast',
         ]);
 
         return view('beers.show', [
             'beer' => $beer,
+            'recipe' => $beer->recipes->first() ?? null,
         ]);
     }
 
@@ -88,9 +94,11 @@ class BeerController extends Controller
         $beer->load([
             'style'
         ]);
+        $styles = Style::orderBy('name')->pluck('name', 'id');
 
         return view('beers.edit', [
             'beer' => $beer,
+            'styles' => $styles,
         ]);
     }
 
@@ -101,15 +109,13 @@ class BeerController extends Controller
      * @param  \App\Beer  $beer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Beer $beer)
+    public function update(UpdateBeer $request, Beer $beer)
     {
         $this->authorize('update', $beer);
 
         $beer->update($request->input());
 
-        return view('beers.show', [
-            'beer' => $beer,
-        ]);
+        return redirect()->route('beers.show', $beer->slug);
     }
 
     /**
@@ -123,10 +129,10 @@ class BeerController extends Controller
         $this->authorize('delete', $beer);
 
         $request->validate([
-            'name' => 'required'
+            'confirm_name' => 'required'
         ]);
 
-        if ($request->input('name') !== $beer->name) {
+        if ($request->input('confirm_name') !== $beer->name) {
             return redirect()
                 ->route('beers.edit', $beer->slug)
                 ->with('error', 'The typed name does not match.');

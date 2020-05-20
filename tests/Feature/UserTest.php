@@ -63,12 +63,11 @@ class UserTest extends TestCase
     {
         // arrange 
         $user = factory(User::class)->create();
+        $user->name = 'Testing McTest';
 
         // act
         $response = $this->actingAs($user)
-            ->patch(route('users.update', $user->username), [
-                'name' => 'Testing McTest'
-            ]);
+            ->patch(route('users.update', $user->username), $user->toArray());
 
         // assert
         $response->status(200);
@@ -127,7 +126,7 @@ class UserTest extends TestCase
         // act
         $response = $this->actingAs($user)
             ->delete(route('users.destroy', $user->username), [
-                'username' => $user->username
+                'confirm_email' => $user->email
             ]);
     
         // assert
@@ -148,7 +147,7 @@ class UserTest extends TestCase
         // act
         $response = $this->actingAs($badUser)
             ->delete(route('users.destroy', $user->username), [
-                'username' => $user->username
+                'confirm_email' => $user->email
             ]);
     
         // assert
