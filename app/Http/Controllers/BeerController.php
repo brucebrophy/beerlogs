@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Beers\Beer;
+use App\Beers\Style;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreBeer;
 use App\Http\Requests\UpdateBeer;
@@ -33,8 +34,10 @@ class BeerController extends Controller
     public function create()
     {
         $beer = new Beer;
+        $styles = Style::orderBy('name')->pluck('name', 'id');
         return view('beers.create', [
             'beer' => $beer,
+            'styles' => $styles,
         ]);
     }
 
@@ -91,9 +94,11 @@ class BeerController extends Controller
         $beer->load([
             'style'
         ]);
+        $styles = Style::orderBy('name')->pluck('name', 'id');
 
         return view('beers.edit', [
             'beer' => $beer,
+            'styles' => $styles,
         ]);
     }
 
@@ -110,9 +115,7 @@ class BeerController extends Controller
 
         $beer->update($request->input());
 
-        return view('beers.show', [
-            'beer' => $beer,
-        ]);
+        return redirect()->route('beers.show', $beer->slug);
     }
 
     /**
@@ -126,10 +129,10 @@ class BeerController extends Controller
         $this->authorize('delete', $beer);
 
         $request->validate([
-            'name' => 'required'
+            'confirm_name' => 'required'
         ]);
 
-        if ($request->input('name') !== $beer->name) {
+        if ($request->input('confirm_name') !== $beer->name) {
             return redirect()
                 ->route('beers.edit', $beer->slug)
                 ->with('error', 'The typed name does not match.');

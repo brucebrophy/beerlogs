@@ -2,8 +2,17 @@
 
 @section('content')
 	<div class="container mx-auto">
+		@can('update', $user)
+			<div class="row">
+				<div class="col-12">
+					<div class="flex justify-end mb-6">
+						<a href="{{ route('users.edit', $user) }}" class="px-8 py-3 mr-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Profile</a>		
+					</div>
+				</div>
+			</div>
+		@endcan
 		<div class="row">
-			<div class="md:col-5">
+			<div class="md:col-6">
 				<div class="bg-indigo-600 rounded-lg shadow-lg">
 					<div class="p-8">
 						<div class="mx-auto inline-block">
