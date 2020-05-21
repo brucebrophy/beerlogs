@@ -8,7 +8,7 @@
 					<div class="flex justify-end mb-6">
 						<a href="{{ route('beers.edit', $beer->slug) }}" class="px-8 py-3 mr-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Beer</a>	
 						@if(count($beer->recipes))
-							<a href="{{ route('beers.recipes.edit', [$beer->slug, $current_recipe->id]) }}" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Recipe</a>
+							<a href="{{ route('beers.recipes.edit', [$beer->slug, $recipe->id]) }}" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Recipe</a>
 						@else
 							<a href="{{ route('beers.recipes.create', $beer->slug) }}" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Add Recipe</a>
 						@endif
@@ -25,65 +25,69 @@
 						<p class="font-mono leading-normal">{{ $beer->notes }}</p>
 						<p class="mt-4 leading-normal">{!! nl2br($beer->description) !!}</p>
 						
-						<ul class="mt-4">
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Malts:</span> 
-								@foreach ($recipe->malt_additions as $malt_addition)
-									<span>
-										{{ $malt_addition->malt->name }}@if(!$loop->last),@endif
-									</span>
-								@endforeach
-							</li>
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Hops:</span> 
-								@foreach ($recipe->hop_additions as $hop_addition)
-									<span>
-										{{ $hop_addition->hop->name }}@if(!$loop->last),@endif
-									</span>
-								@endforeach
-							</li>
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Yeast:</span> 
-								@foreach ($recipe->yeast_additions as $yeast_addition)
-									<span>
-										{{ $yeast_addition->yeast->name }} ({{ $yeast_addition->yeast->strain }})@if(!$loop->last),@endif
-									</span>
-								@endforeach</li>
-							<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Adjuncts:</span> Lactose, Dextrose, Key Lime Juice Concentrate, Vanilla Bean</li>
-						</ul>
+						@if($recipe)
+							<ul class="mt-4">
+								<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Malts:</span> 
+									@foreach ($recipe->malt_additions as $malt_addition)
+										<span>
+											{{ $malt_addition->malt->name }}@if(!$loop->last),@endif
+										</span>
+									@endforeach
+								</li>
+								<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Hops:</span> 
+									@foreach ($recipe->hop_additions as $hop_addition)
+										<span>
+											{{ $hop_addition->hop->name }}@if(!$loop->last),@endif
+										</span>
+									@endforeach
+								</li>
+								<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Yeast:</span> 
+									@foreach ($recipe->yeast_additions as $yeast_addition)
+										<span>
+											{{ $yeast_addition->yeast->name }} ({{ $yeast_addition->yeast->strain }})@if(!$loop->last),@endif
+										</span>
+									@endforeach</li>
+								<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Adjuncts:</span> Lactose, Dextrose, Key Lime Juice Concentrate, Vanilla Bean</li>
+							</ul>
+						@endif
 					</div>
 				</div>
 			</div>
 			<div class="md:col-6 mt-6 md:mt-0">
-				<div class="rounded-lg shadow-lg bg-white">
-					<div class="p-8">
-						<div class="text-center mb-4">
-							<h2 class="uppercase font-mono text-xl">Recipe</h2>
-							<h4 class="mt-2">
-								<a class="text-indigo-600 hover:text-indigo-800" href="{{ route('users.show', $beer->user->username) }}">{{ '@' . $beer->user->username }}</a>
-							</h4>
-						</div>
-						<div class="rounded bg-indigo-600">
-							<div class="flex justify-around pt-4 pb-2 px-4">
-								<div class="w-full text-center">
-									<span class="block text-white font-mono text-xl">IBU</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->ibu }}</span>
-								</div>
-								<div class="w-full text-center">
-									<span class="block text-white font-mono text-xl">ABV</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->abv }}%</span>
-								</div>
+				@if($recipe)
+					<div class="rounded-lg shadow-lg bg-white">
+						<div class="p-8">
+							<div class="text-center mb-4">
+								<h2 class="uppercase font-mono text-xl">Recipe</h2>
+								<h4 class="mt-2">
+									<a class="text-indigo-600 hover:text-indigo-800" href="{{ route('users.show', $beer->user->username) }}">{{ '@' . $beer->user->username }}</a>
+								</h4>
 							</div>
-							<div class="flex justify-around pt-2 pb-4 px-4">
-								<div class="w-full text-center">
-									<span class="block text-white font-mono text-xl">OG</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->og }}</span>
+							<div class="rounded bg-indigo-600">
+								<div class="flex justify-around pt-4 pb-2 px-4">
+									<div class="w-full text-center">
+										<span class="block text-white font-mono text-xl">IBU</span>
+										<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->ibu }}</span>
+									</div>
+									<div class="w-full text-center">
+										<span class="block text-white font-mono text-xl">ABV</span>
+										<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->abv }}%</span>
+									</div>
 								</div>
-								<div class="w-full text-center">
-									<span class="block text-white font-mono text-xl">FG</span>
-									<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->fg }}</span>
+								<div class="flex justify-around pt-2 pb-4 px-4">
+									<div class="w-full text-center">
+										<span class="block text-white font-mono text-xl">OG</span>
+										<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->og }}</span>
+									</div>
+									<div class="w-full text-center">
+										<span class="block text-white font-mono text-xl">FG</span>
+										<span class="block mt-2 text-white font-mono font-semibold text-3xl">{{ $recipe->fg }}</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				@endif
 			</div>
 		</div>
 	</div>
