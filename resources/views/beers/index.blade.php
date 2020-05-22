@@ -14,14 +14,16 @@
 								<p class="text-gray-700 text-base mt-2 leading-tight">{{ \Str::limit($beer->description, 90) }}</p>
 							</div>
 							<div>
-								<div class="mt-4 flex justify-between">
-									<span class="font-bold text-gray-600">OG: 1.06</span>
-									<span class="font-bold text-gray-600">FG: 1.002</span>
-								</div>
-								<div class="mt-4 flex justify-between">
-									<span class="font-bold text-gray-600">ABV: 6.0</span>
-									<span class="font-bold text-gray-600">IBU: 35</span>
-								</div>
+								@if($recipe = $beer->recipes->first())
+									<div class="mt-4 flex justify-between">
+										<span class="font-bold text-gray-600">OG: {{ $recipe->og }}</span>
+										<span class="font-bold text-gray-600">FG: {{ $recipe->fg }}</span>
+									</div>
+									<div class="mt-4 flex justify-between">
+										<span class="font-bold text-gray-600">ABV: {{ $recipe->abv }}%</span>
+										<span class="font-bold text-gray-600">IBU: {{ $recipe->ibu }}</span>
+									</div>
+								@endif
 							</div>
 						</div>				
 					</a>

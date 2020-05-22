@@ -13,6 +13,19 @@ class UserTest extends TestCase
 {
     use RefreshDatabase;
 
+    public function setUp(): void
+    {
+        parent::setUp();
+        
+        $this->seed('BeerStyleSeeder');
+        $this->seed('HopSeeder');
+        $this->seed('HopTypeSeeder');
+        $this->seed('HopMethodSeeder');
+        $this->seed('MaltSeeder');
+        $this->seed('YeastSeeder');
+        $this->seed('UnitSeeder');
+    }
+
     public function testGuestsCanViewProfiles()
     {
         // arrange

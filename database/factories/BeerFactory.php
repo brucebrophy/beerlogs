@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 use App\User;
 use App\Beers\Beer;
 use App\Beers\Style;
+use App\Beers\Recipe;
 
 $factory->define(Beer::class, function (Faker $faker) {
     $name = $faker->words(2, true);
@@ -18,4 +19,11 @@ $factory->define(Beer::class, function (Faker $faker) {
         'style_id' => $style->id,
         'user_id' => factory(User::class),
     ];
+});
+
+$factory->afterCreating(Beer::class, function ($beer, $faker) {    
+    factory(Recipe::class)->create([
+        'beer_id' => $beer->id,
+        'user_id' => $beer->user_id,
+    ]);
 });

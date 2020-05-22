@@ -12,11 +12,23 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class BeerTest extends TestCase
 {
     use RefreshDatabase;
-    
+
+    public function setUp(): void
+    {
+        parent::setUp();
+        
+        $this->seed('BeerStyleSeeder');
+        $this->seed('HopSeeder');
+        $this->seed('HopTypeSeeder');
+        $this->seed('HopMethodSeeder');
+        $this->seed('MaltSeeder');
+        $this->seed('YeastSeeder');
+        $this->seed('UnitSeeder');
+    }
+
     public function testNonAuthenticatedUserCanViewIndex()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $beer = factory(Beer::class)->create();
 
         // act
@@ -43,7 +55,6 @@ class BeerTest extends TestCase
     public function testNonAuthenticatedUserCannotCreateRecord()
     {
          // arrange
-        $this->seed(BeerStyleSeeder::class);
         $beer = factory(Beer::class)->make();
 
         // act
@@ -62,7 +73,6 @@ class BeerTest extends TestCase
     public function testNonAuthenticatedUserCannotEditResource()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $beer = factory(Beer::class)->create();
 
         // act
@@ -78,7 +88,6 @@ class BeerTest extends TestCase
     public function testNonAuthenticatedUserCannotDeleteRecord()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $beer = factory(Beer::class)->create();
 
         // act
@@ -116,7 +125,6 @@ class BeerTest extends TestCase
     public function testAuthenticatedUserCanCreateRecord()
     {
          // arrange
-        $this->seed(BeerStyleSeeder::class);
         $user = factory(User::class)->create();
         $beer = factory(Beer::class)->make();
 
@@ -139,7 +147,6 @@ class BeerTest extends TestCase
     public function testAuthenticatedUserCanEditResource()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $user = factory(User::class)->create();
         $beer = factory(Beer::class)->create([
             'user_id' => $user->id
@@ -157,7 +164,6 @@ class BeerTest extends TestCase
     public function testAuthenticatedUserCanOnlyEditOwnedResource()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $user = factory(User::class)->create();
         $beer = factory(Beer::class)->create();
 
@@ -173,7 +179,6 @@ class BeerTest extends TestCase
     public function testAuthenticatedUserCanUpdateResource()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $user = factory(User::class)->create();
         $beer = factory(Beer::class)->create([
             'user_id' => $user->id
@@ -199,7 +204,6 @@ class BeerTest extends TestCase
     public function testAuthenticatedUserCannotDeleteRecordIfNameIsNotConfirmed()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $user = factory(User::class)->create();
         $beer = factory(Beer::class)->create([
             'user_id' => $user->id
@@ -223,7 +227,6 @@ class BeerTest extends TestCase
     public function testAuthenticatedUserCanDeleteResource()
     {
         // arrange
-        $this->seed(BeerStyleSeeder::class);
         $user = factory(User::class)->create();
         $beer = factory(Beer::class)->create([
             'user_id' => $user->id
