@@ -16,13 +16,17 @@ class CreateRecipesTable extends Migration
         Schema::create('recipes', function (Blueprint $table) {
             $table->id();
             $table->text('instructions')->nullable();
-            $table->string('abv')->nullable();
-            $table->string('ibu')->nullable();
-            $table->string('og')->nullable();
-            $table->string('fg')->nullable();
-            $table->string('srm')->nullable();
+            $table->integer('abv')->nullable();
+            $table->integer('ibu')->nullable();
+            $table->float('og', 4, 3)->nullable();
+            $table->float('fg', 4, 3)->nullable();
+            $table->integer('srm')->nullable();
+            $table->integer('batch_size')->nullable();
             $table->text('adjuncts')->nullable();
+            
+            $table->integer('unit_id')->unsigned();
             $table->integer('beer_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
         });
     }

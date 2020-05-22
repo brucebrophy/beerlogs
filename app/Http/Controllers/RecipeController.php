@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 use App\Hops\Hop;
 use App\Malts\Malt;
 use App\Beers\Beer;
+use App\System\Unit;
 use App\Beers\Recipe;
+use App\Http\Requests\StoreRecipeRequest;
 
 class RecipeController extends Controller
 {
@@ -27,9 +29,14 @@ class RecipeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(Beer $beer)
-    {          
+    {   
+        $this->authorize('update', $beer);
+
+        $units = Unit::whereIn('symbol', ['gal', 'l'])->pluck('symbol', 'id');
+
         return view('beers.recipes.create', [
             'beer' => $beer,
+            'units' => $units,
             'recipe' => new Recipe,
         ]);
     }
@@ -40,18 +47,14 @@ class RecipeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Beer $beer)
+    public function store(StoreRecipeRequest $request, Beer $beer)
     {
+        $this->authorize('update', $beer);
+
         $recipe = new Recipe;
-        
-        $recipe->fill($request->only([
-            'abv',
-            'og',
-            'fb',
-            'srm',
-        ]));
-        
+        $recipe->fill($request->all());
         $recipe->beer_id = $beer->id;
+        $recipe->user_id = auth()->user()->id;
         
         $recipe->save();
 
@@ -81,6 +84,8 @@ class RecipeController extends Controller
      */
     public function edit(Beer $beer, Recipe $recipe)
     {
+        $this->authorize('update', $recipe);
+
         dd($recipe->toArray());
     }
 
@@ -93,7 +98,7 @@ class RecipeController extends Controller
      */
     public function update(Request $request, Recipe $recipe)
     {
-        //
+         $this->authorize('update', $recipe);
     }
 
     /**
@@ -104,6 +109,6 @@ class RecipeController extends Controller
      */
     public function destroy(Recipe $recipe)
     {
-        //
+         $this->authorize('delete', $recipe);
     }
 }

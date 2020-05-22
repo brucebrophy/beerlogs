@@ -2,8 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
+use App\User;
 use App\Malts\Malt;
 use App\Beers\Beer;
+use App\System\Unit;
 use App\Yeasts\Yeast;
 use App\Beers\Recipe;
 use App\Beers\HopAddition;
@@ -16,11 +18,14 @@ $factory->define(Recipe::class, function (Faker $faker) {
         'instructions' => $faker->words(350, true),
         'abv' => $faker->randomDigit,
         'ibu' => $faker->randomNumber(2),
-        'og' => '1.0' . $faker->randomNumber(2),
-        'fg' => '1.0' . $faker->randomNumber(2),
+        'og' => '1.0' . $faker->numberBetween(40, 50),
+        'fg' => '1.0' . $faker->numberBetween(10, 15),
         'srm' => $faker->numberBetween(1, 20),
+        'batch_size' => $faker->numberBetween(1, 5),
         'adjuncts' => $faker->words(8, true),
+        'unit_id' => Unit::where('symbol', 'gal')->first()->id,
         'beer_id' => factory(Beer::class),
+        'user_id' => factory(User::class),
     ];
 });
 

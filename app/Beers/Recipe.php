@@ -5,6 +5,7 @@ namespace App\Beers;
 use App\Hops\Hop;
 use App\Malts\Malt;
 use App\Beers\Beer;
+use App\System\Unit;
 use App\Yeasts\Yeast;
 use App\Beers\HopAddition;
 use App\Beers\MaltAddition;
@@ -20,9 +21,17 @@ class Recipe extends Model
         'og',
         'fg',
         'srm',
+        'batch_size',
         'adjuncts',
+        'unit_id',
+        'user_id',
         'beer_id',
     ];
+
+    public function unit()
+    {
+        return $this->belongsTo(Unit::class);
+    }
 
     public function beer()
     {

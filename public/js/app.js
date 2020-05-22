@@ -1974,6 +1974,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {},
   mounted: function mounted() {
@@ -19785,6 +19791,8 @@ var render = function() {
         "rounded-lg my-2 md:my-0 overflow-hidden border border-gray-200 shadow-md bg-white"
     },
     [
+      _vm._m(0),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "p-6" },
@@ -19998,20 +20006,37 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col" }, [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "px-8 py-3 mt-2 d-block w-full border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
-                  attrs: { type: "button" },
-                  on: {
-                    click: function($event) {
-                      _vm.numberOfHopAdditions++
+              _c("div", { staticClass: "flex" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "px-8 py-3 mt-2 mr-2 w-full inline-block border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
+                    attrs: { type: "button" },
+                    on: {
+                      click: function($event) {
+                        _vm.numberOfHopAdditions++
+                      }
                     }
-                  }
-                },
-                [_vm._v("Add Hops")]
-              )
+                  },
+                  [_vm._v("+")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "px-8 py-3 mt-2 w-full inline-block border-2 border-red-600 text-red-600 font-mono hover:bg-red-600 hover:text-white font-bold tracking-wide bg-white",
+                    attrs: { type: "button" },
+                    on: {
+                      click: function($event) {
+                        _vm.numberOfHopAdditions--
+                      }
+                    }
+                  },
+                  [_vm._v("-")]
+                )
+              ])
             ])
           ])
         ],
@@ -20020,7 +20045,27 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "py-3 flex justify-center bg-indigo-600" },
+      [
+        _c(
+          "h4",
+          {
+            staticClass:
+              "font-mono text-white font-bold tracking-wider uppercase"
+          },
+          [_vm._v("Hops")]
+        )
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 

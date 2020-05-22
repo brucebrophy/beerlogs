@@ -1,5 +1,8 @@
 <template>
 	<div class="rounded-lg my-2 md:my-0 overflow-hidden border border-gray-200 shadow-md bg-white">
+		<div class="py-3 flex justify-center bg-indigo-600">
+			<h4 class="font-mono text-white font-bold tracking-wider uppercase">Hops</h4>
+		</div>
 		<div class="p-6">
 			<div v-for="(n, index) in numberOfHopAdditions" :key="index">
 				<div class="row">
@@ -57,7 +60,10 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<button type="button" @click="numberOfHopAdditions++" class="px-8 py-3 mt-2 d-block w-full border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Add Hops</button>
+					<div class="flex">
+						<button type="button" @click="numberOfHopAdditions++" class="px-8 py-3 mt-2 mr-2 w-full inline-block border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">+</button>
+						<button type="button" @click="numberOfHopAdditions--" class="px-8 py-3 mt-2 w-full inline-block border-2 border-red-600 text-red-600 font-mono hover:bg-red-600 hover:text-white font-bold tracking-wide bg-white">-</button>
+					</div>
 				</div>
 			</div>
 		</div>
