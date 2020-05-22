@@ -19,8 +19,8 @@ class CreateBeersTable extends Migration
             $table->string('slug');
             $table->text('notes');
             $table->text('description');
-            $table->integer('style_id')->unsigned();
-            $table->integer('user_id')->unsigned();
+            $table->bigInteger('style_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
             $table->timestamps();
         });
     }

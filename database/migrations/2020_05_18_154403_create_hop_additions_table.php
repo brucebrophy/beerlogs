@@ -15,11 +15,11 @@ class CreateHopAdditionsTable extends Migration
     {
         Schema::create('hop_additions', function (Blueprint $table) {
             $table->id();
-            $table->integer('hop_id')->unsigned();
-            $table->integer('recipe_id')->unsigned();
-            $table->integer('hop_type_id')->unsigned();
-            $table->integer('hop_method_id')->unsigned();
-            $table->integer('unit_id')->unsigned();
+            $table->bigInteger('hop_id')->unsigned();
+            $table->bigInteger('recipe_id')->unsigned();
+            $table->bigInteger('hop_type_id')->unsigned();
+            $table->bigInteger('hop_method_id')->unsigned();
+            $table->bigInteger('unit_id')->unsigned();
             $table->integer('amount');
             $table->integer('minute')->nullable();
             $table->timestamps();

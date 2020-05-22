@@ -24,9 +24,9 @@ class CreateRecipesTable extends Migration
             $table->integer('batch_size')->nullable();
             $table->text('adjuncts')->nullable();
             
-            $table->integer('unit_id')->unsigned();
-            $table->integer('beer_id')->unsigned();
-            $table->integer('user_id')->unsigned();
+            $table->bigInteger('unit_id')->unsigned();
+            $table->bigInteger('beer_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
             $table->timestamps();
         });
     }

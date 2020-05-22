@@ -18,7 +18,8 @@ class BeerController extends Controller
     public function index()
     {
         $beers = Beer::with([
-            'style'
+            'style',
+            'recipes',
         ])->paginate(20);
 
         return view('beers.index', [
@@ -91,10 +92,10 @@ class BeerController extends Controller
     {
         $this->authorize('update', $beer);
         
+        $styles = Style::orderBy('name')->pluck('name', 'id');
         $beer->load([
             'style'
         ]);
-        $styles = Style::orderBy('name')->pluck('name', 'id');
 
         return view('beers.edit', [
             'beer' => $beer,
