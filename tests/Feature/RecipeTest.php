@@ -54,8 +54,7 @@ class RecipeTest extends TestCase
             ->post(route('beers.store'), $beer->toArray());
 
         // assert
-        $response->assertStatus(200)
-            ->assertSee('Create Recipe');
+        $response->assertStatus(200);
     }
 
     public function testUserCanCreateRecipe()

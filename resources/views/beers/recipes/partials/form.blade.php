@@ -45,7 +45,7 @@
 					<div class="col-4">
 						<div class="mb-2 font-mono block">
 							{{ Form::label('fg', 'FG', ['class' => 'font-mono text-indigo-600 block uppercase']) }}
-							{{ Form::text('fg', $recipe->og, ['class' => 'form-input font-mono w-full border mt-2 focus:border-indigo-600', 'placeholder' => 'FG']) }}
+							{{ Form::text('fg', $recipe->fg, ['class' => 'form-input font-mono w-full border mt-2 focus:border-indigo-600', 'placeholder' => 'FG']) }}
 						</div>
 					</div>
 					<div class="col-4">

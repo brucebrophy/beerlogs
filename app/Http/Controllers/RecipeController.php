@@ -93,8 +93,14 @@ class RecipeController extends Controller
     public function edit(Beer $beer, Recipe $recipe)
     {
         $this->authorize('update', $recipe);
-
-        dd($recipe->toArray());
+        
+        $units = Unit::whereIn('symbol', ['gal', 'l'])->pluck('symbol', 'id');
+        
+        return view('beers.recipes.edit', [
+            'beer' => $beer,
+            'units' => $units,
+            'recipe' => $recipe,
+        ]);
     }
 
     /**

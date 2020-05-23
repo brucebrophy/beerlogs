@@ -47,7 +47,7 @@
 											{{ $yeast_addition->yeast->name }} ({{ $yeast_addition->yeast->strain }})@if(!$loop->last),@endif
 										</span>
 									@endforeach</li>
-								<li class="mb-2 leading-normal"><span class="font-mono font-semibold">Adjuncts:</span> Lactose, Dextrose, Key Lime Juice Concentrate, Vanilla Bean</li>
+								{{-- <li class="mb-2 leading-normal"><span class="font-mono font-semibold">Adjuncts:</span> Lactose, Dextrose, Key Lime Juice Concentrate, Vanilla Bean</li> --}}
 							</ul>
 						@endif
 					</div>
@@ -104,6 +104,15 @@
 										<p>
 											{{ $hop_addition->method->name }} - {{ $hop_addition->minute }} min
 										</p>
+									</div>
+								@endforeach
+							</div>
+
+							<div class="mt-5">
+								<h2 class="mb-3 uppercase font-mono text-lg text-center">Yeast</h2>
+								@foreach ($recipe->yeast_additions as $yeast_addition)
+									<div class="mb-3">
+										<h3 class="font-mono font-semibold mb-2">{{ $yeast_addition->yeast->name }} ({{ $yeast_addition->yeast->strain }})</h3>
 									</div>
 								@endforeach
 							</div>
