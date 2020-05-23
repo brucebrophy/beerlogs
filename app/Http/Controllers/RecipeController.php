@@ -62,6 +62,14 @@ class RecipeController extends Controller
             $recipe->hop_additions()->createMany($request->input('hops'));
         }
 
+        if ($request->has('malts')) {
+            $recipe->malt_additions()->createMany($request->input('malts'));
+        }
+
+        if ($request->has('yeasts')) {
+            $recipe->yeast_additions()->createMany($request->input('yeasts'));
+        }
+
         return redirect()->route('beers.show', $beer->slug);
     }
 

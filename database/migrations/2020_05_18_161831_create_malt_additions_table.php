@@ -15,8 +15,10 @@ class CreateMaltAdditionsTable extends Migration
     {
         Schema::create('malt_additions', function (Blueprint $table) {
             $table->id();
-            $table->integer('malt_id')->unsigned();
-            $table->integer('recipe_id')->unsigned();
+            $table->bigInteger('malt_id')->unsigned();
+            $table->bigInteger('recipe_id')->unsigned();
+            $table->bigInteger('unit_id')->unsigned();
+            $table->integer('amount');
             $table->timestamps();
         });
     }

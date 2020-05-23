@@ -1,6 +1,9 @@
 <div class="row">
 	<div class="col-12">
 		<div class="rounded-lg mb-6 overflow-hidden border border-gray-200 shadow-md bg-white">
+			<div class="py-3 flex justify-center bg-indigo-600">
+				<h4 class="font-mono text-white font-bold tracking-wider uppercase">Recipe Details</h4>
+			</div>
 			<div class="p-6">
 				<div class="row">
 					<div class="col-4">
@@ -61,15 +64,21 @@
 	<div class="lg:col-4">
 		<hop-selector-component />
 	</div>
+	<div class="lg:col-4">
+		<malt-selector-component />
+	</div>
+	<div class="lg:col-4">
+		<yeast-selector-component />
+	</div>
 </div>
 
 <div class="row">
 	<div class="col-12">
 		<div class="rounded-lg mt-6 overflow-hidden border border-gray-200 shadow-md bg-white">
-			<div class="p-6">
-				{{ Form::label('instructions', 'Instructions', ['class' => 'font-mono text-indigo-600 block uppercase']) }}
-				{{ Form::textarea('instructions', $recipe->instructions, ['class' => 'form-input font-mono w-full border mt-2 focus:border-indigo-600', 'placeholder' => '']) }}
+			<div class="py-3 flex justify-center bg-indigo-600">
+				<h4 class="font-mono text-white font-bold tracking-wider uppercase">Instructions</h4>
 			</div>
+			{{ Form::textarea('instructions', $recipe->instructions, ['class' => 'form-input font-mono w-full rounded-lg border-0 rounded-t-none focus:border-indigo-600', 'placeholder' => '']) }}
 		</div>
 	</div>
 </div>

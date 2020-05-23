@@ -15,8 +15,8 @@ class CreateYeastAdditionsTable extends Migration
     {
         Schema::create('yeast_additions', function (Blueprint $table) {
             $table->id();
-            $table->integer('yeast_id')->unsigned();
-            $table->integer('recipe_id')->unsigned();
+            $table->bigInteger('yeast_id')->unsigned();
+            $table->bigInteger('recipe_id')->unsigned();
             $table->timestamps();
         });
     }

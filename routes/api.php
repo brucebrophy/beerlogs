@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('yeasts', 'Api\YeastController@index');
 Route::get('malts', 'Api\MaltController@index');
 Route::get('hops', 'Api\HopController@index');
 Route::get('hops/types', 'Api\HopTypeController@index');

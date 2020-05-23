@@ -18,8 +18,8 @@ class CreateRecipesTable extends Migration
             $table->text('instructions')->nullable();
             $table->integer('abv')->nullable();
             $table->integer('ibu')->nullable();
-            $table->float('og', 4, 3)->nullable();
-            $table->float('fg', 4, 3)->nullable();
+            $table->decimal('og', 4, 3)->nullable();
+            $table->decimal('fg', 4, 3)->nullable();
             $table->integer('srm')->nullable();
             $table->integer('batch_size')->nullable();
             $table->text('adjuncts')->nullable();

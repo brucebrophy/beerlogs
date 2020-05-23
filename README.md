@@ -1,5 +1,5 @@
 ## Features (To be completed)
-- HopMethod (https://www.beercraftr.com/introduction-hopping-methods/)
+- User Logs for Beer (tracking changes, taking notes, etc)
 - Filtering of Beers by Style
 - Filtering of Beers by SRM, ABV, IBU
 - Comments 
@@ -10,7 +10,6 @@
 ## Issues
 - Integrate Recipe Data to Beer Details Page
 - Tests for Recipe Creation
-- Add Gates for Recipes
 - Beer/Recipe UI/UX
 - Add Units to Application for coversion of recipes
 - OG/FG Number Fields
