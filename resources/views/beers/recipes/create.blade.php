@@ -3,12 +3,6 @@
 @section('content')
 	{!! Form::open(['route' => ['beers.recipes.store', $beer->slug]]) !!}
 		<div class="container mx-auto">
-			<div class="row">
-				<div class="col-12">
-					<h1>Create Recipe</h1>
-				</div>
-			</div>
-
 			@if ($errors->any())
 				<div class="alert alert-danger">
 					<ul>

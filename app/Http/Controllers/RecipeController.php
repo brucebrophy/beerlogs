@@ -62,6 +62,14 @@ class RecipeController extends Controller
             $recipe->hop_additions()->createMany($request->input('hops'));
         }
 
+        if ($request->has('malts')) {
+            $recipe->malt_additions()->createMany($request->input('malts'));
+        }
+
+        if ($request->has('yeasts')) {
+            $recipe->yeast_additions()->createMany($request->input('yeasts'));
+        }
+
         return redirect()->route('beers.show', $beer->slug);
     }
 
@@ -85,8 +93,14 @@ class RecipeController extends Controller
     public function edit(Beer $beer, Recipe $recipe)
     {
         $this->authorize('update', $recipe);
-
-        dd($recipe->toArray());
+        
+        $units = Unit::whereIn('symbol', ['gal', 'l'])->pluck('symbol', 'id');
+        
+        return view('beers.recipes.edit', [
+            'beer' => $beer,
+            'units' => $units,
+            'recipe' => $recipe,
+        ]);
     }
 
     /**

@@ -135,12 +135,13 @@ class BeerTest extends TestCase
 
         // assert
         $response
-            ->assertStatus(200)
-            ->assertSee('Create Recipe');
+            ->assertStatus(200);
 
         $this->assertDatabaseHas('beers', [
             'name' => $beer->name,
             'notes' => $beer->notes,
+            'style_id' => $beer->style_id,
+            'user_id' => $user->id
         ]);
     }
 

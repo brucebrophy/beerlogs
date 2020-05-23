@@ -73,8 +73,11 @@ class BeerController extends Controller
             'recipes.hop_additions.method',
             'recipes.hop_additions.unit',
             'recipes.malt_additions.malt',
+            'recipes.malt_additions.unit',
             'recipes.yeast_additions.yeast',
         ]);
+
+        // dd($beer->toArray());
 
         return view('beers.show', [
             'beer' => $beer,

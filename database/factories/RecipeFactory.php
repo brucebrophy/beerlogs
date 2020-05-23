@@ -15,7 +15,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Recipe::class, function (Faker $faker) {
     return [
-        'instructions' => $faker->words(350, true),
+        'instructions' => $faker->paragraphs(5, true),
         'abv' => $faker->randomDigit,
         'ibu' => $faker->randomNumber(2),
         'og' => '1.0' . $faker->numberBetween(40, 50),
