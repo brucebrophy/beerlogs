@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	{!! Form::model(['route' => ['beers.recipes.update', $beer->slug, $recipe->id]]) !!}
+	{!! Form::model($recipe, ['route' => ['beers.recipes.update', $beer->slug, $recipe->id], 'method' => 'PATCH']) !!}
 		<div class="container mx-auto">
 			@if ($errors->any())
 				<div class="alert alert-danger">

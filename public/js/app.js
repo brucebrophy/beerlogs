@@ -1983,6 +1983,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     selectedHops: {
@@ -1999,12 +2000,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      numberOfHopAdditions: 1,
+      hopsAdded: [],
       hops: [],
       types: [],
       methods: [],
-      units: [],
-      hopsAdded: []
+      units: []
     };
   },
   computed: {
@@ -19960,6 +19960,29 @@ var render = function() {
         [
           _vm._l(_vm.hopsAdded, function(hop, index) {
             return _c("div", { key: index }, [
+              hop.id
+                ? _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: hop.id,
+                        expression: "hop.id"
+                      }
+                    ],
+                    attrs: { type: "hidden", name: "hops[" + index + "][id]" },
+                    domProps: { value: hop.id },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(hop, "id", $event.target.value)
+                      }
+                    }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
               _c("div", { staticClass: "row" }, [
                 _c("div", { staticClass: "col-12" }, [
                   _c("div", { staticClass: "mb-2 font-mono block" }, [

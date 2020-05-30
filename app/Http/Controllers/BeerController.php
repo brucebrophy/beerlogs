@@ -77,8 +77,6 @@ class BeerController extends Controller
             'recipes.yeast_additions.yeast',
         ]);
 
-        // dd($beer->toArray());
-
         return view('beers.show', [
             'beer' => $beer,
             'recipe' => $beer->recipes->first() ?? null,

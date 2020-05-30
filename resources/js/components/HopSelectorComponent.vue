@@ -5,6 +5,7 @@
 		</div>
 		<div class="p-3">
 			<div v-for="(hop, index) in hopsAdded" :key="index">
+				<input v-if="hop.id" type="hidden" :name="`hops[${index}][id]`" v-model="hop.id">
 				<div class="row">
 					<div class="col-12">
 						<div class="mb-2 font-mono block">
@@ -89,12 +90,11 @@ export default {
 	},
 	data() {
 		return {
-			numberOfHopAdditions: 1,
+			hopsAdded: [],
 			hops: [],
 			types: [],
 			methods: [],
-			units: [],
-			hopsAdded: []
+			units: []
 		};
 	},
 	computed: {

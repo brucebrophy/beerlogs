@@ -9,6 +9,7 @@ use App\Malts\Malt;
 use App\Beers\Beer;
 use App\System\Unit;
 use App\Beers\Recipe;
+use App\Beers\HopAddition;
 use App\Http\Requests\StoreRecipeRequest;
 
 class RecipeController extends Controller
@@ -110,9 +111,17 @@ class RecipeController extends Controller
      * @param  \App\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Recipe $recipe)
+    public function update(Request $request, Beer $beer, Recipe $recipe)
     {
-         $this->authorize('update', $recipe);
+        $this->authorize('update', $recipe);
+
+        $recipe->update($request->all());
+
+        if ($request->has('hops')) {
+            $this->updateHopAdditions($request->get('hops'), $recipe);
+        }
+
+        return redirect()->route('beers.recipes.edit', [$beer->slug, $recipe->id]);
     }
 
     /**
@@ -124,5 +133,26 @@ class RecipeController extends Controller
     public function destroy(Recipe $recipe)
     {
          $this->authorize('delete', $recipe);
+    }
+
+    private function updateHopAdditions($hops, $recipe)
+    {
+        $hops_collection = collect($hops);
+        $hops_collection->each(function($hop) use ($recipe) {
+            $hop = (object) $hop;
+            HopAddition::updateOrCreate(['id' => $hop->id ?? null], [
+                'hop_id' => $hop->hop_id,
+                'recipe_id' => $recipe->id,
+                'hop_type_id' => $hop->hop_type_id,
+                'hop_method_id' => $hop->hop_method_id,
+                'unit_id' => $hop->unit_id,
+                'amount' => $hop->amount,
+                'minute' => $hop->minute,
+            ]);
+        });
+
+        HopAddition::where('recipe_id', $recipe->id)
+            ->whereNotIn('id', $hops_collection->pluck('id'))
+            ->delete();
     }
 }
