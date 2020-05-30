@@ -62,7 +62,9 @@
 
 <div class="row">
 	<div class="lg:col-4">
-		<hop-selector-component />
+		<hop-selector-component 
+			:selected-hops="{{ $recipe->hop_additions }}" 
+		/>
 	</div>
 	<div class="lg:col-4">
 		<malt-selector-component />

@@ -1983,11 +1983,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: {},
+  props: {
+    selectedHops: {
+      type: Array
+    }
+  },
   mounted: function mounted() {
     this.getHopData();
+    this.addHops();
+
+    if (this.selectedHops.length) {
+      this.hopsAdded = this.selectedHops;
+    }
   },
   data: function data() {
     return {
@@ -1995,7 +2003,8 @@ __webpack_require__.r(__webpack_exports__);
       hops: [],
       types: [],
       methods: [],
-      units: []
+      units: [],
+      hopsAdded: []
     };
   },
   computed: {
@@ -2005,10 +2014,23 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     isDisabled: function isDisabled() {
-      return this.numberOfHopAdditions < 2;
+      return this.hopsAdded.length < 2;
     }
   },
   methods: {
+    addHops: function addHops() {
+      this.hopsAdded.push({
+        hop_id: null,
+        hop_type_id: null,
+        hop_method_id: null,
+        minute: null,
+        amount: null,
+        unit_id: null
+      });
+    },
+    removeHops: function removeHops() {
+      this.hopsAdded.pop();
+    },
     getHopData: function getHopData() {
       var _this = this;
 
@@ -19936,7 +19958,7 @@ var render = function() {
         "div",
         { staticClass: "p-3" },
         [
-          _vm._l(_vm.numberOfHopAdditions, function(n, index) {
+          _vm._l(_vm.hopsAdded, function(hop, index) {
             return _c("div", { key: index }, [
               _c("div", { staticClass: "row" }, [
                 _c("div", { staticClass: "col-12" }, [
@@ -19944,11 +19966,38 @@ var render = function() {
                     _c(
                       "select",
                       {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: hop.hop_id,
+                            expression: "hop.hop_id"
+                          }
+                        ],
                         staticClass:
                           "form-select text-gray-700 w-full border focus:border-indigo-600",
                         attrs: {
-                          name: "hops[" + n + "][hop_id]",
-                          id: "hop-" + n
+                          name: "hops[" + index + "][hop_id]",
+                          id: "hop-" + index
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              hop,
+                              "hop_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
                       },
                       [
@@ -19979,7 +20028,7 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "type-" + n }
+                        attrs: { for: "type-" + index }
                       },
                       [_vm._v("Type")]
                     ),
@@ -19987,11 +20036,38 @@ var render = function() {
                     _c(
                       "select",
                       {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: hop.hop_type_id,
+                            expression: "hop.hop_type_id"
+                          }
+                        ],
                         staticClass:
                           "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
                         attrs: {
-                          name: "hops[" + n + "][hop_type_id]",
-                          id: "type-" + n
+                          name: "hops[" + index + "][hop_type_id]",
+                          id: "type-" + index
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              hop,
+                              "hop_type_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
                       },
                       _vm._l(_vm.types, function(type) {
@@ -20012,7 +20088,7 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "method-" + n }
+                        attrs: { for: "method-" + index }
                       },
                       [_vm._v("Method")]
                     ),
@@ -20020,11 +20096,38 @@ var render = function() {
                     _c(
                       "select",
                       {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: hop.hop_method_id,
+                            expression: "hop.hop_method_id"
+                          }
+                        ],
                         staticClass:
                           "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
                         attrs: {
-                          name: "hops[" + n + "][hop_method_id]",
-                          id: "method-" + n
+                          name: "hops[" + index + "][hop_method_id]",
+                          id: "method-" + index
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              hop,
+                              "hop_method_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
                       },
                       _vm._l(_vm.methods, function(method) {
@@ -20053,19 +20156,36 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "minute-" + n }
+                        attrs: { for: "minute-" + index }
                       },
                       [_vm._v("Minute")]
                     ),
                     _vm._v(" "),
                     _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: hop.minute,
+                          expression: "hop.minute"
+                        }
+                      ],
                       staticClass:
                         "form-input font-mono w-full border mt-2 focus:border-indigo-600",
                       attrs: {
                         type: "number",
-                        name: "hops[" + n + "][minute]",
+                        name: "hops[" + index + "][minute]",
                         min: "0",
-                        id: "minute-" + n
+                        id: "minute-" + index
+                      },
+                      domProps: { value: hop.minute },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(hop, "minute", $event.target.value)
+                        }
                       }
                     })
                   ])
@@ -20077,18 +20197,35 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "amount-" + n }
+                        attrs: { for: "amount-" + index }
                       },
                       [_vm._v("Amount")]
                     ),
                     _vm._v(" "),
                     _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: hop.amount,
+                          expression: "hop.amount"
+                        }
+                      ],
                       staticClass:
                         "form-input font-mono w-full border mt-2 focus:border-indigo-600",
                       attrs: {
                         type: "number",
-                        name: "hops[" + n + "][amount]",
-                        id: "amount-" + n
+                        name: "hops[" + index + "][amount]",
+                        id: "amount-" + index
+                      },
+                      domProps: { value: hop.amount },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(hop, "amount", $event.target.value)
+                        }
                       }
                     })
                   ])
@@ -20100,7 +20237,7 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "unit-" + n }
+                        attrs: { for: "unit-" + index }
                       },
                       [_vm._v("Unit")]
                     ),
@@ -20108,11 +20245,38 @@ var render = function() {
                     _c(
                       "select",
                       {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: hop.unit_id,
+                            expression: "hop.unit_id"
+                          }
+                        ],
                         staticClass:
                           "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
                         attrs: {
-                          name: "hops[" + n + "][unit_id]",
-                          id: "unit-" + n
+                          name: "hops[" + index + "][unit_id]",
+                          id: "unit-" + index
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              hop,
+                              "unit_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
                       },
                       _vm._l(_vm.filteredUnits, function(unit) {
@@ -20128,7 +20292,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm.numberOfHopAdditions > n
+              _vm.hopsAdded.length > index
                 ? _c("hr", { staticClass: "my-3" })
                 : _vm._e()
             ])
@@ -20143,11 +20307,7 @@ var render = function() {
                     staticClass:
                       "px-8 py-3 mt-2 mr-2 w-full inline-block border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
                     attrs: { type: "button" },
-                    on: {
-                      click: function($event) {
-                        _vm.numberOfHopAdditions++
-                      }
-                    }
+                    on: { click: _vm.addHops }
                   },
                   [_vm._v("+")]
                 ),
@@ -20159,11 +20319,7 @@ var render = function() {
                       "px-8 py-3 mt-2 w-full inline-block border-2 border-red-600 text-red-600 font-mono hover:bg-red-600 disabled:opacity-50 hover:text-white font-bold tracking-wide bg-white",
                     class: { "cursor-not-allowed": _vm.isDisabled },
                     attrs: { type: "button", disabled: _vm.isDisabled },
-                    on: {
-                      click: function($event) {
-                        _vm.numberOfHopAdditions--
-                      }
-                    }
+                    on: { click: _vm.removeHops }
                   },
                   [_vm._v("-\n\t\t\t\t\t")]
                 )
