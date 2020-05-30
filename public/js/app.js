@@ -1984,6 +1984,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     selectedHops: {
@@ -1991,7 +1993,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
-    this.getHopData();
+    this.getData();
     this.addHops();
 
     if (this.selectedHops.length) {
@@ -2025,13 +2027,13 @@ __webpack_require__.r(__webpack_exports__);
         hop_method_id: null,
         minute: null,
         amount: null,
-        unit_id: null
+        unit_id: 1
       });
     },
     removeHops: function removeHops() {
       this.hopsAdded.pop();
     },
-    getHopData: function getHopData() {
+    getData: function getData() {
       var _this = this;
 
       axios.get("/api/hops").then(function (data) {
@@ -2126,13 +2128,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: {},
+  props: {
+    selectedMalts: {
+      type: Array
+    }
+  },
   mounted: function mounted() {
     this.getData();
+    this.addMalts();
+
+    if (this.selectedMalts.length) {
+      this.maltsAdded = this.selectedMalts;
+    }
   },
   data: function data() {
     return {
-      numberOfMaltAdditions: 1,
+      maltsAdded: [],
       malts: [],
       units: []
     };
@@ -2148,6 +2159,16 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   methods: {
+    addMalts: function addMalts() {
+      this.maltsAdded.push({
+        malt_id: null,
+        amount: null,
+        unit_id: 1
+      });
+    },
+    removeMalts: function removeMalts() {
+      this.maltsAdded.pop();
+    },
     getData: function getData() {
       var _this = this;
 
@@ -20026,8 +20047,11 @@ var render = function() {
                       [
                         _c(
                           "option",
-                          { attrs: { disabled: "", selected: "" } },
-                          [_vm._v("Select...")]
+                          {
+                            attrs: { disabled: "", selected: "" },
+                            domProps: { value: null }
+                          },
+                          [_vm._v("Hops...")]
                         ),
                         _vm._v(" "),
                         _vm._l(_vm.hops, function(hop) {
@@ -20093,14 +20117,25 @@ var render = function() {
                           }
                         }
                       },
-                      _vm._l(_vm.types, function(type) {
-                        return _c(
+                      [
+                        _c(
                           "option",
-                          { key: type.id, domProps: { value: type.id } },
-                          [_vm._v(_vm._s(type.name))]
-                        )
-                      }),
-                      0
+                          {
+                            attrs: { disabled: "", selected: "" },
+                            domProps: { value: null }
+                          },
+                          [_vm._v("Types...")]
+                        ),
+                        _vm._v(" "),
+                        _vm._l(_vm.types, function(type) {
+                          return _c(
+                            "option",
+                            { key: type.id, domProps: { value: type.id } },
+                            [_vm._v(_vm._s(type.name))]
+                          )
+                        })
+                      ],
+                      2
                     )
                   ])
                 ]),
@@ -20153,20 +20188,31 @@ var render = function() {
                           }
                         }
                       },
-                      _vm._l(_vm.methods, function(method) {
-                        return _c(
+                      [
+                        _c(
                           "option",
                           {
-                            key: method.id,
-                            domProps: {
-                              value: method.id,
-                              selected: method.name === "Boil"
-                            }
+                            attrs: { disabled: "", selected: "" },
+                            domProps: { value: null }
                           },
-                          [_vm._v(_vm._s(method.name))]
-                        )
-                      }),
-                      0
+                          [_vm._v("Methods...")]
+                        ),
+                        _vm._v(" "),
+                        _vm._l(_vm.methods, function(method) {
+                          return _c(
+                            "option",
+                            {
+                              key: method.id,
+                              domProps: {
+                                value: method.id,
+                                selected: method.name === "Boil"
+                              }
+                            },
+                            [_vm._v(_vm._s(method.name))]
+                          )
+                        })
+                      ],
+                      2
                     )
                   ])
                 ])
@@ -20410,26 +20456,79 @@ var render = function() {
         "div",
         { staticClass: "p-3" },
         [
-          _vm._l(_vm.numberOfMaltAdditions, function(n, index) {
+          _vm._l(_vm.maltsAdded, function(malt, index) {
             return _c("div", { key: index }, [
+              malt.id
+                ? _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: malt.id,
+                        expression: "malt.id"
+                      }
+                    ],
+                    attrs: { type: "hidden", name: "malts[" + index + "][id]" },
+                    domProps: { value: malt.id },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(malt, "id", $event.target.value)
+                      }
+                    }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
               _c("div", { staticClass: "row" }, [
                 _c("div", { staticClass: "col-12" }, [
                   _c("div", { staticClass: "mb-2 font-mono block" }, [
                     _c(
                       "select",
                       {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: malt.malt_id,
+                            expression: "malt.malt_id"
+                          }
+                        ],
                         staticClass:
                           "form-select text-gray-700 w-full border focus:border-indigo-600",
                         attrs: {
-                          name: "malts[" + n + "][malt_id]",
-                          id: "malt-" + n
+                          name: "malts[" + index + "][malt_id]",
+                          id: "malt-" + index
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              malt,
+                              "malt_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
                       },
                       [
                         _c(
                           "option",
-                          { attrs: { disabled: "", selected: "" } },
-                          [_vm._v("Select...")]
+                          {
+                            attrs: { disabled: "", selected: "" },
+                            domProps: { value: null }
+                          },
+                          [_vm._v("Malts...")]
                         ),
                         _vm._v(" "),
                         _vm._l(_vm.malts, function(malt) {
@@ -20453,18 +20552,35 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "malt-amount-" + n }
+                        attrs: { for: "malt-amount-" + index }
                       },
                       [_vm._v("Amount")]
                     ),
                     _vm._v(" "),
                     _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: malt.amount,
+                          expression: "malt.amount"
+                        }
+                      ],
                       staticClass:
                         "form-input font-mono w-full border mt-2 focus:border-indigo-600",
                       attrs: {
                         type: "number",
-                        name: "malts[" + n + "][amount]",
-                        id: "malt-amount-" + n
+                        name: "malts[" + index + "][amount]",
+                        id: "malt-amount-" + index
+                      },
+                      domProps: { value: malt.amount },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(malt, "amount", $event.target.value)
+                        }
                       }
                     })
                   ])
@@ -20476,7 +20592,7 @@ var render = function() {
                       "label",
                       {
                         staticClass: "text-indigo-600 uppercase",
-                        attrs: { for: "malt-unit-" + n }
+                        attrs: { for: "malt-unit-" + index }
                       },
                       [_vm._v("Unit")]
                     ),
@@ -20484,11 +20600,38 @@ var render = function() {
                     _c(
                       "select",
                       {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: malt.unit_id,
+                            expression: "malt.unit_id"
+                          }
+                        ],
                         staticClass:
                           "form-select text-gray-700 w-full border mt-2 focus:border-indigo-600",
                         attrs: {
-                          name: "malts[" + n + "][unit_id]",
-                          id: "malt-unit-" + n
+                          name: "malts[" + index + "][unit_id]",
+                          id: "malt-unit-" + index
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              malt,
+                              "unit_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
                       },
                       _vm._l(_vm.filteredUnits, function(unit) {
@@ -20504,7 +20647,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm.numberOfMaltAdditions > n
+              _vm.maltsAdded.length > index
                 ? _c("hr", { staticClass: "my-3" })
                 : _vm._e()
             ])
@@ -20519,11 +20662,7 @@ var render = function() {
                     staticClass:
                       "px-8 py-3 mt-2 mr-2 w-full inline-block border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
                     attrs: { type: "button" },
-                    on: {
-                      click: function($event) {
-                        _vm.numberOfMaltAdditions++
-                      }
-                    }
+                    on: { click: _vm.addMalts }
                   },
                   [_vm._v("+")]
                 ),
@@ -20535,11 +20674,7 @@ var render = function() {
                       "px-8 py-3 mt-2 w-full inline-block border-2 border-red-600 text-red-600 font-mono hover:bg-red-600 disabled:opacity-50 hover:text-white font-bold tracking-wide bg-white",
                     class: { "cursor-not-allowed": _vm.isDisabled },
                     attrs: { type: "button", disabled: _vm.isDisabled },
-                    on: {
-                      click: function($event) {
-                        _vm.numberOfMaltAdditions--
-                      }
-                    }
+                    on: { click: _vm.removeMalts }
                   },
                   [_vm._v("-\n\t\t\t\t\t")]
                 )

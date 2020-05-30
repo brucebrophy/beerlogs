@@ -10,6 +10,8 @@ use App\Beers\Beer;
 use App\System\Unit;
 use App\Beers\Recipe;
 use App\Beers\HopAddition;
+use App\Beers\MaltAddition;
+use App\Beers\YeastAddition;
 use App\Http\Requests\StoreRecipeRequest;
 
 class RecipeController extends Controller
@@ -118,7 +120,13 @@ class RecipeController extends Controller
         $recipe->update($request->all());
 
         if ($request->has('hops')) {
-            $this->updateHopAdditions($request->get('hops'), $recipe);
+            $this->updateHopAdditions($request->input('hops'), $recipe);
+        }
+        if ($request->has('malts')) {
+            $this->updateMaltAdditions($request->input('malts'), $recipe);
+        }
+        if ($request->has('yeasts')) {
+            $this->updateYeastAdditions($request->input('yeasts'), $recipe);
         }
 
         return redirect()->route('beers.recipes.edit', [$beer->slug, $recipe->id]);
@@ -153,6 +161,40 @@ class RecipeController extends Controller
 
         HopAddition::where('recipe_id', $recipe->id)
             ->whereNotIn('id', $hops_collection->pluck('id'))
+            ->delete();
+    }
+
+    private function updateMaltAdditions($malts, $recipe)
+    {
+        $malts_collection = collect($malts);
+        $malts_collection->each(function($malt) use ($recipe) {
+            $malt = (object) $malt;
+            MaltAddition::updateOrCreate(['id' => $malt->id ?? null], [
+                'malt_id' => $malt->malt_id,
+                'recipe_id' => $recipe->id,
+                'unit_id' => $malt->unit_id,
+                'amount' => $malt->amount,
+            ]);
+        });
+
+        MaltAddition::where('recipe_id', $recipe->id)
+            ->whereNotIn('id', $malts_collection->pluck('id'))
+            ->delete();
+    }
+
+    private function updateYeastAdditions($yeasts, $recipe)
+    {
+        $yeast_collection = collect($yeasts);
+        $yeast_collection->each(function($yeast) use ($recipe) {
+            $yeast = (object) $yeast;
+            YeastAddition::updateOrCreate(['id' => $yeast->id ?? null], [
+                'yeast_id' => $yeast->yeast_id,
+                'recipe_id' => $recipe->id,
+            ]);
+        });
+
+        YeastAddition::where('recipe_id', $recipe->id)
+            ->whereNotIn('id', $yeast_collection->pluck('id'))
             ->delete();
     }
 }

@@ -10,7 +10,7 @@
 					<div class="col-12">
 						<div class="mb-2 font-mono block">
 							<select :name="`hops[${index}][hop_id]`" v-model="hop.hop_id" :id="`hop-${index}`" class="form-select text-gray-700 w-full border focus:border-indigo-600">
-								<option disabled selected>Select...</option>
+								<option :value="null" disabled selected>Hops...</option>
 								<option v-for="hop in hops" :key="hop.id" :value="hop.id">{{ hop.name }}</option>
 							</select>
 						</div>
@@ -21,6 +21,7 @@
 						<div class="mb-2 font-mono block">
 							<label class="text-indigo-600 uppercase" :for="`type-${index}`">Type</label>
 							<select :name="`hops[${index}][hop_type_id]`" v-model="hop.hop_type_id" :id="`type-${index}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
+								<option :value="null" disabled selected>Types...</option>
 								<option v-for="type in types" :key="type.id" :value="type.id">{{ type.name }}</option>
 							</select>
 						</div>
@@ -29,6 +30,7 @@
 						<div class="mb-2 font-mono block">
 							<label class="text-indigo-600 uppercase" :for="`method-${index}`">Method</label>
 							<select :name="`hops[${index}][hop_method_id]`" v-model="hop.hop_method_id" :id="`method-${index}`" class="form-select text-gray-700 w-full border mt-2 focus:border-indigo-600">
+								<option :value="null" disabled selected>Methods...</option>
 								<option v-for="method in methods" :key="method.id" :value="method.id" :selected="method.name === 'Boil'">{{ method.name }}</option>
 							</select>
 						</div>
@@ -82,7 +84,7 @@ export default {
 		}
 	},
 	mounted() {
-		this.getHopData();
+		this.getData();
 		this.addHops();
 		if (this.selectedHops.length) {
 			this.hopsAdded = this.selectedHops;
@@ -115,13 +117,13 @@ export default {
 				hop_method_id: null,
 				minute: null,
 				amount: null,
-				unit_id: null
+				unit_id: 1
 			});
 		},
 		removeHops() {
 			this.hopsAdded.pop();
 		},
-		getHopData() {
+		getData() {
 			axios
 				.get("/api/hops")
 				.then(data => {
