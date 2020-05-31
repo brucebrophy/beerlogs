@@ -2,6 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
+use App\Beers\Recipe;
 use App\Yeasts\Yeast;
 use App\Beers\YeastAddition;
 use Faker\Generator as Faker;
