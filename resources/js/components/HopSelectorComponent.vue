@@ -58,7 +58,7 @@
 						</div>
 					</div>
 				</div>
-				<hr v-if="hopsAdded.length > index" class="my-3">
+				<hr v-if="hopsAdded.length > (index + 1)" class="my-3">
 			</div>
 			<div class="row">
 				<div class="col">

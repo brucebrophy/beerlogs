@@ -2155,7 +2155,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     isDisabled: function isDisabled() {
-      return this.numberOfMaltAdditions < 2;
+      return this.maltsAdded.length < 2;
     }
   },
   methods: {
@@ -2331,27 +2331,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: {},
+  props: {
+    selectedYeasts: {
+      type: Array
+    }
+  },
   mounted: function mounted() {
     this.getData();
+    this.addYeasts();
+
+    if (this.selectedYeasts.length) {
+      this.yeastsAdded = this.selectedYeasts;
+    }
   },
   data: function data() {
     return {
-      numberOfYeastsAdditions: 1,
+      yeastsAdded: [],
       yeasts: []
     };
   },
   computed: {
-    filteredUnits: function filteredUnits() {
-      return this.units.filter(function (unit) {
-        return ["lb", "kg"].includes(unit.symbol);
-      });
-    },
     isDisabled: function isDisabled() {
-      return this.numberOfYeastsAdditions < 2;
+      return this.yeastsAdded.length < 2;
     }
   },
   methods: {
+    addYeasts: function addYeasts() {
+      this.yeastsAdded.push({
+        yeast_id: null
+      });
+    },
+    removeYeasts: function removeYeasts() {
+      this.yeastsAdded.pop();
+    },
     getData: function getData() {
       var _this = this;
 
@@ -20361,7 +20373,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm.hopsAdded.length > index
+              _vm.hopsAdded.length > index + 1
                 ? _c("hr", { staticClass: "my-3" })
                 : _vm._e()
             ])
@@ -20647,7 +20659,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm.maltsAdded.length > index
+              _vm.maltsAdded.length > index + 1
                 ? _c("hr", { staticClass: "my-3" })
                 : _vm._e()
             ])
@@ -20932,25 +20944,81 @@ var render = function() {
         "div",
         { staticClass: "p-3" },
         [
-          _vm._l(_vm.numberOfYeastsAdditions, function(n, index) {
+          _vm._l(_vm.yeastsAdded, function(yeast, index) {
             return _c("div", { key: index }, [
+              yeast.id
+                ? _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: yeast.id,
+                        expression: "yeast.id"
+                      }
+                    ],
+                    attrs: {
+                      type: "hidden",
+                      name: "yeasts[" + index + "][id]"
+                    },
+                    domProps: { value: yeast.id },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(yeast, "id", $event.target.value)
+                      }
+                    }
+                  })
+                : _vm._e(),
+              _vm._v(" "),
               _c("div", { staticClass: "row" }, [
                 _c("div", { staticClass: "col-12" }, [
                   _c("div", { staticClass: "mb-2 font-mono block" }, [
                     _c(
                       "select",
                       {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: yeast.yeast_id,
+                            expression: "yeast.yeast_id"
+                          }
+                        ],
                         staticClass:
                           "form-select text-gray-700 w-full border focus:border-indigo-600",
                         attrs: {
-                          name: "yeasts[" + n + "][yeast_id]",
-                          id: "yeast-" + n
+                          name: "yeasts[" + index + "][yeast_id]",
+                          id: "yeast-" + index
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.$set(
+                              yeast,
+                              "yeast_id",
+                              $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            )
+                          }
                         }
                       },
                       [
                         _c(
                           "option",
-                          { attrs: { disabled: "", selected: "" } },
+                          {
+                            attrs: { disabled: "", selected: "" },
+                            domProps: { value: null }
+                          },
                           [_vm._v("Select...")]
                         ),
                         _vm._v(" "),
@@ -20968,7 +21036,7 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm.numberOfYeastsAdditions > n
+              _vm.yeastsAdded.length > index + 1
                 ? _c("hr", { staticClass: "my-3" })
                 : _vm._e()
             ])
@@ -20983,11 +21051,7 @@ var render = function() {
                     staticClass:
                       "px-8 py-3 mt-2 mr-2 w-full inline-block border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
                     attrs: { type: "button" },
-                    on: {
-                      click: function($event) {
-                        _vm.numberOfYeastsAdditions++
-                      }
-                    }
+                    on: { click: _vm.addYeasts }
                   },
                   [_vm._v("+")]
                 ),
@@ -20999,11 +21063,7 @@ var render = function() {
                       "px-8 py-3 mt-2 w-full inline-block border-2 border-red-600 text-red-600 font-mono hover:bg-red-600 disabled:opacity-50 hover:text-white font-bold tracking-wide bg-white",
                     class: { "cursor-not-allowed": _vm.isDisabled },
                     attrs: { type: "button", disabled: _vm.isDisabled },
-                    on: {
-                      click: function($event) {
-                        _vm.numberOfYeastsAdditions--
-                      }
-                    }
+                    on: { click: _vm.removeYeasts }
                   },
                   [_vm._v("-\n\t\t\t\t\t")]
                 )

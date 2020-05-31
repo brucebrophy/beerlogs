@@ -32,7 +32,7 @@
 						</div>
 					</div>
 				</div>
-				<hr v-if="maltsAdded.length > index" class="my-3">
+				<hr v-if="maltsAdded.length > (index + 1)" class="my-3">
 			</div>
 			<div class="row">
 				<div class="col">
@@ -78,7 +78,7 @@ export default {
 			});
 		},
 		isDisabled() {
-			return this.numberOfMaltAdditions < 2;
+			return this.maltsAdded.length < 2;
 		}
 	},
 	methods: {
