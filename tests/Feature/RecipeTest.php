@@ -114,7 +114,7 @@ class RecipeTest extends TestCase
 
         // act
         $response = $this->actingAs($user)
-            ->get(route('beers.recipes.edit', [$recipe->beer->slug, $recipe->id]));
+            ->get(route('beers.recipes.edit', [$recipe->beer->slug, $recipe->uuid]));
 
         // assert 
         $response->assertStatus(200);
@@ -156,7 +156,7 @@ class RecipeTest extends TestCase
         $response = $this->actingAs($user)
             ->followingRedirects()
             ->patch(
-                route('beers.recipes.update', [$recipe->beer->slug, $recipe->id]), 
+                route('beers.recipes.update', [$recipe->beer->slug, $recipe->uuid]), 
                 array_merge(
                     $recipe->toArray(),
                     ['hops' => [$hops->toArray()]],
@@ -216,7 +216,7 @@ class RecipeTest extends TestCase
         // act
         $response = $this->actingAs($user)
             ->followingRedirects()
-            ->delete(route('beers.recipes.destroy', [$recipe->beer->slug, $recipe->id]), [
+            ->delete(route('beers.recipes.destroy', [$recipe->beer->slug, $recipe->uuid]), [
                 'confirmation' => 'DELETE'
             ]);
 

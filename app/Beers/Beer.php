@@ -17,6 +17,7 @@ class Beer extends Model
         'slug',
         'notes',
         'description',
+        'is_private',
         'style_id',
         'user_id',
     ];
