@@ -15,7 +15,7 @@ class UnitController extends Controller
      */
     public function index()
     {
-        $units = Unit::all();
+        $units = Unit::get(['id', 'name', 'symbol']);
         
         return response()->json([
             'units' => $units,

@@ -138,9 +138,23 @@ class RecipeController extends Controller
      * @param  \App\Recipe  $recipe
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Recipe $recipe)
+    public function destroy(Request $request, Beer $beer, Recipe $recipe)
     {
-         $this->authorize('delete', $recipe);
+        $this->authorize('delete', $recipe);
+
+        $request->validate([
+            'confirmation' => 'required'
+        ]);
+
+        if (strtoupper($request->input('confirmation')) !== 'DELETE') {
+            return redirect()
+                ->route('beers.edit', $beer->slug)
+                ->with('error', 'The typed text does not match DELETE.');
+        }
+
+        $recipe->delete();
+        
+        return redirect()->route('beers.show', $beer->slug);
     }
 
     private function updateHopAdditions($hops, $recipe)

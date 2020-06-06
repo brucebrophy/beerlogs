@@ -26,7 +26,7 @@ class UserTest extends TestCase
         $this->seed('UnitSeeder');
     }
 
-    public function testGuestsCanViewProfiles()
+    public function testGuestCanViewProfiles()
     {
         // arrange
         $user = factory(User::class)->create();
@@ -36,7 +36,7 @@ class UserTest extends TestCase
             ->assertStatus(200);
     }
 
-    public function testUsersBeersAreShownOnTheirProfile()
+    public function testBeersAreShownOnUserProfile()
     {
         // arrange 
         $this->seed(BeerStyleSeeder::class);

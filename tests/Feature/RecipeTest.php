@@ -196,4 +196,31 @@ class RecipeTest extends TestCase
             'recipe_id' => $recipe->id,
         ]);
     }
+
+    public function testUserCanDeleteRecipe()
+    {
+        // arrange
+        $this->seed('BeerStyleSeeder');
+        $this->seed('HopSeeder');
+        $this->seed('HopTypeSeeder');
+        $this->seed('HopMethodSeeder');
+        $this->seed('MaltSeeder');
+        $this->seed('YeastSeeder');
+        $this->seed('UnitSeeder');
+
+        $user = factory(User::class)->create();
+        $recipe = factory(Recipe::class)->create([
+            'user_id' => $user->id,
+        ]);
+
+        // act
+        $response = $this->actingAs($user)
+            ->followingRedirects()
+            ->delete(route('beers.recipes.destroy', [$recipe->beer->slug, $recipe->id]), [
+                'confirmation' => 'DELETE'
+            ]);
+
+        // assert
+        $this->assertDeleted($recipe);
+    }
 }
