@@ -6,11 +6,10 @@
 - Likes
 - Brewed Counts for Beers
 - SRM Colour Tags for Beers 
+- Private Beers & Recipes 
 
 ## Issues
-- Integrate Recipe Data to Beer Details Page
-- Tests for Recipe Creation
+- Add Delete for Recipes (Add Tests too)
 - Beer/Recipe UI/UX
 - Add Units to Application for coversion of recipes
 - OG/FG Number Fields
-- Uncompleted Recipes/Recipe Editing 

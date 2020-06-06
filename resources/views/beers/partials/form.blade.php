@@ -7,7 +7,7 @@
 </div>
 <div class="mb-5">
 	{{ Form::label('style_id', 'Notes', ['class' => 'font-mono text-indigo-600 block uppercase']) }}
-	{{ Form::select('style_id', $styles, null, ['class' => 'form-input font-mono w-full border mt-2 focus:border-indigo-600', 'placeholder' => 'Select...']) }}
+	{{ Form::select('style_id', $styles, null, ['class' => 'form-select font-mono w-full border mt-2 focus:border-indigo-600', 'placeholder' => 'Select...']) }}
 	@error('style_id')
 		<span class="block mt-2 font-mono text-sm text-red-600">{{ $message }}</span>
 	@enderror

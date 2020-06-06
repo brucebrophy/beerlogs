@@ -62,13 +62,19 @@
 
 <div class="row">
 	<div class="lg:col-4">
-		<hop-selector-component />
+		<hop-selector-component 
+			:selected-hops="{{ $recipe->hop_additions }}" 
+		/>
 	</div>
 	<div class="lg:col-4">
-		<malt-selector-component />
+		<malt-selector-component
+			:selected-malts="{{ $recipe->malt_additions }}" 
+		/>
 	</div>
 	<div class="lg:col-4">
-		<yeast-selector-component />
+		<yeast-selector-component
+			:selected-yeasts="{{ $recipe->yeast_additions }}" 
+		/>
 	</div>
 </div>
 

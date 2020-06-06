@@ -26,7 +26,7 @@ class BeerTest extends TestCase
         $this->seed('UnitSeeder');
     }
 
-    public function testNonAuthenticatedUserCanViewIndex()
+    public function testGuestCanViewIndex()
     {
         // arrange
         $beer = factory(Beer::class)->create();
@@ -40,7 +40,7 @@ class BeerTest extends TestCase
             ->assertSee($beer->name);
     }
 
-    public function testNonAuthenticatedUserCannotViewCreateForm()
+    public function testGuestCannotViewCreateForm()
     {
         // act
         $response = $this->followingRedirects()
@@ -52,7 +52,7 @@ class BeerTest extends TestCase
             ->assertSee('Login');
     }
 
-    public function testNonAuthenticatedUserCannotCreateRecord()
+    public function testGuestCannotCreateRecord()
     {
          // arrange
         $beer = factory(Beer::class)->make();
@@ -70,7 +70,7 @@ class BeerTest extends TestCase
         ]);
     }
 
-    public function testNonAuthenticatedUserCannotEditResource()
+    public function testGuestCannotEditResource()
     {
         // arrange
         $beer = factory(Beer::class)->create();
@@ -85,7 +85,7 @@ class BeerTest extends TestCase
             ->assertSee('Login');
     }
 
-    public function testNonAuthenticatedUserCannotDeleteRecord()
+    public function testGuestCannotDeleteRecord()
     {
         // arrange
         $beer = factory(Beer::class)->create();
@@ -106,7 +106,7 @@ class BeerTest extends TestCase
         ]);
     }
 
-    public function testAuthenticatedUserCanViewCreateForm()
+    public function testUserCanViewCreateForm()
     {
         // arrange
         $user = factory(User::class)->make();
@@ -122,7 +122,7 @@ class BeerTest extends TestCase
             ->assertSee('Continue to Recipe');
     }
 
-    public function testAuthenticatedUserCanCreateRecord()
+    public function testUserCanCreateRecord()
     {
          // arrange
         $user = factory(User::class)->create();
@@ -145,7 +145,7 @@ class BeerTest extends TestCase
         ]);
     }
 
-    public function testAuthenticatedUserCanEditResource()
+    public function testUserCanEditResource()
     {
         // arrange
         $user = factory(User::class)->create();
@@ -162,7 +162,7 @@ class BeerTest extends TestCase
             ->assertStatus(200);
     }
 
-    public function testAuthenticatedUserCanOnlyEditOwnedResource()
+    public function testUserCanOnlyEditOwnedResource()
     {
         // arrange
         $user = factory(User::class)->create();
@@ -177,7 +177,7 @@ class BeerTest extends TestCase
             ->assertStatus(403);
     }
 
-    public function testAuthenticatedUserCanUpdateResource()
+    public function testUserCanUpdateResource()
     {
         // arrange
         $user = factory(User::class)->create();
@@ -202,7 +202,7 @@ class BeerTest extends TestCase
         ]);
     }
 
-    public function testAuthenticatedUserCannotDeleteRecordIfNameIsNotConfirmed()
+    public function testUserCannotDeleteRecordIfNameIsNotConfirmed()
     {
         // arrange
         $user = factory(User::class)->create();
@@ -225,7 +225,7 @@ class BeerTest extends TestCase
         ]);
     }
 
-    public function testAuthenticatedUserCanDeleteResource()
+    public function testUserCanDeleteBeer()
     {
         // arrange
         $user = factory(User::class)->create();

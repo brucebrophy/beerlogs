@@ -6,7 +6,7 @@
 			@foreach ($beers as $beer)
 				<div class="flex">
 					<a href="{{ route('beers.show', $beer->slug) }}" class="flex w-full rounded-lg my-2 md:my-0 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
-						<div class="flex flex-col justify-between px-6 py-6">
+						<div class="flex flex-col justify-between p-6 w-full">
 							<div>
 								<span class="uppercase text-indigo-400 font-mono font-bold text-xs">{{ $beer->style->name }}</span>
 								<div class="font-bold font-mono text-xl mt-2 mb-2 text-indigo-600 capitalize">{{ $beer->name }}</div>
