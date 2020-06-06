@@ -45,6 +45,16 @@ class Beer extends Model
         ];
     }
 
+    public function scopePublic($query)
+    {
+        return $query->where('is_private', 0);
+    }
+
+    public function isPrivate()
+    {
+        return $this->is_private ? true : false;
+    }
+
     public function user()
     {
         return $this->belongsTo(User::class);

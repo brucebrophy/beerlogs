@@ -6,7 +6,6 @@
 - Likes
 - Brewed Counts for Beers
 - SRM Colour Tags for Beers 
-- Private Beers & Recipes 
 
 ## Issues
 - Add Delete for Recipes (Add Tests too)
