@@ -21,6 +21,9 @@ Route::get('hops/types', 'Api\HopTypeController@index');
 Route::get('hops/methods', 'Api\HopMethodController@index');
 Route::get('units', 'Api\UnitController@index');
 
+
+Route::resource('beers.comments', 'Api\Beers\CommentController')->except(['create', 'edit', 'show']);
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
