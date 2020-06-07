@@ -10,6 +10,8 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
+Vue.component('passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue').default);
+
 Vue.component('navigation-component', require('./components/NavigationComponent.vue').default);
 Vue.component('malt-selector-component', require('./components/MaltSelectorComponent.vue').default);
 Vue.component('hop-selector-component', require('./components/HopSelectorComponent.vue').default);
