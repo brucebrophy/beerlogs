@@ -142,6 +142,7 @@ class BeerController extends Controller
                 ->with('error', 'The typed name does not match.');
         }
 
+        $beer->comments()->delete();
         $beer->delete();
         
         return redirect()->route('beers.index');
