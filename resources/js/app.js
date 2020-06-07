@@ -15,6 +15,8 @@ Vue.component('malt-selector-component', require('./components/MaltSelectorCompo
 Vue.component('hop-selector-component', require('./components/HopSelectorComponent.vue').default);
 Vue.component('yeast-selector-component', require('./components/YeastSelectorComponent.vue').default);
 
+Vue.component('comment-feed-component', require('./components/CommentFeed.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
