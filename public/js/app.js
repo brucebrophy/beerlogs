@@ -2522,7 +2522,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   /*
    * The component's data.
@@ -2531,7 +2530,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return {
       showForm: false,
       accessToken: null,
-      showToken: false,
       tokens: [],
       scopes: [],
       form: {
@@ -2629,7 +2627,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     showAccessToken: function showAccessToken(accessToken) {
       this.showToken = true;
       this.accessToken = accessToken;
-      $("#modal-access-token").modal("show");
+      this.showForm = false;
     },
 
     /**
@@ -22073,9 +22071,9 @@ var render = function() {
       [
         _vm._m(0),
         _vm._v(" "),
-        _c("div", { staticClass: "p-3" }, [
-          _vm.tokens.length === 0
-            ? _c("p", { staticClass: "mb-0" }, [
+        _c("div", { staticClass: "p-8" }, [
+          _vm.tokens.length === 0 && !_vm.showForm
+            ? _c("p", { staticClass: "text-center font-mono my-6" }, [
                 _vm._v(
                   "\n\t\t\t\t\tYou have not created any personal access tokens.\n\t\t\t\t"
                 )
@@ -22083,7 +22081,7 @@ var render = function() {
             : _vm._e(),
           _vm._v(" "),
           _vm.tokens.length > 0
-            ? _c("table", {}, [
+            ? _c("table", { staticClass: "w-full mb-6" }, [
                 _vm._m(1),
                 _vm._v(" "),
                 _c(
@@ -22092,7 +22090,11 @@ var render = function() {
                     return _c("tr", { key: token.id }, [
                       _c(
                         "td",
-                        { staticStyle: { "vertical-align": "middle" } },
+                        {
+                          staticClass:
+                            "border-t border-b border-gray-400 py-3 font-mono",
+                          staticStyle: { "vertical-align": "middle" }
+                        },
                         [
                           _vm._v(
                             "\n\t\t\t\t\t\t\t\t" +
@@ -22104,11 +22106,16 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "td",
-                        { staticStyle: { "vertical-align": "middle" } },
+                        {
+                          staticClass:
+                            "border-t border-b border-gray-400 py-3 text-right",
+                          staticStyle: { "vertical-align": "middle" }
+                        },
                         [
                           _c(
-                            "a",
+                            "button",
                             {
+                              staticClass: "text-red-600 font-mono",
                               on: {
                                 click: function($event) {
                                   return _vm.revoke(token)
@@ -22130,126 +22137,143 @@ var render = function() {
               ])
             : _vm._e(),
           _vm._v(" "),
-          _vm.form.errors.length > 0
-            ? _c("div", { staticClass: "alert alert-danger" }, [
-                _vm._m(2),
-                _vm._v(" "),
-                _c("br"),
+          _vm.showForm
+            ? _c(
+                "form",
+                {
+                  attrs: { role: "form" },
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.store($event)
+                    }
+                  }
+                },
+                [
+                  _vm.form.errors.length > 0
+                    ? _c("div", { staticClass: "alert alert-danger mb-6" }, [
+                        _vm._m(2),
+                        _vm._v(" "),
+                        _c(
+                          "ul",
+                          { staticClass: "mt-2" },
+                          _vm._l(_vm.form.errors, function(error) {
+                            return _c("li", [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t" +
+                                  _vm._s(error) +
+                                  "\n\t\t\t\t\t\t\t"
+                              )
+                            ])
+                          }),
+                          0
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "label",
+                    {
+                      staticClass: "font-mono text-indigo-600 block uppercase"
+                    },
+                    [_vm._v("Name")]
+                  ),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.name,
+                        expression: "form.name"
+                      }
+                    ],
+                    staticClass:
+                      "form-input font-mono w-full border mt-2 focus:border-indigo-600",
+                    attrs: {
+                      id: "create-token-name",
+                      type: "text",
+                      name: "name"
+                    },
+                    domProps: { value: _vm.form.name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.form, "name", $event.target.value)
+                      }
+                    }
+                  })
+                ]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.accessToken
+            ? _c("div", [
+                _c("p", { staticClass: "font-mono leading-normal mt-6" }, [
+                  _vm._v(
+                    "\n\t\t\t\t\t\tHere is your new personal access token. This is the only time it will be shown so don't lose it!\n\t\t\t\t\t\tYou may now use this token to make API requests.\n\t\t\t\t\t"
+                  )
+                ]),
                 _vm._v(" "),
                 _c(
-                  "ul",
-                  _vm._l(_vm.form.errors, function(error) {
-                    return _c("li", [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t\t" + _vm._s(error) + "\n\t\t\t\t\t\t"
-                      )
-                    ])
-                  }),
-                  0
+                  "textarea",
+                  {
+                    staticClass:
+                      "form-input font-mono w-full border mt-2 focus:border-indigo-600",
+                    attrs: { rows: "10" }
+                  },
+                  [_vm._v(_vm._s(_vm.accessToken))]
                 )
               ])
             : _vm._e(),
           _vm._v(" "),
-          _c(
-            "form",
-            {
-              attrs: { role: "form" },
-              on: {
-                submit: function($event) {
-                  $event.preventDefault()
-                  return _vm.store($event)
-                }
-              }
-            },
-            [
-              _c("label", { staticClass: "col-md-4 col-form-label" }, [
-                _vm._v("Name")
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
+          _c("div", { staticClass: "flex justify-end" }, [
+            _vm.showForm
+              ? _c(
+                  "button",
                   {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.name,
-                    expression: "form.name"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { id: "create-token-name", type: "text", name: "name" },
-                domProps: { value: _vm.form.name },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+                    staticClass: "mt-4 p-3 mr-3 font-mono",
+                    on: {
+                      click: function($event) {
+                        _vm.showForm = false
+                      }
                     }
-                    _vm.$set(_vm.form, "name", $event.target.value)
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _vm.scopes.length > 0
-                ? _c("div", { staticClass: "form-group row" }, [
-                    _c("label", { staticClass: "col-md-4 col-form-label" }, [
-                      _vm._v("Scopes")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "col-md-6" },
-                      _vm._l(_vm.scopes, function(scope) {
-                        return _c("div", [
-                          _c("div", { staticClass: "checkbox" }, [
-                            _c("label", [
-                              _c("input", {
-                                attrs: { type: "checkbox" },
-                                domProps: {
-                                  checked: _vm.scopeIsAssigned(scope.id)
-                                },
-                                on: {
-                                  click: function($event) {
-                                    return _vm.toggleScope(scope.id)
-                                  }
-                                }
-                              }),
-                              _vm._v(
-                                "\n\t\t\t\t\t\t\t\t\t\t\t" +
-                                  _vm._s(scope.id) +
-                                  "\n\t\t\t\t\t\t\t\t\t"
-                              )
-                            ])
-                          ])
-                        ])
-                      }),
-                      0
-                    )
-                  ])
-                : _vm._e()
-            ]
-          ),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n\t\t\t\t\tHere is your new personal access token. This is the only time it will be shown so don't lose it!\n\t\t\t\t\tYou may now use this token to make API requests.\n\t\t\t\t"
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "textarea",
-            { staticClass: "form-control", attrs: { rows: "10" } },
-            [_vm._v(_vm._s(_vm.accessToken))]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass:
-                "px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
-              attrs: { type: "submit" },
-              on: { click: _vm.showCreateTokenForm }
-            },
-            [_vm._v("Create New Token")]
-          )
+                  },
+                  [_vm._v("Cancel")]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            !_vm.showForm
+              ? _c(
+                  "button",
+                  {
+                    staticClass:
+                      "mt-4 px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
+                    attrs: { type: "submit" },
+                    on: {
+                      click: function($event) {
+                        _vm.showForm = true
+                      }
+                    }
+                  },
+                  [_vm._v("Create New Token")]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.showForm
+              ? _c(
+                  "button",
+                  {
+                    staticClass:
+                      "mt-4 px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white",
+                    on: { click: _vm.store }
+                  },
+                  [_vm._v("Create New Token")]
+                )
+              : _vm._e()
+          ])
         ])
       ]
     )
@@ -22280,14 +22304,20 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("thead", [
-      _c("tr", [_c("th", [_vm._v("Name")]), _vm._v(" "), _c("th")])
+      _c("tr", [
+        _c("th", { staticClass: "text-left font-mono font-semibold py-2" }, [
+          _vm._v("Token Name")
+        ]),
+        _vm._v(" "),
+        _c("th")
+      ])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", { staticClass: "mb-0" }, [
+    return _c("p", [
       _c("strong", [_vm._v("Whoops!")]),
       _vm._v(" Something went wrong!")
     ])

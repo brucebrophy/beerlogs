@@ -42,7 +42,7 @@ class CommentController extends Controller
 
         $comment = $beer->comments()->create([
             'body' => $request->input('body'),
-            'user_id' => 1,
+            'user_id' => auth()->id(),
         ]);
 
         return response()->json([

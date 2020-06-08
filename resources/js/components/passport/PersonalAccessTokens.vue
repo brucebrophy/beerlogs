@@ -4,79 +4,78 @@
 			<div class="py-3 flex justify-center bg-indigo-600">
 				<h4 class="font-mono text-white font-bold tracking-wider uppercase">Personal Access Tokens</h4>
 			</div>
-			<div class="p-3">
+			<div class="p-8">
 				<!-- No Tokens Notice -->
-				<p class="mb-0" v-if="tokens.length === 0">
+				<p class="text-center font-mono my-6" v-if="tokens.length === 0 && ! showForm">
 					You have not created any personal access tokens.
 				</p>
-
-				<table class="" v-if="tokens.length > 0">
+				<table class="w-full mb-6" v-if="tokens.length > 0">
 					<thead>
 						<tr>
-							<th>Name</th>
+							<th class="text-left font-mono font-semibold py-2">Token Name</th>
 							<th></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr v-for="token in tokens" :key="token.id">
-							<!-- Client Name -->
-							<td style="vertical-align: middle;">
+							<td class="border-t border-b border-gray-400 py-3 font-mono" style="vertical-align: middle;">
 								{{ token.name }}
-							</td>
-
-							<!-- Delete Button -->
-							<td style="vertical-align: middle;">
-								<a @click="revoke(token)">
+							</td>							
+							<td class="border-t border-b border-gray-400 py-3 text-right" style="vertical-align: middle;">
+								<button class="text-red-600 font-mono" @click="revoke(token)">
 									Delete
-								</a>
+								</button>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 
-				<!-- Form Errors -->
-				<div class="alert alert-danger" v-if="form.errors.length > 0">
-					<p class="mb-0"><strong>Whoops!</strong> Something went wrong!</p>
-					<br>
-					<ul>
-						<li v-for="error in form.errors">
-							{{ error }}
-						</li>
-					</ul>
-				</div>
-
 				<!-- Create Token Form -->
-				<form role="form" @submit.prevent="store">
+				<form v-if="showForm" role="form" @submit.prevent="store">
+					<!-- Form Errors -->
+					<div class="alert alert-danger mb-6" v-if="form.errors.length > 0">
+						<p><strong>Whoops!</strong> Something went wrong!</p>
+						<ul class="mt-2">
+							<li v-for="error in form.errors">
+								{{ error }}
+							</li>
+						</ul>
+					</div>
+
 					<!-- Name -->
-					<label class="col-md-4 col-form-label">Name</label>
-					<input id="create-token-name" type="text" class="form-control" name="name" v-model="form.name">
+					<label class="font-mono text-indigo-600 block uppercase">Name</label>
+					<input id="create-token-name" type="text" class="form-input font-mono w-full border mt-2 focus:border-indigo-600" name="name" v-model="form.name">
 
 					<!-- Scopes -->
-					<div class="form-group row" v-if="scopes.length > 0">
+					<!-- <div class="form-group row" v-if="scopes.length > 0">
 						<label class="col-md-4 col-form-label">Scopes</label>
 						<div class="col-md-6">
 							<div v-for="scope in scopes">
 								<div class="checkbox">
 									<label>
-										<input type="checkbox"
-											@click="toggleScope(scope.id)"
-											:checked="scopeIsAssigned(scope.id)">
-											{{ scope.id }}
+										<input type="checkbox" @click="toggleScope(scope.id)" :checked="scopeIsAssigned(scope.id)">
+										{{ scope.id }}
 									</label>
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</form>
 
-				 <p>
-					Here is your new personal access token. This is the only time it will be shown so don't lose it!
-					You may now use this token to make API requests.
-				</p>
+				<div v-if="accessToken">
+					<p class="font-mono leading-normal mt-6">
+						Here is your new personal access token. This is the only time it will be shown so don't lose it!
+						You may now use this token to make API requests.
+					</p>
+					
+					<textarea class="form-input font-mono w-full border mt-2 focus:border-indigo-600" rows="10">{{ accessToken }}</textarea>
+				</div>
 
-				<textarea class="form-control" rows="10">{{ accessToken }}</textarea>
-
-				<button type="submit" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white" @click="showCreateTokenForm">Create New Token</button>
+				<div class="flex justify-end">
+					<button v-if="showForm" @click="showForm = false" class="mt-4 p-3 mr-3 font-mono">Cancel</button>
+					<button v-if="!showForm" @click="showForm = true" type="submit" class="mt-4 px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Create New Token</button>
+					<button v-if="showForm" @click="store" class="mt-4 px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Create New Token</button>
+				</div>
 			</div>
 		</div>
     </div>
@@ -91,7 +90,6 @@ export default {
 		return {
 			showForm: false,
 			accessToken: null,
-			showToken: false,
 			tokens: [],
 			scopes: [],
 			form: {
@@ -186,10 +184,8 @@ export default {
 		 */
 		showAccessToken(accessToken) {
 			this.showToken = true;
-
 			this.accessToken = accessToken;
-
-			$("#modal-access-token").modal("show");
+			this.showForm = false;
 		},
 
 		/**
