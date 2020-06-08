@@ -67,7 +67,6 @@
 						Here is your new personal access token. This is the only time it will be shown so don't lose it!
 						You may now use this token to make API requests.
 					</p>
-					
 					<textarea class="form-input font-mono w-full border mt-2 focus:border-indigo-600" rows="10">{{ accessToken }}</textarea>
 				</div>
 
