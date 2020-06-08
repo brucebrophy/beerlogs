@@ -2,9 +2,11 @@
 
 namespace Tests\Feature\Api;
 
+use App\User;
 use HopSeeder;
 use HopTypeSeeder;
 use HopMethodSeeder;
+use Laravel\Passport\Passport;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -17,6 +19,7 @@ class HopTest extends TestCase
     {
         // arrange
         $this->seed(HopSeeder::class);
+        Passport::actingAs(factory(User::class)->create());
 
         // act
         $response = $this->get('/api/hops');
@@ -33,6 +36,7 @@ class HopTest extends TestCase
     {
         // arrange
         $this->seed(HopTypeSeeder::class);
+        Passport::actingAs(factory(User::class)->create());
 
         // act
         $response = $this->get('/api/hops/types');
@@ -50,6 +54,7 @@ class HopTest extends TestCase
     {
         // arrange
         $this->seed(HopMethodSeeder::class);
+        Passport::actingAs(factory(User::class)->create());
 
         // act
         $response = $this->get('/api/hops/methods');
