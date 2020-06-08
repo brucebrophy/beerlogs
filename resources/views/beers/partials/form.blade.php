@@ -26,3 +26,14 @@
 		<span class="block mt-2 font-mono text-sm text-red-600">{{ $message }}</span>
 	@enderror
 </div>
+<div class="mb-5">
+	 <div class="flex mb-6">
+		<label class="inline-flex items-center text-sm text-gray-700" for="is_private">
+			{{ Form::checkbox('is_private', 1, $beer->is_private, ['class' => 'form-checkbox', 'id' => 'is_private']) }}
+			<span class="ml-2 font-mono text-sm uppercase">Mark As Private</span>
+		</label>
+	</div>
+	@error('description')
+		<span class="block mt-2 font-mono text-sm text-red-600">{{ $message }}</span>
+	@enderror
+</div>

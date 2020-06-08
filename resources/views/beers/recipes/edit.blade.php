@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	{!! Form::model($recipe, ['route' => ['beers.recipes.update', $beer->slug, $recipe->id], 'method' => 'PATCH']) !!}
+	{!! Form::model($recipe, ['route' => ['beers.recipes.update', $beer->slug, $recipe->uuid], 'method' => 'PATCH']) !!}
 		<div class="container mx-auto">
 			@if ($errors->any())
 				<div class="alert alert-danger">
@@ -27,7 +27,7 @@
 		<div class="col-12 md:col-8 md:offset-2">
 			<div class="rounded-lg shadow-lg border border-red-600 bg-white mt-6">
 				<div class="p-8">
-					{!! Form::open(['route' => ['beers.recipes.destroy', $beer->slug, $recipe->id], 'method' => 'DELETE']) !!}
+					{!! Form::open(['route' => ['beers.recipes.destroy', $beer->slug, $recipe->uuid], 'method' => 'DELETE']) !!}
 						{{ Form::label('name', 'Delete Recipe', ['class' => 'font-mono font-semibold text-red-600 block']) }}
 						<div class="flex align-items-center mt-2">
 							{{ Form::text('confirmation', null, ['class' => 'form-input font-mono w-full border', 'placeholder' => 'Type DELETE to confirm']) }}

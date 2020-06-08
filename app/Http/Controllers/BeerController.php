@@ -17,7 +17,7 @@ class BeerController extends Controller
      */
     public function index()
     {
-        $beers = Beer::with([
+        $beers = Beer::public()->with([
             'style',
             'recipes',
         ])->paginate(20);
@@ -66,6 +66,8 @@ class BeerController extends Controller
      */
     public function show(Beer $beer)
     {
+        $this->authorize('view', $beer);
+
         $beer->load([
             'style',
             'recipes.hop_additions.hop',
@@ -140,6 +142,7 @@ class BeerController extends Controller
                 ->with('error', 'The typed name does not match.');
         }
 
+        $beer->comments()->delete();
         $beer->delete();
         
         return redirect()->route('beers.index');

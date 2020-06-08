@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers;
 
-use App\Malts\Malt;
+use App\Comment;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
-class MaltController extends Controller
+class CommentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +14,17 @@ class MaltController extends Controller
      */
     public function index()
     {
-        $malts = Malt::orderBy('name')->get(['id', 'name']);
+        //
+    }
 
-        return response()->json([
-            'malts' => $malts,
-        ]);
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
 
     /**
@@ -36,10 +41,21 @@ class MaltController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Malts\Malt  $malt
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function show(Malt $malt)
+    public function show(Comment $comment)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Comment  $comment
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Comment $comment)
     {
         //
     }
@@ -48,10 +64,10 @@ class MaltController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Malts\Malt  $malt
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Malt $malt)
+    public function update(Request $request, Comment $comment)
     {
         //
     }
@@ -59,10 +75,10 @@ class MaltController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Malts\Malt  $malt
+     * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Malt $malt)
+    public function destroy(Comment $comment)
     {
         //
     }

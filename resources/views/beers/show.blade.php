@@ -8,7 +8,7 @@
 					<div class="flex justify-end mb-6">
 						<a href="{{ route('beers.edit', $beer->slug) }}" class="px-8 py-3 mr-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Beer</a>	
 						@if(count($beer->recipes))
-							<a href="{{ route('beers.recipes.edit', [$beer->slug, $recipe->id]) }}" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Recipe</a>
+							<a href="{{ route('beers.recipes.edit', [$beer->slug, $recipe->uuid]) }}" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Edit Recipe</a>
 						@else
 							<a href="{{ route('beers.recipes.create', $beer->slug) }}" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Add Recipe</a>
 						@endif
@@ -105,8 +105,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="lg:col-6 mt-6 lg:mt-0">
-
+			<div class="col-5 mt-6">
+				<comment-feed-component endpoint="/api/beers/{{ $beer->slug}}/comments" />
 			</div>
 		</div>
 	</div>

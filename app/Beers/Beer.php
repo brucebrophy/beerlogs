@@ -3,6 +3,7 @@
 namespace App\Beers;
 
 use App\User;
+use App\Comment;
 use App\Beers\Recipe;
 use App\Beers\Style;
 use Illuminate\Database\Eloquent\Model;
@@ -17,6 +18,7 @@ class Beer extends Model
         'slug',
         'notes',
         'description',
+        'is_private',
         'style_id',
         'user_id',
     ];
@@ -43,6 +45,21 @@ class Beer extends Model
                 'source' => ['name', 'user.username']
             ]
         ];
+    }
+
+    public function scopePublic($query)
+    {
+        return $query->where('is_private', 0);
+    }
+
+    public function isPrivate()
+    {
+        return $this->is_private ? true : false;
+    }
+
+    public function comments()
+    {
+        return $this->morphMany(Comment::class, 'commentable');
     }
 
     public function user()

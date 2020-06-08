@@ -129,7 +129,7 @@ class RecipeController extends Controller
             $this->updateYeastAdditions($request->input('yeasts'), $recipe);
         }
 
-        return redirect()->route('beers.recipes.edit', [$beer->slug, $recipe->id]);
+        return redirect()->route('beers.recipes.edit', [$beer->slug, $recipe->uuid]);
     }
 
     /**

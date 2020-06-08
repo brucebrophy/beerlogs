@@ -28,8 +28,16 @@ class BeerPolicy
      * @param  \App\Beers\Beer  $beer
      * @return mixed
      */
-    public function view(User $user, Beer $beer)
+    public function view(?User $user, Beer $beer)
     {
+        if ($beer->isPrivate() && is_null($user)) {
+            return false;
+        }
+
+        if ($beer->isPrivate()) {
+            return $user->id === (int) $beer->user_id;
+        }
+
         return true;
     }
 

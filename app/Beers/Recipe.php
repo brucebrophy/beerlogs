@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
 class Recipe extends Model
 {
     protected $fillable = [
+        'uuid',
         'instructions',
         'abv',
         'ibu',
@@ -27,6 +28,23 @@ class Recipe extends Model
         'user_id',
         'beer_id',
     ];
+
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'uuid';
+    }
+
+    protected static function booted()
+    {
+        static::creating(function ($recipe) {
+            $recipe->uuid = (string) \Str::uuid();
+        });
+    }
 
     public function unit()
     {

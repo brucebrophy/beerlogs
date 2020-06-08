@@ -244,4 +244,50 @@ class BeerTest extends TestCase
         $response->assertStatus(200);
         $this->assertDeleted($beer);
     }
+
+    public function testPrivateBeersAreNotListedOnIndex()
+    {
+        // arrange
+        $beer = factory(Beer::class)->create([
+            'is_private' => 1,
+        ]);
+
+        // act
+        $response = $this->get(route('beers.index'));
+
+        // assert
+        $response
+            ->assertStatus(200)
+            ->assertDontSee($beer->name);
+    }
+
+    public function testGuestCannotViewPrivateBeer()
+    {
+         // arrange
+        $beer = factory(Beer::class)->create([
+            'is_private' => 1,
+        ]);
+
+        // act
+        $response = $this->get(route('beers.show', $beer->slug));
+
+        // assert
+        $response->assertStatus(403);
+    }
+
+    public function testUserCannotViewPrivateBeerOfAnotherUser()
+    {
+         // arrange
+        $user = factory(User::class)->create();
+        $beer = factory(Beer::class)->create([
+            'is_private' => 1,
+        ]);
+
+        // act
+        $response = $this->actingAs($user)
+            ->get(route('beers.show', $beer->slug));
+
+        // assert
+        $response->assertStatus(403);
+    }
 }
