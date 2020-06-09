@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Comment;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -11,14 +12,16 @@ class CommentNotification extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $comment;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Comment $comment)
     {
-        //
+        $this->comment = $comment;
     }
 
     /**
@@ -28,6 +31,9 @@ class CommentNotification extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.comments.notification');
+        $subject = $this->comment->user->username . ' left a comment on one of your beers!';
+    
+        return $this->subject($subject)
+            ->markdown('emails.comments.notification');
     }
 }

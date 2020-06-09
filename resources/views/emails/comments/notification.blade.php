@@ -1,12 +1,15 @@
 @component('mail::message')
-# Introduction
 
-The body of your message.
+# {{ $comment->user->username }} left a comment!
 
-@component('mail::button', ['url' => ''])
-Button Text
+@component('mail::panel')
+	{{ $comment->body }}
 @endcomponent
 
-Thanks,<br>
-{{ config('app.name') }}
+@if($comment->commentable_type === 'App\Beers\Beer')
+@component('mail::button', ['url' => route('beers.show', $comment->commentable->slug)])
+Click here to reply!
+@endcomponent
+@endif
+
 @endcomponent
