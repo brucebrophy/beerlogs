@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\Beers;
 use App\Comment;
 use App\Beers\Beer;
 use Illuminate\Http\Request;
+use App\Events\CommentCreated;
 use App\Http\Controllers\Controller;
 
 class CommentController extends Controller
@@ -44,8 +45,10 @@ class CommentController extends Controller
             'body' => $request->input('body'),
             'user_id' => auth()->id(),
         ]);
-
+        
         $comment->load('user');
+
+        event(new CommentCreated($comment));
 
         return response()->json([
             'comment' => $comment,
