@@ -105,8 +105,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-5 mt-6">
-				<comment-feed-component endpoint="/api/beers/{{ $beer->slug}}/comments" />
+			<div class="lg:col-5">
+				<div class="mt-6 lg:mt-0">
+					<comment-feed-component endpoint="/api/beers/{{ $beer->slug}}/comments" />
+				</div>
 			</div>
 		</div>
 	</div>

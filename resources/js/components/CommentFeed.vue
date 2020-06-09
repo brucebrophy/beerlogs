@@ -1,7 +1,19 @@
 <template>
 	<div>
-		<div v-for="comment in comments" :key="comment.id">
-			{{ comment.body }}
+		<comment-card-component 
+			v-for="comment in comments" 
+			:comment="comment" 
+			:key="comment.id" 
+			:updateComment="updateComment"
+			:deleteComment="deleteComment" />
+		
+		<comment-form-component 
+			v-if="user" 
+			:endpoint="endpoint" 
+			:addComment="addComment" />
+		
+		<div v-else class="block text-center mt-2">
+			<a href="/login" class="inline-block mx-auto p-4 text-center font-mono text-indigo-600">Login to comment</a> 
 		</div>
 	</div>
 </template>
@@ -16,10 +28,12 @@ export default {
 	},
 	mounted() {
 		this.getComments();
+		this.user = window.user;
 	},
 	data() {
 		return {
-			comments: []
+			comments: [],
+			user: null
 		};
 	},
 	computed: {},
@@ -30,6 +44,34 @@ export default {
 				.then(data => {
 					let { comments } = data.data;
 					this.comments = comments;
+				})
+				.catch(error => {
+					console.log(error);
+				});
+		},
+		addComment(comment) {
+			this.comments.push(comment);
+		},
+		updateComment(comment, body) {
+			axios
+				.patch(`${this.endpoint}/${comment.id}`, {
+					body
+				})
+				.then(data => {
+					let newComment = data.data.comment;
+					let index = this.comments.indexOf(comment);
+					this.comments.splice(index, 1, newComment);
+				})
+				.catch(error => {
+					console.log(error);
+				});
+		},
+		deleteComment(comment) {
+			axios
+				.delete(`${this.endpoint}/${comment.id}`)
+				.then(data => {
+					let index = this.comments.indexOf(comment);
+					this.comments.splice(index, 1);
 				})
 				.catch(error => {
 					console.log(error);

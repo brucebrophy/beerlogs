@@ -45,6 +45,8 @@ class CommentController extends Controller
             'user_id' => auth()->id(),
         ]);
 
+        $comment->load('user');
+
         return response()->json([
             'comment' => $comment,
         ]);
@@ -66,6 +68,8 @@ class CommentController extends Controller
         $comment->update([
             'body' => $request->input('body'),
         ]);
+        
+        $comment->load('user');
 
         return response()->json([
             'comment' => $comment,
