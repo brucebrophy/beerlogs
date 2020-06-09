@@ -45,6 +45,8 @@ class CommentController extends Controller
             'user_id' => auth()->id(),
         ]);
 
+        $comment->load('user');
+
         return response()->json([
             'comment' => $comment,
         ]);
@@ -59,6 +61,8 @@ class CommentController extends Controller
      */
     public function update(Request $request, Beer $beer, Comment $comment)
     {
+        $this->authorize('update', $comment);
+
         $request->validate([
             'body' => 'required',
         ]);
@@ -66,6 +70,8 @@ class CommentController extends Controller
         $comment->update([
             'body' => $request->input('body'),
         ]);
+        
+        $comment->load('user');
 
         return response()->json([
             'comment' => $comment,
@@ -80,6 +86,8 @@ class CommentController extends Controller
      */
     public function destroy(Beer $beer, Comment $comment)
     {
+        $this->authorize('delete', $comment);
+
         $comment->delete();
 
         return response()->json([

@@ -12,12 +12,14 @@ window.Vue = require('vue');
 
 Vue.component('passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue').default);
 
-Vue.component('navigation-component', require('./components/NavigationComponent.vue').default);
-Vue.component('malt-selector-component', require('./components/MaltSelectorComponent.vue').default);
-Vue.component('hop-selector-component', require('./components/HopSelectorComponent.vue').default);
-Vue.component('yeast-selector-component', require('./components/YeastSelectorComponent.vue').default);
+Vue.component('navigation-component', require('./components/Navigation.vue').default);
+Vue.component('malt-selector-component', require('./components/MaltSelector.vue').default);
+Vue.component('hop-selector-component', require('./components/HopSelector.vue').default);
+Vue.component('yeast-selector-component', require('./components/YeastSelector.vue').default);
 
 Vue.component('comment-feed-component', require('./components/CommentFeed.vue').default);
+Vue.component('comment-form-component', require('./components/CommentForm.vue').default);
+Vue.component('comment-card-component', require('./components/CommentCard.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

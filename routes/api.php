@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('beers/{beer}/comments', 'Api\Beers\CommentController@index');
+
 Route::middleware('auth:api')->group(function () {
     Route::get('yeasts', 'Api\YeastController@index');
     Route::get('malts', 'Api\MaltController@index');
@@ -22,5 +24,5 @@ Route::middleware('auth:api')->group(function () {
     Route::get('hops/methods', 'Api\HopMethodController@index');
     Route::get('units', 'Api\UnitController@index');
 
-    Route::resource('beers.comments', 'Api\Beers\CommentController')->except(['create', 'edit', 'show']);
+    Route::resource('beers.comments', 'Api\Beers\CommentController')->only(['store', 'update', 'destroy']);
 });
