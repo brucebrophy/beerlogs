@@ -107,6 +107,7 @@
 			</div>
 			<div class="lg:col-5">
 				<div class="mt-6 lg:mt-0">
+					<h2 class="mb-3 uppercase font-mono font-semibold text-lg text-center text-indigo-600">Comments</h2>
 					<comment-feed-component endpoint="/api/beers/{{ $beer->slug}}/comments" />
 				</div>
 			</div>

@@ -1,11 +1,17 @@
 <template>
 	<div>
-		<comment-card-component 
-			v-for="comment in comments" 
-			:comment="comment" 
-			:key="comment.id" 
-			:updateComment="updateComment"
-			:deleteComment="deleteComment" />
+		<div v-if="comments.length > 0">
+			<comment-card-component 
+				v-for="comment in comments" 
+				:comment="comment" 
+				:key="comment.id" 
+				:updateComment="updateComment"
+				:deleteComment="deleteComment" />
+		</div>
+		<div v-else>
+			<p class="block mx-auto p-4 text-center font-mono text-indigo-600">No one has left a comment yet..</p> 
+		</div>
+
 		
 		<comment-form-component 
 			v-if="user" 

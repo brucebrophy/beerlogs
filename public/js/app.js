@@ -2017,6 +2017,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     endpoint: {
@@ -42282,16 +42288,31 @@ var render = function() {
   return _c(
     "div",
     [
-      _vm._l(_vm.comments, function(comment) {
-        return _c("comment-card-component", {
-          key: comment.id,
-          attrs: {
-            comment: comment,
-            updateComment: _vm.updateComment,
-            deleteComment: _vm.deleteComment
-          }
-        })
-      }),
+      _vm.comments.length > 0
+        ? _c(
+            "div",
+            _vm._l(_vm.comments, function(comment) {
+              return _c("comment-card-component", {
+                key: comment.id,
+                attrs: {
+                  comment: comment,
+                  updateComment: _vm.updateComment,
+                  deleteComment: _vm.deleteComment
+                }
+              })
+            }),
+            1
+          )
+        : _c("div", [
+            _c(
+              "p",
+              {
+                staticClass:
+                  "block mx-auto p-4 text-center font-mono text-indigo-600"
+              },
+              [_vm._v("No one has left a comment yet..")]
+            )
+          ]),
       _vm._v(" "),
       _vm.user
         ? _c("comment-form-component", {
@@ -42309,7 +42330,7 @@ var render = function() {
             )
           ])
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
@@ -42334,7 +42355,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "mt-6" }, [
+  return _c("div", { staticClass: "my-6" }, [
     _c("textarea", {
       directives: [
         {
