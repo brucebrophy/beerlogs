@@ -5,6 +5,7 @@
 use Faker\Generator as Faker;
 
 use App\User;
+use App\Comment;
 use App\Beers\Beer;
 use App\Beers\Style;
 use App\Beers\Recipe;
@@ -26,4 +27,6 @@ $factory->afterCreating(Beer::class, function ($beer, $faker) {
         'beer_id' => $beer->id,
         'user_id' => $beer->user_id,
     ]);
+
+    $beer->comments()->saveMany(factory(Comment::class, 5)->make());
 });
