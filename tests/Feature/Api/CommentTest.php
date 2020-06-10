@@ -2,9 +2,13 @@
 
 namespace Tests\Feature\Api;
 
+use App\Events\CommentCreated;
+use App\Mail\CommentNotification;
 use App\User;
 use App\Comment;
 use App\Beers\Beer;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Mail;
 use Laravel\Passport\Passport;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -13,11 +17,11 @@ use Tests\TestCase;
 class CommentTest extends TestCase
 {
     use RefreshDatabase;
-    
+
     public function setUp(): void
     {
         parent::setUp();
-        
+
         $this->seed('BeerStyleSeeder');
         $this->seed('HopSeeder');
         $this->seed('HopTypeSeeder');
@@ -29,10 +33,10 @@ class CommentTest extends TestCase
 
     public function testGuestCanGetComments()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
 
-        // act 
+        // act
         $response = $this->getJson('/api/beers/' . $beer->slug . '/comments');
 
         // assert
@@ -41,10 +45,10 @@ class CommentTest extends TestCase
 
     public function testGuestCannotCreateComment()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
 
-        // act 
+        // act
         $response = $this->postJson('/api/beers/' . $beer->slug . '/comments', [
             'body' => 'Hello World!'
         ]);
@@ -55,12 +59,12 @@ class CommentTest extends TestCase
 
     public function testGuestCannotUpdateComment()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
         $comment = factory(Comment::class)->make();
         $beer->comments()->save($comment);
 
-        // act 
+        // act
         $response = $this->patchJson('/api/beers/' . $beer->slug . '/comments/' . $comment->id, [
             'body' => 'Updated!'
         ]);
@@ -71,12 +75,12 @@ class CommentTest extends TestCase
 
     public function testGuestCannotDeleteComment()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
         $comment = factory(Comment::class)->make();
         $beer->comments()->save($comment);
 
-        // act 
+        // act
         $response = $this->deleteJson('/api/beers/' . $beer->slug . '/comments/' . $comment->id);
 
         // assert
@@ -85,55 +89,64 @@ class CommentTest extends TestCase
 
     public function testUserCanCreateComment()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
-        Passport::actingAs(factory(User::class)->create());
+        $user = factory(User::class)->create();
+        Passport::actingAs($user);
 
-        // act 
+        // act
         $response = $this->postJson('/api/beers/' . $beer->slug . '/comments', [
             'body' => 'Hello World!'
         ]);
 
         // assert
         $response->assertStatus(200);
+        $this->assertDatabaseHas('comments', [
+            'body' => 'Hello World!',
+            'user_id' => $user->id,
+        ]);
     }
 
     public function testUserCanUpdateComment()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
-        $user = factory(User::class)->create();        
+        $user = factory(User::class)->create();
         $comment = factory(Comment::class)->create([
             'user_id' => $user->id,
             'commentable_id' => $beer->id,
             'commentable_type' => 'App\Beers\Beer',
-        ]);   
-        
+        ]);
+
         Passport::actingAs($user);
 
-        // act 
+        // act
         $response = $this->patchJson('/api/beers/' . $beer->slug . '/comments/' . $comment->id, [
             'body' => 'Updated!'
         ]);
 
         // assert
         $response->assertStatus(200);
+        $this->assertDatabaseHas('comments', [
+            'body' => 'Updated!',
+            'user_id' => $user->id,
+        ]);
     }
 
     public function testUserCanDeleteComment()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
-        $user = factory(User::class)->create();        
+        $user = factory(User::class)->create();
         $comment = factory(Comment::class)->create([
             'user_id' => $user->id,
             'commentable_id' => $beer->id,
             'commentable_type' => 'App\Beers\Beer',
-        ]);   
-        
+        ]);
+
         Passport::actingAs($user);
 
-        // act 
+        // act
         $response = $this->deleteJson('/api/beers/' . $beer->slug . '/comments/' . $comment->id);
 
         // assert
@@ -142,18 +155,18 @@ class CommentTest extends TestCase
 
     public function testUserCannotUpdateCommentOwnedByAnotherUser()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
-        $user = factory(User::class)->create();        
+        $user = factory(User::class)->create();
         $comment = factory(Comment::class)->create([
             'user_id' => $user->id,
             'commentable_id' => $beer->id,
             'commentable_type' => 'App\Beers\Beer',
-        ]);   
-        
+        ]);
+
         Passport::actingAs(factory(User::class)->create());
 
-        // act 
+        // act
         $response = $this->patchJson('/api/beers/' . $beer->slug . '/comments/' . $comment->id, [
             'body' => 'Updated!'
         ]);
@@ -164,21 +177,44 @@ class CommentTest extends TestCase
 
     public function testUserCannotDeleteCommentOwnedByAnotherUser()
     {
-        // arrange 
+        // arrange
         $beer = factory(Beer::class)->create();
-        $user = factory(User::class)->create();        
+        $user = factory(User::class)->create();
         $comment = factory(Comment::class)->create([
             'user_id' => $user->id,
             'commentable_id' => $beer->id,
             'commentable_type' => 'App\Beers\Beer',
-        ]);   
-        
+        ]);
+
         Passport::actingAs(factory(User::class)->create());
 
-        // act 
+        // act
         $response = $this->deleteJson('/api/beers/' . $beer->slug . '/comments/' . $comment->id);
 
         // assert
         $response->assertStatus(403);
+    }
+
+    public function testBeerOwnerGetsNotificationOnNewComment()
+    {
+        Mail::fake();
+
+        // arrange
+        $owner = factory(User::class)->create();
+        $user = factory(User::class)->create();
+        $beer = factory(Beer::class)->create([
+            'user_id' => $owner->id
+        ]);
+        Passport::actingAs($user);
+
+        // act
+        $this->postJson('/api/beers/' . $beer->slug . '/comments', [
+            'body' => 'Hello World!'
+        ]);
+
+        // assert
+        Mail::assertSent(CommentNotification::class, function ($mail) use ($owner) {
+            return $mail->hasTo($owner->email);
+        });
     }
 }
