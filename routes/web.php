@@ -13,39 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-if (config('app.env') === 'local') {
-    Route::get('styles/buttons', function() {
-        return view('styleguide.buttons');
-    });
-    Route::get('styles/typography', function() {
-        return view('styleguide.typography');
-    });
-    Route::get('styles/cards', function() {
-        return view('styleguide.cards');
-    });
-    Route::get('styles/forms', function() {
-        return view('styleguide.forms');
-    });
-    Route::get('styles/components', function() {
-        return view('styleguide.components');
-    });
-}
-
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('home', 'HomeController@index')->name('home');
-
-Route::middleware(['auth'])->group(function () {
-    // Beers - Authenticated
-    Route::resource('beers', 'BeerController')->except(['index', 'show']);
-    Route::resource('beers.recipes', 'RecipeController')->except(['index', 'show']);
-
-    // Profiles - Authenticated 
-    Route::get('@{user:username}/edit', 'UserController@edit')->name('users.edit');
-    Route::patch('@{user:username}', 'UserController@update')->name('users.update');
-    Route::delete('@{user:username}', 'UserController@destroy')->name('users.destroy');
+    return view('home');
 });
 
 // Beers - Public
@@ -54,6 +23,18 @@ Route::get('beers/{beer}', 'BeerController@show')->name('beers.show');
 
 // Profiles - Public
 Route::get('@{user:username}', 'UserController@show')->name('users.show');
+
+Route::middleware(['auth'])->group(function () {
+    // Beers - Authenticated
+    Route::resource('beers', 'BeerController')->except(['index', 'show']);
+    // Recipes - Authenticated
+    Route::resource('beers.recipes', 'RecipeController')->except(['index', 'show']);
+
+    // Profiles - Authenticated 
+    Route::get('@{user:username}/edit', 'UserController@edit')->name('users.edit');
+    Route::patch('@{user:username}', 'UserController@update')->name('users.update');
+    Route::delete('@{user:username}', 'UserController@destroy')->name('users.destroy');
+});
 
 Auth::routes(['verify' => true]);
 
