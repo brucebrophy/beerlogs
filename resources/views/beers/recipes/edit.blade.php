@@ -25,7 +25,7 @@
 
 	<div class="row">
 		<div class="col-12 md:col-8 md:offset-2">
-			<div class="rounded-lg shadow-lg border border-red-600 bg-white mt-6">
+			<div class="rounded-lg shadow-lg border border-red-600 bg-white my-6">
 				<div class="p-8">
 					{!! Form::open(['route' => ['beers.recipes.destroy', $beer->slug, $recipe->uuid], 'method' => 'DELETE']) !!}
 						{{ Form::label('name', 'Delete Recipe', ['class' => 'font-mono font-semibold text-red-600 block']) }}
