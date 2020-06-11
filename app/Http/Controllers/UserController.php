@@ -19,6 +19,7 @@ class UserController extends Controller
 		$user->load([
 			'beers',
 			'beers.recipes',
+            'comments',
 		]);
 
 		return view('users.show', [

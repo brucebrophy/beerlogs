@@ -1,25 +1,24 @@
 <template>
 	<div>
 		<div v-if="comments.length > 0">
-			<comment-card-component 
-				v-for="comment in comments" 
-				:comment="comment" 
-				:key="comment.id" 
+			<comment-card-component
+				v-for="comment in comments"
+				:comment="comment"
+				:key="comment.id"
 				:updateComment="updateComment"
 				:deleteComment="deleteComment" />
 		</div>
 		<div v-else>
-			<p class="block mx-auto p-4 text-center font-mono text-indigo-600">No one has left a comment yet..</p> 
+			<p class="block mx-auto p-4 text-center font-mono text-indigo-600">No one has left a comment yet..</p>
 		</div>
 
-		
-		<comment-form-component 
-			v-if="user" 
-			:endpoint="endpoint" 
+		<comment-form-component
+			v-if="user"
+			:endpoint="endpoint"
 			:addComment="addComment" />
-		
+
 		<div v-else class="block text-center mt-2">
-			<a href="/login" class="inline-block mx-auto p-4 text-center font-mono text-indigo-600">Login to comment</a> 
+			<a href="/login" class="inline-block mx-auto p-4 text-center font-mono text-indigo-600">Login to comment</a>
 		</div>
 	</div>
 </template>
