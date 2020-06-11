@@ -17,13 +17,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-// Beers - Public
-Route::get('beers', 'BeerController@index')->name('beers.index');
-Route::get('beers/{beer}', 'BeerController@show')->name('beers.show');
-
-// Profiles - Public
-Route::get('@{user:username}', 'UserController@show')->name('users.show');
-
 Route::middleware(['auth'])->group(function () {
     // Beers - Authenticated
     Route::resource('beers', 'BeerController')->except(['index', 'show']);
@@ -36,5 +29,11 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('@{user:username}', 'UserController@destroy')->name('users.destroy');
 });
 
-Auth::routes(['verify' => true]);
+// Beers - Public
+Route::get('beers', 'BeerController@index')->name('beers.index');
+Route::get('beers/{beer}', 'BeerController@show')->name('beers.show');
 
+// Profiles - Public
+Route::get('@{user:username}', 'UserController@show')->name('users.show');
+
+Auth::routes(['verify' => true]);
