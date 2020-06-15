@@ -12,7 +12,11 @@ window.Vue = require('vue');
 
 Vue.component('passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue').default);
 
+Vue.component('drop-down-component', require('./components/DropDown.vue').default);
+Vue.component('profile-drop-down-component', require('./components/ProfileDropDown.vue').default);
+Vue.component('onclick-outside-component', require('./components/OnClickOutside.vue').default);
 Vue.component('navigation-component', require('./components/Navigation.vue').default);
+
 Vue.component('malt-selector-component', require('./components/MaltSelector.vue').default);
 Vue.component('hop-selector-component', require('./components/HopSelector.vue').default);
 Vue.component('yeast-selector-component', require('./components/YeastSelector.vue').default);

@@ -10,12 +10,11 @@ use App\Http\Requests\UpdateBeer;
 
 class BeerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+
+	/**
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 */
+	public function index()
     {
         $beers = Beer::public()->with([
             'style',
@@ -27,12 +26,11 @@ class BeerController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+
+	/**
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 */
+	public function create()
     {
         $beer = new Beer;
         $styles = Style::orderBy('name')->pluck('name', 'id');
@@ -58,13 +56,13 @@ class BeerController extends Controller
         return redirect()->route('beers.recipes.create', $beer->slug);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Beer  $beer
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Beer $beer)
+
+	/**
+	 * @param  Beer  $beer
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function show(Beer $beer)
     {
         $this->authorize('view', $beer);
 
@@ -85,13 +83,13 @@ class BeerController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Beer  $beer
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Beer $beer)
+
+	/**
+	 * @param  Beer  $beer
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function edit(Beer $beer)
     {
         $this->authorize('update', $beer);
         
@@ -106,14 +104,14 @@ class BeerController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Beer  $beer
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateBeer $request, Beer $beer)
+
+	/**
+	 * @param  UpdateBeer  $request
+	 * @param  Beer  $beer
+	 * @return \Illuminate\Http\RedirectResponse
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function update(UpdateBeer $request, Beer $beer)
     {
         $this->authorize('update', $beer);
 
@@ -122,13 +120,14 @@ class BeerController extends Controller
         return redirect()->route('beers.show', $beer->slug);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Beer  $beer
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Request $request, Beer $beer)
+
+	/**
+	 * @param  Request  $request
+	 * @param  Beer  $beer
+	 * @return \Illuminate\Http\RedirectResponse
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function destroy(Request $request, Beer $beer)
     {
         $this->authorize('delete', $beer);
 

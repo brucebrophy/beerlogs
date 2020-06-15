@@ -35,12 +35,17 @@
 					-->
 					<!-- Authenticated User Dropdown -->
 					<div v-if="user" class="ml-3 relative">
-						<div>
+						<div class="flex items-center">
+							<drop-down-component>
+								<template v-slot:dropdownLabel>
+									<svg class="h-5 fill-current" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z"></path></svg>
+								</template>
+							</drop-down-component>
 							<button @click="toggleProfileMenu" class="flex font-mono tracking-wider text-sm md:text-base text-white focus:outline-none transition duration-150 ease-in-out" id="user-menu" aria-label="User menu" aria-haspopup="true">
 								{{ user.username }}
 							</button>
 						</div>
-						<div :class="profileIsOpen ? 'block' : 'hidden'" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10">
+						<div :class="profileIsOpen ? 'block' : 'hidden'" class="origin-top-right absolute right-0 w-48 rounded-md shadow-lg z-10">
 							<div class="py-1 rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
 								<slot name="profile" />
 							</div>

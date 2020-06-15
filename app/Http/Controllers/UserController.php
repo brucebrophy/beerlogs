@@ -9,10 +9,8 @@ use App\Http\Requests\UpdateUser;
 class UserController extends Controller
 {
 	/**
-	 * Display the specified resource.
-	 *
-	 * @param  \App\User  $user
-	 * @return \Illuminate\Http\Response
+	 * @param  User  $user
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 	 */
 	public function show(User $user)
 	{
@@ -28,10 +26,9 @@ class UserController extends Controller
 	}
 
 	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  \App\User  $user
-	 * @return \Illuminate\Http\Response
+	 * @param  User  $user
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
 	 */
 	public function edit(User $user)
 	{
@@ -42,11 +39,10 @@ class UserController extends Controller
 	}
 
 	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @param  \App\User  $user
-	 * @return \Illuminate\Http\Response
+	 * @param  UpdateUser  $request
+	 * @param  User  $user
+	 * @return \Illuminate\Http\RedirectResponse
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
 	 */
 	public function update(UpdateUser $request, User $user)
 	{
@@ -57,10 +53,10 @@ class UserController extends Controller
 	}
 
 	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  \App\User  $user
-	 * @return \Illuminate\Http\Response
+	 * @param  Request  $request
+	 * @param  User  $user
+	 * @return \Illuminate\Http\RedirectResponse
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
 	 */
 	public function destroy(Request $request, User $user)
 	{
