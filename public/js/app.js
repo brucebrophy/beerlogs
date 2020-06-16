@@ -2162,10 +2162,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     label: {
-      required: true,
+      required: false,
       type: String
     }
   },
@@ -2536,6 +2541,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     label: {
@@ -2554,9 +2560,6 @@ __webpack_require__.r(__webpack_exports__);
       required: true,
       type: String
     }
-  },
-  mounted: function mounted() {
-    console.log(this.routes);
   },
   data: function data() {
     return {
@@ -42468,21 +42471,92 @@ var render = function() {
     "onclick-outside-component",
     { attrs: { do: _vm.handleClickOutside } },
     [
-      _c("div", { staticClass: "relative mx-2" }, [
-        _c(
-          "a",
-          {
-            staticClass: "font-mono text-white rounded px-4 py-2",
-            attrs: { href: "#" },
-            on: {
-              click: function($event) {
-                $event.preventDefault()
-                _vm.isOpen = !_vm.isOpen
-              }
-            }
-          },
-          [_vm._v("\n            " + _vm._s(_vm.label) + "\n        ")]
-        ),
+      _c("div", { staticClass: "relative" }, [
+        _vm.label
+          ? _c(
+              "a",
+              {
+                staticClass:
+                  "flex items-center text-sm sm:text-base font-mono text-white rounded px-2 py-2",
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.isOpen = !_vm.isOpen
+                  }
+                }
+              },
+              [
+                _vm._v("\n            " + _vm._s(_vm.label) + "\n            "),
+                _c(
+                  "svg",
+                  {
+                    staticClass: "fill-current w-2 ml-2 mt-1",
+                    attrs: {
+                      "aria-hidden": "true",
+                      focusable: "false",
+                      "data-prefix": "fas",
+                      "data-icon": "caret-down",
+                      role: "img",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 320 512"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        fill: "currentColor",
+                        d:
+                          "M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      }
+                    })
+                  ]
+                )
+              ]
+            )
+          : _c(
+              "a",
+              {
+                staticClass:
+                  "flex items-center text-sm sm:text-base font-mono text-white rounded px-2 py-2",
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    _vm.isOpen = !_vm.isOpen
+                  }
+                }
+              },
+              [
+                _vm._t("label"),
+                _vm._v(" "),
+                _c(
+                  "svg",
+                  {
+                    staticClass: "fill-current w-2 ml-2 mt-1",
+                    attrs: {
+                      "aria-hidden": "true",
+                      focusable: "false",
+                      "data-prefix": "fas",
+                      "data-icon": "caret-down",
+                      role: "img",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 320 512"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        fill: "currentColor",
+                        d:
+                          "M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                      }
+                    })
+                  ]
+                )
+              ],
+              2
+            ),
         _vm._v(" "),
         _c(
           "div",
@@ -42502,17 +42576,8 @@ var render = function() {
                   "aria-labelledby": "user-menu"
                 }
               },
-              [
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "block px-4 py-2 font-mono text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out",
-                    attrs: { href: "#" }
-                  },
-                  [_vm._v("Profile")]
-                )
-              ]
+              [_vm._t("links")],
+              2
             )
           ]
         )
@@ -43309,12 +43374,12 @@ var render = function() {
     "onclick-outside-component",
     { attrs: { do: _vm.handleClickOutside } },
     [
-      _c("div", { staticClass: "relative mx-2" }, [
+      _c("div", { staticClass: "relative" }, [
         _c(
           "a",
           {
             staticClass:
-              "text-sm sm:text-base font-mono text-white rounded px-4 py-2",
+              "flex items-center text-sm sm:text-base font-mono text-white rounded px-2 py-2",
             attrs: { href: "#" },
             on: {
               click: function($event) {
@@ -43323,7 +43388,33 @@ var render = function() {
               }
             }
           },
-          [_vm._v("\n            " + _vm._s(_vm.label) + "\n        ")]
+          [
+            _vm._v("\n            " + _vm._s(_vm.label) + "\n            "),
+            _c(
+              "svg",
+              {
+                staticClass: "fill-current w-2 ml-2 mt-1",
+                attrs: {
+                  "aria-hidden": "true",
+                  focusable: "false",
+                  "data-prefix": "fas",
+                  "data-icon": "caret-down",
+                  role: "img",
+                  xmlns: "http://www.w3.org/2000/svg",
+                  viewBox: "0 0 320 512"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    fill: "currentColor",
+                    d:
+                      "M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+                  }
+                })
+              ]
+            )
+          ]
         ),
         _vm._v(" "),
         _c(
