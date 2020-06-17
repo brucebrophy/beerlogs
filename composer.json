@@ -18,7 +18,8 @@
         "laravel/passport": "^9.2",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
-        "laravelcollective/html": "^6.1"
+        "laravelcollective/html": "^6.1",
+        "php-unit-conversion/php-unit-conversion": "^1.30"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
