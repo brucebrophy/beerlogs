@@ -26,12 +26,12 @@ class RecipeController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create(Beer $beer)
+	/**
+	 * @param  Beer  $beer
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function create(Beer $beer)
     {   
         $this->authorize('update', $beer);
 
@@ -44,13 +44,13 @@ class RecipeController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreRecipeRequest $request, Beer $beer)
+	/**
+	 * @param  StoreRecipeRequest  $request
+	 * @param  Beer  $beer
+	 * @return \Illuminate\Http\RedirectResponse
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function store(StoreRecipeRequest $request, Beer $beer)
     {
         $this->authorize('update', $beer);
 
@@ -76,24 +76,21 @@ class RecipeController extends Controller
         return redirect()->route('beers.show', $beer->slug);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Recipe  $recipe
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Recipe $recipe)
+	/**
+	 * @param  Recipe  $recipe
+	 */
+	public function show(Recipe $recipe)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Recipe  $recipe
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Beer $beer, Recipe $recipe)
+	/**
+	 * @param  Beer  $beer
+	 * @param  Recipe  $recipe
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function edit(Beer $beer, Recipe $recipe)
     {
         $this->authorize('update', $recipe);
         
@@ -106,14 +103,14 @@ class RecipeController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Recipe  $recipe
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Beer $beer, Recipe $recipe)
+	/**
+	 * @param  Request  $request
+	 * @param  Beer  $beer
+	 * @param  Recipe  $recipe
+	 * @return \Illuminate\Http\RedirectResponse
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function update(Request $request, Beer $beer, Recipe $recipe)
     {
         $this->authorize('update', $recipe);
 
@@ -132,13 +129,14 @@ class RecipeController extends Controller
         return redirect()->route('beers.recipes.edit', [$beer->slug, $recipe->uuid]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Recipe  $recipe
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Request $request, Beer $beer, Recipe $recipe)
+	/**
+	 * @param  Request  $request
+	 * @param  Beer  $beer
+	 * @param  Recipe  $recipe
+	 * @return \Illuminate\Http\RedirectResponse
+	 * @throws \Illuminate\Auth\Access\AuthorizationException
+	 */
+	public function destroy(Request $request, Beer $beer, Recipe $recipe)
     {
         $this->authorize('delete', $recipe);
 
@@ -157,7 +155,11 @@ class RecipeController extends Controller
         return redirect()->route('beers.show', $beer->slug);
     }
 
-    private function updateHopAdditions($hops, $recipe)
+	/**
+	 * @param $hops
+	 * @param $recipe
+	 */
+	private function updateHopAdditions($hops, $recipe)
     {
         $hops_collection = collect($hops);
         $hops_collection->each(function($hop) use ($recipe) {
@@ -178,7 +180,11 @@ class RecipeController extends Controller
             ->delete();
     }
 
-    private function updateMaltAdditions($malts, $recipe)
+	/**
+	 * @param $malts
+	 * @param $recipe
+	 */
+	private function updateMaltAdditions($malts, $recipe)
     {
         $malts_collection = collect($malts);
         $malts_collection->each(function($malt) use ($recipe) {
@@ -196,7 +202,11 @@ class RecipeController extends Controller
             ->delete();
     }
 
-    private function updateYeastAdditions($yeasts, $recipe)
+	/**
+	 * @param $yeasts
+	 * @param $recipe
+	 */
+	private function updateYeastAdditions($yeasts, $recipe)
     {
         $yeast_collection = collect($yeasts);
         $yeast_collection->each(function($yeast) use ($recipe) {
