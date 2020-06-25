@@ -40,13 +40,13 @@
 					<div class="lg:col-4">
 						<div class="mb-2 font-mono block">
 							<label class="text-indigo-600 uppercase" :for="`minute-${index}`">Minute</label>
-							<input type="number" :name="`hops[${index}][minute]`" v-model="hop.minute" min="0" :id="`minute-${index}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
+							<input type="text" :name="`hops[${index}][minute]`" v-model="hop.minute" min="0" :id="`minute-${index}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
 						</div>
 					</div>
 					<div class="lg:col-4">
 						<div class="mb-2 font-mono block">
 							<label class="text-indigo-600 uppercase" :for="`amount-${index}`">Amount</label>
-							<input type="number" :name="`hops[${index}][amount]`" v-model="hop.amount" :id="`amount-${index}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
+							<input type="text" :name="`hops[${index}][amount]`" v-model="hop.amount" :id="`amount-${index}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
 						</div>
 					</div>
 					<div class="lg:col-4">

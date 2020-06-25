@@ -4,8 +4,6 @@ namespace App\Beers;
 
 use App\User;
 use App\Comment;
-use App\Beers\Recipe;
-use App\Beers\Style;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 

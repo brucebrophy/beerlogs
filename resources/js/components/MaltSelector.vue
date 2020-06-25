@@ -20,7 +20,7 @@
 					<div class="lg:col-6">
 						<div class="mb-2 font-mono block">
 							<label class="text-indigo-600 uppercase" :for="`malt-amount-${index}`">Amount</label>
-							<input type="number" :name="`malts[${index}][amount]`" v-model="malt.amount" :id="`malt-amount-${index}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
+							<input type="text" :name="`malts[${index}][amount]`" v-model="malt.amount" :id="`malt-amount-${index}`" class="form-input font-mono w-full border mt-2 focus:border-indigo-600">
 						</div>
 					</div>
 					<div class="lg:col-6">
@@ -86,7 +86,7 @@ export default {
 			this.maltsAdded.push({
 				malt_id: null,
 				amount: null,
-				unit_id: 1
+				unit_id: 2
 			});
 		},
 		removeMalts() {
