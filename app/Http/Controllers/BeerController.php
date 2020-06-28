@@ -14,8 +14,9 @@ class BeerController extends Controller
     {
         $beers = Beer::with([
             'style:id,name',
-            'recipes:id,og,fg,abv,ibu,beer_id',
+            'recipes:id,beer_id,og,fg,abv,ibu,srm',
         ])
+		->public()
 		->paginate(16);
 
         return view('beers.index', [

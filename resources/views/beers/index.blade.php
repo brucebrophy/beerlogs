@@ -8,7 +8,12 @@
 					<a href="{{ route('beers.show', $beer->slug) }}" class="flex w-full rounded-lg my-2 md:my-0 overflow-hidden border border-gray-200 shadow-md hover:shadow-lg hover:border-indigo-600 transition ease-in duration-100 bg-white">				
 						<div class="flex flex-col justify-between p-6 w-full">
 							<div>
-								<span class="uppercase text-indigo-400 font-mono font-bold text-xs">{{ $beer->style->name }}</span>
+								<div class="flex justify-between">
+									<span class="pr-4 uppercase text-indigo-400 font-mono font-bold text-xs">{{ $beer->style->name }}</span>
+									@if($recipe = $beer->recipes->first())
+										<div class="w-3 h-3 rounded-full" style="background-color: {{ $recipe->getSrmHex($recipe->srm) }}"></div>
+									@endif
+								</div>
 								<div class="font-bold font-mono text-xl mt-2 mb-2 text-indigo-600 capitalize">{{ $beer->name }}</div>
 								<p class="text-gray-700 font-mono tracking-tight text-sm leading-tight lowercase">{{ Str::limit($beer->notes, 50) }}</p>
 								<p class="text-gray-700 text-base mt-2 leading-tight">{{ \Str::limit($beer->description, 90) }}</p>
