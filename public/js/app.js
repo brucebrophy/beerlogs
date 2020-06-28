@@ -2454,7 +2454,7 @@ __webpack_require__.r(__webpack_exports__);
       this.maltsAdded.push({
         malt_id: null,
         amount: null,
-        unit_id: 1
+        unit_id: 2
       });
     },
     removeMalts: function removeMalts() {
@@ -42883,7 +42883,7 @@ var render = function() {
                       staticClass:
                         "form-input font-mono w-full border mt-2 focus:border-indigo-600",
                       attrs: {
-                        type: "number",
+                        type: "text",
                         name: "hops[" + index + "][minute]",
                         min: "0",
                         id: "minute-" + index
@@ -42924,7 +42924,7 @@ var render = function() {
                       staticClass:
                         "form-input font-mono w-full border mt-2 focus:border-indigo-600",
                       attrs: {
-                        type: "number",
+                        type: "text",
                         name: "hops[" + index + "][amount]",
                         id: "amount-" + index
                       },
@@ -43210,7 +43210,7 @@ var render = function() {
                       staticClass:
                         "form-input font-mono w-full border mt-2 focus:border-indigo-600",
                       attrs: {
-                        type: "number",
+                        type: "text",
                         name: "malts[" + index + "][amount]",
                         id: "malt-amount-" + index
                       },

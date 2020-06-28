@@ -8,16 +8,14 @@ use App\Http\Requests\UpdateUser;
 
 class UserController extends Controller
 {
-	/**
-	 * @param  User  $user
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 */
 	public function show(User $user)
 	{
 		$user->load([
 			'beers',
+			'beers.style',
 			'beers.recipes',
             'comments',
+            'comments.commentable',
 		]);
 
 		return view('users.show', [
@@ -25,11 +23,6 @@ class UserController extends Controller
 		]);
 	}
 
-	/**
-	 * @param  User  $user
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 * @throws \Illuminate\Auth\Access\AuthorizationException
-	 */
 	public function edit(User $user)
 	{
 		$this->authorize('update', $user);
@@ -38,26 +31,16 @@ class UserController extends Controller
 		]);
 	}
 
-	/**
-	 * @param  UpdateUser  $request
-	 * @param  User  $user
-	 * @return \Illuminate\Http\RedirectResponse
-	 * @throws \Illuminate\Auth\Access\AuthorizationException
-	 */
 	public function update(UpdateUser $request, User $user)
 	{
 		$this->authorize('update', $user);
+
 		$user->fill($request->only(['email', 'name']));
 		$user->save();
+
 		return redirect()->route('users.edit', $user->username);
 	}
 
-	/**
-	 * @param  Request  $request
-	 * @param  User  $user
-	 * @return \Illuminate\Http\RedirectResponse
-	 * @throws \Illuminate\Auth\Access\AuthorizationException
-	 */
 	public function destroy(Request $request, User $user)
 	{
 		$this->authorize('delete', $user);
@@ -73,6 +56,7 @@ class UserController extends Controller
 		}
 
 		$user->delete();
+
 		return redirect()->route('home');
 	}
 }

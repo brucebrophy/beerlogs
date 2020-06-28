@@ -4,8 +4,6 @@ namespace App\Beers;
 
 use App\User;
 use App\Comment;
-use App\Beers\Recipe;
-use App\Beers\Style;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 
@@ -45,6 +43,11 @@ class Beer extends Model
                 'source' => ['name', 'user.username']
             ]
         ];
+    }
+
+	public function scopeBySearch($query, $term = '')
+	{
+		return $term ? $query->where('name', 'like', '%' . $term . '%') : $query;
     }
 
     public function scopePublic($query)

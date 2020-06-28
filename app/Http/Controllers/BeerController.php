@@ -10,26 +10,21 @@ use App\Http\Requests\UpdateBeer;
 
 class BeerController extends Controller
 {
-
-	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 */
-	public function index()
+	public function index(Request $request)
     {
-        $beers = Beer::public()->with([
-            'style',
-            'recipes',
-        ])->paginate(20);
+        $beers = Beer::with([
+            'style:id,name',
+            'recipes:id,beer_id,og,fg,abv,ibu,srm',
+        ])
+		->bySearch($request->input('search'))
+		->public()
+		->paginate(16);
 
         return view('beers.index', [
             'beers' => $beers,
         ]);
     }
 
-
-	/**
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 */
 	public function create()
     {
         $beer = new Beer;
@@ -40,12 +35,6 @@ class BeerController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(StoreBeer $request)
     {
         $beer = new Beer;
@@ -56,12 +45,6 @@ class BeerController extends Controller
         return redirect()->route('beers.recipes.create', $beer->slug);
     }
 
-
-	/**
-	 * @param  Beer  $beer
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 * @throws \Illuminate\Auth\Access\AuthorizationException
-	 */
 	public function show(Beer $beer)
     {
         $this->authorize('view', $beer);
@@ -83,12 +66,6 @@ class BeerController extends Controller
         ]);
     }
 
-
-	/**
-	 * @param  Beer  $beer
-	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-	 * @throws \Illuminate\Auth\Access\AuthorizationException
-	 */
 	public function edit(Beer $beer)
     {
         $this->authorize('update', $beer);
@@ -104,13 +81,6 @@ class BeerController extends Controller
         ]);
     }
 
-
-	/**
-	 * @param  UpdateBeer  $request
-	 * @param  Beer  $beer
-	 * @return \Illuminate\Http\RedirectResponse
-	 * @throws \Illuminate\Auth\Access\AuthorizationException
-	 */
 	public function update(UpdateBeer $request, Beer $beer)
     {
         $this->authorize('update', $beer);
@@ -120,13 +90,6 @@ class BeerController extends Controller
         return redirect()->route('beers.show', $beer->slug);
     }
 
-
-	/**
-	 * @param  Request  $request
-	 * @param  Beer  $beer
-	 * @return \Illuminate\Http\RedirectResponse
-	 * @throws \Illuminate\Auth\Access\AuthorizationException
-	 */
 	public function destroy(Request $request, Beer $beer)
     {
         $this->authorize('delete', $beer);
