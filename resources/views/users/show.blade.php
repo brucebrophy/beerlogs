@@ -27,9 +27,6 @@
                         <div class="p-3 {{ request()->get('tab') === 'comments' ? 'border-b-2 border-indigo-900' : '' }}">
                             <a href="{{ route('users.show', [$user->username, 'tab' => 'comments']) }}" class="p-3 mx-2 inline-block font-mono">Comments</a>
                         </div>
-{{--                        <div class="p-3">--}}
-{{--                            <a href="{{ route('users.show', $user->username) }}" class="p-3 mx-2 inline-block font-mono">Logs</a>--}}
-{{--                        </div>--}}
                     </div>
                 </div>
 
@@ -86,7 +83,4 @@
             </div>
 		</div>
 	</div>
-    <div class="row">
-
-    </div>
 @endsection

@@ -11,7 +11,7 @@
 					</div>
 				{!!Form::close() !!}
 			</div>
-		w
+		</div>
 		<div class="md:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:col-gap-6 md:row-gap-6">
 			@foreach ($beers as $beer)
 				<div class="flex">
