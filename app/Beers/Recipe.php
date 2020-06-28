@@ -3,10 +3,13 @@
 namespace App\Beers;
 
 use App\System\Unit;
+use App\Traits\HasSRM;
 use Illuminate\Database\Eloquent\Model;
 
 class Recipe extends Model
 {
+	use HasSRM;
+
     protected $fillable = [
         'uuid',
         'instructions',

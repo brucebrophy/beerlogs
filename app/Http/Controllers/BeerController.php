@@ -10,12 +10,14 @@ use App\Http\Requests\UpdateBeer;
 
 class BeerController extends Controller
 {
-	public function index()
+	public function index(Request $request)
     {
         $beers = Beer::with([
             'style:id,name',
-            'recipes:id,og,fg,abv,ibu,beer_id',
+            'recipes:id,beer_id,og,fg,abv,ibu,srm',
         ])
+		->bySearch($request->input('search'))
+		->public()
 		->paginate(16);
 
         return view('beers.index', [

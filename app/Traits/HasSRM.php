@@ -1,17 +1,19 @@
 <?php
 
-class HasSRM
+namespace App\Traits;
+
+trait HasSRM
 {
-	public const SRM_COLOR_LOOKUP = [
-		1 => '#FFE69',
-		2 => '#FFD87',
-		3 => '#FFCA5',
-		4 => '#FFBF4',
-		5 => '#FBB12',
-		6 => '#F8A60',
-		7 => '#F39C0',
-		8 => '#EA8F0',
-		9 => '#E5850',
+	public $SRM_COLOR_LOOKUP = [
+		1 => '#FFE699',
+		2 => '#FFD877',
+		3 => '#FFCA55',
+		4 => '#FFBF44',
+		5 => '#FBB122',
+		6 => '#F8A600',
+		7 => '#F39C00',
+		8 => '#EA8F00',
+		9 => '#E58500',
 		10 => '#DE7C00',
 		11 => '#D77200',
 		12 => '#CF6900',
@@ -44,4 +46,13 @@ class HasSRM
 		39 => '#3A070B',
 		40 => '#36080A',
 	];
+
+	public function getSrmHex($srm)
+	{
+		if ($srm > 40) {
+			return '#000000';
+		}
+
+		return array_key_exists($srm, $this->SRM_COLOR_LOOKUP) ? $this->SRM_COLOR_LOOKUP[$srm] : null;
+	}
 }
