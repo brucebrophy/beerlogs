@@ -45,6 +45,11 @@ class Beer extends Model
         ];
     }
 
+	public function scopeBySearch($query, $term = '')
+	{
+		return $term ? $query->where('name', 'like', '%' . $term . '%') : $query;
+    }
+
     public function scopePublic($query)
     {
         return $query->where('is_private', 0);

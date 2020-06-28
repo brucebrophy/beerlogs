@@ -2,6 +2,16 @@
 
 @section('content')
 	<div class="container mx-auto pb-8">
+		<div class="row">
+			<div class="lg:col-6">
+				{!! Form::open(['route' => 'beers.index', 'method' => 'GET']) !!}
+					<div class="flex mb-6">
+						{{ Form::text('search', request()->get('search'), ['class' => 'form-input font-mono w-full border rounded-l-md border-r-0 rounded-r-none focus:border-indigo-600', 'placeholder' => 'Hazy IPA']) }}
+						<button type="submit" class="px-6 py-3 border-2 rounded-r-md border-indigo-600 text-indigo-600 font-mono hover:bg-indigo-600 hover:text-white font-bold tracking-wide bg-white">Search</button>
+					</div>
+				{!!Form::close() !!}
+			</div>
+		</div>
 		<div class="md:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:col-gap-6 md:row-gap-6">
 			@foreach ($beers as $beer)
 				<div class="flex">
