@@ -49,7 +49,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="mt-8">
-					{{ $beers->links() }}
+					{{ $beers->links('pagination::tailwind') }}
 				</div>
 			</div>
 		</div>
