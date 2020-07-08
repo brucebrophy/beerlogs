@@ -16,7 +16,7 @@ class Unit extends Model
 
 		if ($this->isVolumeUnit()) {
 			return collect([
-				'qt' => $unitInstance->to(Volume\Quart::class)->format(),
+				'qt' => $unitInstance->to(Volume\USLiquidQuart::class)->format(),
 				'ml' => $unitInstance->to(Volume\MilliLiter::class)->format(),
 				'gal' => $unitInstance->to(Volume\USLiquidGallon::class)->format(),
 				'l' => $unitInstance->to(Volume\Liter::class)->format(),
